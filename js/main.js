@@ -1,3 +1,4 @@
+//Menu movement
 const menu = document.querySelector('.menu');
 const l1 = document.querySelector(".l1")
 const l2 = document.querySelector(".l2")
@@ -16,7 +17,6 @@ function animateBars (){
 
 
 // Cambio de color en scroll:
-// Escuchar el evento de scroll
 window.addEventListener("scroll", function () {
     const header = document.querySelector("header");
     const navLogo = document.getElementById("navLogo");
@@ -57,7 +57,6 @@ window.addEventListener("scroll", function () {
 });
 
 //Desplegar navbar
-
 const menu1 = document.getElementById("menu")
 const options = document.getElementById("options_container")
 const line1 = document.getElementById("l1")
@@ -85,3 +84,24 @@ function openingBar () {
         line3.style.background = "black"
     }
 }
+
+
+
+//Cambiar el slogan en base al tiempo
+document.addEventListener('DOMContentLoaded', function () {
+    const sloganElement = document.getElementById('slogan');
+    const textos = ['tus expectativas', 'tu espíritu', 'tu inspiración', 'tus sentidos']; // Puedes agregar más textos según sea necesario
+    let index = 0;
+  
+    function cambiarTexto() {
+        sloganElement.style.opacity = 0
+        setTimeout(function(){
+            sloganElement.textContent = textos[index];
+            sloganElement.style.opacity = 1
+            index = (index + 1) % textos.length;
+        }, 2000)
+    }
+  
+    // Cambiar el texto cada 2000 milisegundos (2 segundos)
+    setInterval(cambiarTexto, 5000);
+  });

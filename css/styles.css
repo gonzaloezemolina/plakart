@@ -152,6 +152,18 @@ small:hover {
   height: 100vh;
   width: 100%;
 }
+.first_section .first_section_slogan {
+  display: flex;
+}
+
+#slogan {
+  padding-left: 6px;
+}
+
+.first_section_slogan_word {
+  opacity: 1;
+  transition: opacity 2s ease-in-out;
+}
 
 .logo {
   margin-top: 170px;
