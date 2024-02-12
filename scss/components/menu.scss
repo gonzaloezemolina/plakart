@@ -1,0 +1,108 @@
+
+.menu{
+    border: 0;
+    justify-content: center;
+    align-items: center;
+    margin-left: 80px;
+    background: white;
+    width: 80px;
+    height: 60px;
+    position: absolute;
+    z-index: 9999;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+
+
+
+.menu span{
+    /* margin-left: 23px; */
+    display: block;
+    width: 40%;
+    height: 2px;
+    background: rgb(0, 0, 0);
+    margin-top: 6px;
+    transform-origin: 0px 100%;
+    transition: all 600ms;
+}
+
+
+/*ANIMACION*/
+
+.activel1{
+    transform:rotate(45deg) translate(-3px,1px);
+    background: #000000;
+}
+
+
+.activel2{
+    opacity: 0;
+    margin-left: 30px;
+}
+
+.activel3{
+    background: #000000;
+    transform: rotate(-45deg) translate(-5px,2px);
+}
+
+
+
+
+
+.icons_in_menu{
+    padding-top: 100px;
+    text-align: end;
+    svg{
+        padding: 1px;
+    }
+}
+
+
+.options_container{
+    background-color: #ffffff; 
+    color: #000000; 
+    /* display: none;  */
+    padding-right: 100px;
+    padding-bottom: 100px; 
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5); /* Sombra */
+    position: fixed;
+    left: -40%;
+    width: 40%;
+    transition: left 0.5s, width 0.5s;
+    z-index: 1;
+}
+
+.options_container.active {
+    left: 0;
+    width: 40%;
+    display: block;   
+}
+
+
+
+/* Estilos para los enlaces en la barra lateral */
+.options_container ul {
+    margin-left: 68%;
+    align-items: center;
+    flex-direction: column;
+    text-align: justify;
+    list-style: none;
+    margin-top: 175%;
+}
+
+.options_container ul li {
+    padding-top: 10px;
+    margin-bottom: 10px;
+}
+
+.options_container a {
+    color: #000000;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: "AdelleL";
+}
+
+
+

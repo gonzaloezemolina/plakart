@@ -1,0 +1,98 @@
+
+
+
+.first_section{
+    background: linear-gradient(to right, black 50%, rgb(255, 255, 255)0%); 
+    height: 100vh;
+    width: 100%;
+}
+
+
+.logo{
+    margin-top: 170px;
+    margin-left: 70px;
+}
+
+p{  
+    font-family: "AdelleL";
+    color: white;
+    font-size: 25px;
+    padding-top: 30px;
+    padding-left: 80px;
+}
+
+
+.second_section{
+    display: flex;
+    width: 100%;
+    height: 65vh;
+    background: linear-gradient(to right, white 50%, black 0%);
+    img{
+        height: 65vh;
+        width: 50%;
+    }
+    .card{
+        height: 40vh;
+        width: 30%;
+        background: white;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5); /* Sombra */
+    z-index: 2;
+        h3{
+            font-family: "AdelleL";
+        }
+        p{
+            color: black;
+            font-size: 15px;
+        }
+    }
+}
+
+.third_section{
+    display: flex;
+    height: 90vh;
+    width: 100%;
+    background: linear-gradient(to right, white 50%, black 0%);
+    a{
+        text-decoration: none;
+        color: black;
+    }
+    li{
+        font-family: "AdelleL";
+        font-size: 40px;
+    }
+    hr{
+        flex-direction: column;
+        width: 50%;
+        border: 15px solid rgb(212, 35, 35);
+        padding: 1px;
+        background: rgb(0, 0, 0);
+        color: red;
+    }
+ 
+}
+
+
+.fourth_section{
+    height: 95vh;
+    width: 100%;
+    background: linear-gradient(to right, rgb(0, 0, 0) 50%, rgb(255, 255, 255) 0%);
+    p{
+        font-family: "AdelleB";
+    }
+    .circulo {
+        width: 220px;
+        height: 220px;
+        background-color: white;
+        border-radius: 50%;
+        position: absolute;
+        left: -5%;
+        margin: 10px; 
+        transform: translateY(-15%);
+      }
+}
+
+.fifth_section{
+    height: 85vh;
+    width: 100%;
+    background: linear-gradient(to right, white 50%, black 0%);
+}

@@ -1,0 +1,40 @@
+.portada_cocinas{
+    width: 100%;
+    background-image: url("../../media/img/cocinas/portada3-1024x512-1.jpg");
+    background-repeat: no-repeat;
+    object-fit: cover;
+    height: 88vh;
+    display: flex;
+    justify-content: start;
+    align-items:end;
+    h1{
+        font-family: "AdelleEB";
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 50px;
+    }
+    .portada_cocinas_titulo{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: white;
+        width: 30%;
+        height: 90px;
+    }
+}
+
+.first_section_cocinas{
+    p{
+        margin: 8%;
+        color: black;
+    font-size: 15px;
+    text-align: justify;
+}
+}
+
+
+.galery_section_cocinas{
+    margin-left: 8%;
+    margin-right: 8%;
+}

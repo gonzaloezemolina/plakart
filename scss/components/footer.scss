@@ -1,0 +1,100 @@
+//Footer main container
+footer{
+    bottom: 0;
+    background-color: black;
+    color: white;
+    width: 100%;
+    text-align: center;
+    padding-bottom: 25px;
+    img{
+        padding-top: 20px;
+        padding-bottom: 8px;
+    }
+    a{
+        text-decoration: none;
+    }
+    svg{
+        color: white;
+        padding: 5px;
+        cursor: pointer;
+    }
+}
+
+//Icons
+#whatsApp_icon:hover{
+    // color: rgb(37 211 102);
+    cursor: pointer;
+    color: rgb(117, 116, 116);
+    transition: .5s;
+}
+
+
+  #instagram_icon:hover path {
+    // color: color-mix(in srgb, rgb(255, 0, 221) 50%, rgb(255, 166, 0) 50%);
+    color: rgb(117, 116, 116);
+    transition: .5s;
+  }
+
+#facebook_icon:hover{
+    // color: #4267B2;
+    color: rgb(117, 116, 116);
+    transition: .5s;
+}
+
+#pinterest_icon:hover{
+    // color: #c8232c;
+    color: rgb(117, 116, 116);
+
+    transition: .5s;
+}
+
+#linkedin_icon:hover{
+    // color:#0e76a8;
+    color: rgb(117, 116, 116);
+    transition: .5s;
+}
+
+//Texts
+
+.container_links_footer{
+    display: flex;
+    justify-content: center;
+    text-align: justify;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.container_texts_footer{
+    padding: 50px;
+    padding-top: 25px;
+    padding-bottom: 35px;
+    font-family: "AdelleL";
+    ul{
+        list-style: none;
+    }
+    li {
+        line-height: 1.5; 
+        margin-bottom: 10px; 
+    }
+    a{
+        text-decoration: none;
+        color: #ffffff;
+    }
+}
+
+
+
+small{
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top: 30px;
+    a{
+        text-decoration: none;
+        color: white;
+    }
+    color: #ffffff;
+}
+
+small:hover{
+    text-decoration: underline;
+    transition: .5s;
+}

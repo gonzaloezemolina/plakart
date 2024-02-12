@@ -1,0 +1,35 @@
+
+header{
+    position: fixed;
+    top: 0;
+    height: 60px;
+    width: 100%;
+    background: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color .5s ease;
+  scroll-behavior: smooth;
+  z-index: 9999;
+    img{
+        height: 40px;
+    }
+}
+
+
+nav {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
+}
+
+
+
+nav img {
+    display: none;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+

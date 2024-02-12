@@ -1,0 +1,372 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "AdelleEB";
+  src: url(../media/font/Adelle_ExtraBold.otf);
+}
+@font-face {
+  font-family: "AdelleB";
+  src: url(../media/font/adelle-sans-bold.otf);
+}
+@font-face {
+  font-family: "AdelleL";
+  src: url(../media/font/adelle-sans-light.otf);
+}
+body::-webkit-scrollbar {
+  background: rgb(0, 0, 0);
+}
+
+body::-webkit-scrollbar-thumb {
+  background: rgb(255, 255, 255);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  height: 60px;
+  width: 100%;
+  background: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.5s ease;
+  scroll-behavior: smooth;
+  z-index: 9999;
+}
+header img {
+  height: 40px;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  width: 100%;
+}
+
+nav img {
+  display: none;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+footer {
+  bottom: 0;
+  background-color: black;
+  color: white;
+  width: 100%;
+  text-align: center;
+  padding-bottom: 25px;
+}
+footer img {
+  padding-top: 20px;
+  padding-bottom: 8px;
+}
+footer a {
+  text-decoration: none;
+}
+footer svg {
+  color: white;
+  padding: 5px;
+  cursor: pointer;
+}
+
+#whatsApp_icon:hover {
+  cursor: pointer;
+  color: rgb(117, 116, 116);
+  transition: 0.5s;
+}
+
+#instagram_icon:hover path {
+  color: rgb(117, 116, 116);
+  transition: 0.5s;
+}
+
+#facebook_icon:hover {
+  color: rgb(117, 116, 116);
+  transition: 0.5s;
+}
+
+#pinterest_icon:hover {
+  color: rgb(117, 116, 116);
+  transition: 0.5s;
+}
+
+#linkedin_icon:hover {
+  color: rgb(117, 116, 116);
+  transition: 0.5s;
+}
+
+.container_links_footer {
+  display: flex;
+  justify-content: center;
+  text-align: justify;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.container_texts_footer {
+  padding: 50px;
+  padding-top: 25px;
+  padding-bottom: 35px;
+  font-family: "AdelleL";
+}
+.container_texts_footer ul {
+  list-style: none;
+}
+.container_texts_footer li {
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
+.container_texts_footer a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+small {
+  font-family: Arial, Helvetica, sans-serif;
+  padding-top: 30px;
+  color: #ffffff;
+}
+small a {
+  text-decoration: none;
+  color: white;
+}
+
+small:hover {
+  text-decoration: underline;
+  transition: 0.5s;
+}
+
+.first_section {
+  background: linear-gradient(to right, black 50%, rgb(255, 255, 255) 0%);
+  height: 100vh;
+  width: 100%;
+}
+
+.logo {
+  margin-top: 170px;
+  margin-left: 70px;
+}
+
+p {
+  font-family: "AdelleL";
+  color: white;
+  font-size: 25px;
+  padding-top: 30px;
+  padding-left: 80px;
+}
+
+.second_section {
+  display: flex;
+  width: 100%;
+  height: 65vh;
+  background: linear-gradient(to right, white 50%, black 0%);
+}
+.second_section img {
+  height: 65vh;
+  width: 50%;
+}
+.second_section .card {
+  height: 40vh;
+  width: 30%;
+  background: white;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5); /* Sombra */
+  z-index: 2;
+}
+.second_section .card h3 {
+  font-family: "AdelleL";
+}
+.second_section .card p {
+  color: black;
+  font-size: 15px;
+}
+
+.third_section {
+  display: flex;
+  height: 90vh;
+  width: 100%;
+  background: linear-gradient(to right, white 50%, black 0%);
+}
+.third_section a {
+  text-decoration: none;
+  color: black;
+}
+.third_section li {
+  font-family: "AdelleL";
+  font-size: 40px;
+}
+.third_section hr {
+  flex-direction: column;
+  width: 50%;
+  border: 15px solid rgb(212, 35, 35);
+  padding: 1px;
+  background: rgb(0, 0, 0);
+  color: red;
+}
+
+.fourth_section {
+  height: 95vh;
+  width: 100%;
+  background: linear-gradient(to right, rgb(0, 0, 0) 50%, rgb(255, 255, 255) 0%);
+}
+.fourth_section p {
+  font-family: "AdelleB";
+}
+.fourth_section .circulo {
+  width: 220px;
+  height: 220px;
+  background-color: white;
+  border-radius: 50%;
+  position: absolute;
+  left: -5%;
+  margin: 10px;
+  transform: translateY(-15%);
+}
+
+.fifth_section {
+  height: 85vh;
+  width: 100%;
+  background: linear-gradient(to right, white 50%, black 0%);
+}
+
+.portada_cocinas {
+  width: 100%;
+  background-image: url("../../media/img/cocinas/portada3-1024x512-1.jpg");
+  background-repeat: no-repeat;
+  object-fit: cover;
+  height: 88vh;
+  display: flex;
+  justify-content: start;
+  align-items: end;
+}
+.portada_cocinas h1 {
+  font-family: "AdelleEB";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 50px;
+}
+.portada_cocinas .portada_cocinas_titulo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  width: 30%;
+  height: 90px;
+}
+
+.first_section_cocinas p {
+  margin: 8%;
+  color: black;
+  font-size: 15px;
+  text-align: justify;
+}
+
+.galery_section_cocinas {
+  margin-left: 8%;
+  margin-right: 8%;
+}
+
+.menu {
+  border: 0;
+  justify-content: center;
+  align-items: center;
+  margin-left: 80px;
+  background: white;
+  width: 80px;
+  height: 60px;
+  position: absolute;
+  z-index: 9999;
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.menu span {
+  /* margin-left: 23px; */
+  display: block;
+  width: 40%;
+  height: 2px;
+  background: rgb(0, 0, 0);
+  margin-top: 6px;
+  transform-origin: 0px 100%;
+  transition: all 600ms;
+}
+
+/*ANIMACION*/
+.activel1 {
+  transform: rotate(45deg) translate(-3px, 1px);
+  background: #000000;
+}
+
+.activel2 {
+  opacity: 0;
+  margin-left: 30px;
+}
+
+.activel3 {
+  background: #000000;
+  transform: rotate(-45deg) translate(-5px, 2px);
+}
+
+.icons_in_menu {
+  padding-top: 100px;
+  text-align: end;
+}
+.icons_in_menu svg {
+  padding: 1px;
+}
+
+.options_container {
+  background-color: #ffffff;
+  color: #000000;
+  /* display: none;  */
+  padding-right: 100px;
+  padding-bottom: 100px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5); /* Sombra */
+  position: fixed;
+  left: -40%;
+  width: 40%;
+  transition: left 0.5s, width 0.5s;
+  z-index: 1;
+}
+
+.options_container.active {
+  left: 0;
+  width: 40%;
+  display: block;
+}
+
+/* Estilos para los enlaces en la barra lateral */
+.options_container ul {
+  margin-left: 68%;
+  align-items: center;
+  flex-direction: column;
+  text-align: justify;
+  list-style: none;
+  margin-top: 175%;
+}
+
+.options_container ul li {
+  padding-top: 10px;
+  margin-bottom: 10px;
+}
+
+.options_container a {
+  color: #000000;
+  text-decoration: none;
+  font-size: 20px;
+  font-family: "AdelleL";
+}
+
+/*# sourceMappingURL=styles.css.map */
