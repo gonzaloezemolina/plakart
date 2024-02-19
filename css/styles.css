@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   padding: 0px;
   margin: 0px;
@@ -142,18 +143,41 @@ small a {
   color: white;
 }
 
-small:hover {
+.developer:hover {
   text-decoration: underline;
   transition: 0.5s;
 }
 
 .first_section {
-  background: linear-gradient(to right, black 50%, rgb(255, 255, 255) 0%);
+  background-color: black;
+  display: grid;
+  grid-template-columns: 50% 50%;
   height: 100vh;
-  width: 100%;
 }
-.first_section .first_section_slogan {
+
+.background_video {
+  height: 100vh;
+  overflow: hidden; /* Para ocultar partes del video que excedan el contenedor */
+}
+
+#background_Video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.content {
+  background-color: black;
   display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.first_section_slogan {
+  display: flex;
+  padding-bottom: 85px;
 }
 
 #slogan {
@@ -166,16 +190,66 @@ small:hover {
 }
 
 .logo {
-  margin-top: 170px;
+  margin-top: 130px;
   margin-left: 70px;
 }
 
-p {
+.first_section_slogan p {
   font-family: "AdelleL";
   color: white;
   font-size: 25px;
-  padding-top: 30px;
+  padding-top: 15px;
   padding-left: 80px;
+}
+
+.first_section_portal {
+  display: flex;
+  height: 276px;
+}
+.first_section_portal .first_section_portal_img {
+  position: relative;
+  align-items: center;
+}
+.first_section_portal .first_section_portal_img img {
+  padding-top: 20px;
+  width: 420px;
+  height: 100%;
+  object-fit: cover;
+}
+.first_section_portal .first_section_portal_img .more {
+  position: absolute;
+  margin-left: 35%;
+  transform: translateY(-370%);
+  text-align: center;
+  z-index: 9;
+}
+.first_section_portal .first_section_portal_img .more a {
+  text-decoration: none;
+  color: white;
+  font-family: "AdelleL";
+  font-size: 35px;
+}
+.first_section_portal .first_section_portal_button {
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  font-size: 50px;
+  background-color: rgb(255, 255, 255);
+  width: 50px;
+  height: 110px;
+}
+.first_section_portal .first_section_portal_button svg {
+  fill: rgb(0, 0, 0);
+}
+
+.first_section_portal_button:hover {
+  transition: 0.7s;
+  background-color: rgb(117, 116, 116);
+}
+.first_section_portal_button:hover svg {
+  fill: white;
 }
 
 .second_section {
@@ -183,31 +257,25 @@ p {
   width: 100%;
   height: 65vh;
   background: linear-gradient(to right, white 50%, black 0%);
+  overflow: hidden;
 }
 .second_section img {
   height: 65vh;
   width: 50%;
+  object-fit: cover;
 }
-.second_section .card {
-  height: 40vh;
-  width: 30%;
-  background: white;
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5); /* Sombra */
-  z-index: 2;
-}
-.second_section .card h3 {
-  font-family: "AdelleL";
-}
-.second_section .card p {
-  color: black;
-  font-size: 15px;
+
+#card1 {
+  position: absolute;
+  transform: translateX(90%) translateY(50%);
 }
 
 .third_section {
-  display: flex;
+  display: grid;
+  grid-template-columns: 50% 50%;
   height: 90vh;
   width: 100%;
-  background: linear-gradient(to right, white 50%, black 0%);
+  background: linear-gradient(to right, white 51%, rgb(0, 0, 0) 0%);
 }
 .third_section a {
   text-decoration: none;
@@ -217,22 +285,77 @@ p {
   font-family: "AdelleL";
   font-size: 40px;
 }
-.third_section hr {
-  flex-direction: column;
-  width: 50%;
-  border: 15px solid rgb(212, 35, 35);
-  padding: 1px;
-  background: rgb(0, 0, 0);
-  color: red;
+.third_section img {
+  height: 100%;
+  width: 90%;
+  object-fit: cover;
+}
+
+.vertical_line {
+  width: 1px; /* Ancho de la línea */
+  height: 46%; /* Altura de la línea (ajusta según sea necesario) */
+  background-color: #000; /* Color de la línea */
+  margin-right: 25px;
+  margin-bottom: 50px; /* Margen a la derecha de la línea (ajusta según sea necesario) */
+  display: inline-block; /* Para que la línea no afecte el diseño de la lista */
+}
+
+.third_section_photos {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+.third_section_links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 120px;
+}
+.third_section_links ul li {
+  transform: translateY(-40%);
+  margin-bottom: 15px;
+  list-style: none;
+}
+
+#card2 {
+  position: absolute;
+  width: 60%;
+  height: 40%;
+  transform: translateY(100%) translateX(70%);
+  margin-bottom: 0;
+  margin-top: 90px;
+}
+
+.c:hover {
+  transform: scale(1.1);
+  transition: 0.5s;
+}
+
+.p:hover {
+  transform: scale(1.1);
+  transition: 0.5s;
+}
+
+.v:hover {
+  transform: scale(1.1);
+  transition: 0.5s;
+}
+
+.com:hover {
+  transform: scale(1.1);
+  transition: 0.5s;
 }
 
 .fourth_section {
+  display: grid;
+  grid-template-columns: 55% 45%;
   height: 95vh;
   width: 100%;
   background: linear-gradient(to right, rgb(0, 0, 0) 50%, rgb(255, 255, 255) 0%);
 }
 .fourth_section p {
-  font-family: "AdelleB";
+  font-family: "AdelleEB";
 }
 .fourth_section .circulo {
   width: 220px;
@@ -245,10 +368,57 @@ p {
   transform: translateY(-15%);
 }
 
+.background_video4 {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  overflow: hidden; /* Para ocultar partes del video que excedan el contenedor */
+}
+
+#background_Video4 {
+  height: 72vh;
+  width: 60%;
+  object-fit: cover;
+}
+
+.fourth_section_text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.fourth_section_text p {
+  color: #000;
+  text-align: center;
+  font-size: 30px;
+}
+.fourth_section_text div {
+  margin-bottom: 50px;
+}
+
+#fourth_section_text_animation {
+  transition: opacity 2s ease-in-out;
+}
+
 .fifth_section {
+  display: grid;
+  grid-template-columns: 45% 55%;
   height: 85vh;
   width: 100%;
   background: linear-gradient(to right, white 50%, black 0%);
+}
+
+.fifth_section_img {
+  margin-top: 30px;
+  height: 500px;
+  display: flex;
+  align-items: center;
+  object-fit: cover;
+}
+
+#card3 {
+  width: 65%;
+  transform: translateY(70%) translateX(85%);
 }
 
 .portada_cocinas {
@@ -281,6 +451,7 @@ p {
   margin: 8%;
   color: black;
   font-size: 15px;
+  font-family: "AdelleL";
   text-align: justify;
 }
 
@@ -379,6 +550,61 @@ p {
   text-decoration: none;
   font-size: 20px;
   font-family: "AdelleL";
+}
+
+.card {
+  height: 35vh;
+  width: 40%;
+  background: white;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5); /* Sombra */
+  z-index: 2;
+}
+.card h3 {
+  font-family: "AdelleL";
+}
+.card p {
+  color: black;
+  font-size: 15px;
+}
+
+.card {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding-left: 40px;
+}
+
+.card_title {
+  flex-direction: column;
+  text-align: justify;
+}
+.card_title h3 {
+  padding-bottom: 35px;
+  text-align: start;
+}
+
+.card_text {
+  padding-right: 20px;
+  font-family: "AdelleL";
+}
+
+.card_link {
+  padding-top: 30px;
+  padding-right: 25px;
+  display: flex;
+  justify-content: end;
+}
+.card_link a {
+  font-family: "AdelleL";
+  color: black;
+  text-decoration: none;
+}
+.card_link p {
+  font-family: "AdelleL";
+}
+
+.card_link a:hover {
+  text-decoration: underline;
 }
 
 /*# sourceMappingURL=styles.css.map */

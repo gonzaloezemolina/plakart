@@ -1,13 +1,38 @@
-
-
-
 .first_section{
-    background: linear-gradient(to right, black 50%, rgb(255, 255, 255)0%); 
+    background-color: black;
+    display: grid;
+    grid-template-columns: 50% 50%;
     height: 100vh;
-    width: 100%;
-    .first_section_slogan{
-        display: flex;
-    }
+}
+
+.background_video {
+    height: 100vh;
+    overflow: hidden; /* Para ocultar partes del video que excedan el contenedor */
+}
+
+#background_Video {
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover; 
+}
+
+
+
+  .content {
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+
+  //Slogan
+
+.first_section_slogan{
+    display: flex;
+    padding-bottom: 85px;
 }
 
 #slogan{
@@ -21,17 +46,78 @@
 
 
 .logo{
-    margin-top: 170px;
+    margin-top: 130px;
     margin-left: 70px;
 }
 
-p{  
-    font-family: "AdelleL";
-    color: white;
-    font-size: 25px;
-    padding-top: 30px;
-    padding-left: 80px;
+.first_section_slogan{
+    p{  
+        font-family: "AdelleL";
+        color: white;
+        font-size: 25px;
+        padding-top: 15px;
+        padding-left: 80px;
+    }
 }
+
+
+
+
+.first_section_portal{
+    display: flex;
+    height: 276px;
+    .first_section_portal_img {
+        position: relative;
+        // display: flex;
+align-items: center; 
+        img {
+          padding-top: 20px;
+          width: 420px;
+            height: 100%;
+            object-fit: cover;
+        }
+    
+        .more {
+            position: absolute;
+            margin-left: 35%;
+            transform: translateY(-370%);
+            text-align: center;
+            z-index: 9;
+            a{
+                text-decoration: none;
+                color: white;
+                font-family: "AdelleL";
+                font-size: 35px;
+            }
+        }
+      }
+
+    .first_section_portal_button{
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+        font-size: 50px;
+        background-color: rgb(255, 255, 255);
+        width: 50px;
+        height: 110px;
+        svg{
+            fill: rgb(0, 0, 0);
+        }
+    }
+}
+
+.first_section_portal_button:hover{
+    transition: .7s;
+    background-color: rgb(117, 116, 116) ;
+    svg{
+        fill: white;
+    }
+}
+
+
+//Segunda seccion
 
 
 .second_section{
@@ -39,31 +125,31 @@ p{
     width: 100%;
     height: 65vh;
     background: linear-gradient(to right, white 50%, black 0%);
+    overflow: hidden; 
     img{
         height: 65vh;
         width: 50%;
-    }
-    .card{
-        height: 40vh;
-        width: 30%;
-        background: white;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5); /* Sombra */
-    z-index: 2;
-        h3{
-            font-family: "AdelleL";
-        }
-        p{
-            color: black;
-            font-size: 15px;
-        }
+        object-fit: cover;
     }
 }
 
+#card1 {
+    position: absolute;
+    transform: translateX(90%) translateY(50%);
+}
+
+
+
+
+
+//Tercer seccion
+
 .third_section{
-    display: flex;
+    display: grid;
+    grid-template-columns: 50% 50%;
     height: 90vh;
     width: 100%;
-    background: linear-gradient(to right, white 50%, black 0%);
+    background: linear-gradient(to right, white 51%, rgb(0, 0, 0) 0%);
     a{
         text-decoration: none;
         color: black;
@@ -72,24 +158,83 @@ p{
         font-family: "AdelleL";
         font-size: 40px;
     }
-    hr{
-        flex-direction: column;
-        width: 50%;
-        border: 15px solid rgb(212, 35, 35);
-        padding: 1px;
-        background: rgb(0, 0, 0);
-        color: red;
+    img{
+        height: 100%;
+        width: 90%;
+        object-fit: cover;
     }
- 
 }
 
 
+
+.vertical_line{
+    width: 1px; /* Ancho de la línea */
+    height: 46%; /* Altura de la línea (ajusta según sea necesario) */
+    background-color: #000; /* Color de la línea */
+    margin-right: 25px; 
+    margin-bottom: 50px;/* Margen a la derecha de la línea (ajusta según sea necesario) */
+    display: inline-block; /* Para que la línea no afecte el diseño de la lista */
+}
+
+
+.third_section_photos{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.third_section_links{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 120px;
+    ul li{
+        transform: translateY(-40%);
+        margin-bottom: 15px;
+        list-style: none;
+    }
+}
+
+#card2{
+    position: absolute;
+    width: 60%;
+    height: 40%;
+    transform: translateY(100%) translateX(70%);
+    margin-bottom: 0;
+    margin-top: 90px;
+}
+
+
+.c:hover{
+    transform: scale(1.1);
+    transition: .5s;
+}
+
+.p:hover{
+    transform: scale(1.1);
+    transition: .5s;
+}
+
+.v:hover{
+    transform: scale(1.1);
+    transition: .5s;
+}
+
+.com:hover{
+    transform: scale(1.1);
+    transition: .5s;
+}
+
+//Cuarta seccion
+
 .fourth_section{
+    display: grid;
+    grid-template-columns: 55% 45%;
     height: 95vh;
     width: 100%;
     background: linear-gradient(to right, rgb(0, 0, 0) 50%, rgb(255, 255, 255) 0%);
     p{
-        font-family: "AdelleB";
+        font-family: "AdelleEB";
     }
     .circulo {
         width: 220px;
@@ -103,8 +248,61 @@ p{
       }
 }
 
+
+.background_video4 {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    overflow: hidden; /* Para ocultar partes del video que excedan el contenedor */
+}
+
+#background_Video4 {
+    height: 72vh;
+    width: 60%; 
+    object-fit: cover; 
+}
+
+
+.fourth_section_text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    p{
+        color: #000;
+        text-align: center;
+        font-size: 30px;
+    }
+    div{
+        margin-bottom: 50px;
+    }
+}
+
+
+#fourth_section_text_animation{
+    transition: opacity 2s ease-in-out;
+}
+
+//Quinta seccion
+
 .fifth_section{
+    display: grid;
+    grid-template-columns: 45% 55%;
     height: 85vh;
     width: 100%;
     background: linear-gradient(to right, white 50%, black 0%);
+}
+
+.fifth_section_img{
+    margin-top: 30px;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    object-fit: cover;
+}
+
+
+#card3{
+    width: 65%;
+    transform: translateY(70%) translateX(85%);
 }

@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Plakart</title>
     <link rel="stylesheet" href="./css/styles.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
     <header>
@@ -67,54 +68,118 @@
     <!-- Main content -->
     <main>
        <div class="first_section">
-        <div class="background_video"></div>
-        <img src="./media/img/D1rLil34_Qn3Yd9BgSArl-transformed.png" alt="Plakart" class="logo">
-        <div class="first_section_slogan">
-            <P>Espacios a medida de</P>
-            <p class="first_section_slogan_word" id="slogan">tus sentidos</p>
+        <div class="first_section_content">
+            <img src="./media/img/D1rLil34_Qn3Yd9BgSArl-transformed.png" alt="Plakart" class="logo">
+            <div class="first_section_slogan">
+                <P>Espacios a medida de</P>
+                <p class="first_section_slogan_word" id="slogan">tus sentidos</p>
+            </div>
+            <div class="first_section_portal">
+                <div class="first_section_portal_img">
+                <img src="./media/img/socialcontent/WhatsApp Image 2024-02-13 at 5.25.12 PM.jpeg" alt="">
+                <div class="more">
+                    <a href="#">Ver más</a>
+                </div>
+                </div>
+                <div class="first_section_portal_button">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8"/>
+                      </svg>
+                </div>
+            </div>
+        </div>
+        <div class="background_video">
+            <video autoplay muted loop id="background_Video" width="100%">
+                <source src="./media/videos/istockphoto-1364842759-640_adpp_is.mp4" type="video/mp4">
+                Tu navegador no soporta el elemento de video.
+              </video>
         </div>
        </div>
 
 
        <section class="second_section">
-        <img src="./media/img/03-home-muebles-1.jpg" alt="" class="img_2section">
-        <div class="card">
-            <h3><strong>Quienes somos</strong></h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur aut in maxime at dicta consectetur ab voluptatem culpa necessitatibus atque!</p>
-            <div>
+        <img src="./media/img/socialcontent/WhatsApp Image 2024-02-13 at 5.25.12 PM(1).jpeg" alt="" class="img_2section">
+        <div class="card" id="card1" data-aos="fade-zoom-in"
+        data-aos-easing="ease-in-back"
+        data-aos-delay="500"
+        data-aos-offset="30">
+            <div class="card_title">
+                <h3><strong>¿Quienes somos?</strong></h3>
+                <p class="card_text">Plakart nació en el año 2006 con el objetivo de proporcionar una oferta de amoblamientos de alta gama ausentes hasta el momento en la oferta del mercado.</p>
+            </div>
+            
+            <div class="card_link">
                 <a href="./pages/nosotros.html">Nosotros</a>
             </div>
         </div>
     </section>
 
     <section class="third_section">
-        <div class="third_section_links">
-            <hr class="third_section_hr">
-            <ul>
-                <li><a class="third_section_a" href="./pages/cocinas.html">1.Cocinas</a></li>
-                <li><a class="third_section_a" href="./pages/placares&vestidores.html">2.Placares</a></li>
-                <li><a class="third_section_a" href="./pages/placares&vestidores.html">3.Vestidores</a></li>
-                <li><a  class="third_section_a"href="./pages/complementos.html">4.Complementos</a></li>
+        <div class="third_section_links" data-aos="fade-right"
+        data-aos-offset="300"
+        data-aos-easing="ease-in-sine">
+        <div class="vertical_line"></div>
+        <ul>
+                <li class="c"><a class="third_section_ac" href="./pages/cocinas.html">1.Cocinas</a></li>
+                <li class="p"><a class="third_section_a" href="./pages/placares&vestidores.html">2.Placares</a></li>
+                <li class="v"><a class="third_section_a" href="./pages/placares&vestidores.html">3.Vestidores</a></li>
+                <li class="com"><a  class="third_section_a"href="./pages/complementos.html">4.Complementos</a></li>
             </ul>
+
+
+            <div class="card" id="card2" data-aos="fade-zoom-in"
+            data-aos-easing="ease-in-back"
+            data-aos-delay="500"
+            data-aos-offset="30">
+                <div class="card_title">
+                    <h3><strong>Cocinas</strong></h3>
+                    <p class="card_text">Encuentra inspiración en cada rincón de nuestras cocinas que fusionan estilo y funcionalidad a la perfección.</p>
+                </div>
+                
+                <div class="card_link">
+                    <p class="">1/4</p>
+                    <p></p>
+                </div>
+            </div>
         </div>
+       
         <div class="third_section_photos">
-            <img src="" alt="">
+            <img src="./media/img/cocinas/cocina-grande-blanco-negro.jpg" alt="">
         </div>
     </section>
 
-    <section class="fourth_section">
+    <section class="fourth_section" data-aos="fade-right">
         <div class="circulo"></div>
-        <div>
-            <!-- <p>+20 Años de experiencia</p>
-            <p>+200 Proyectos</p> -->
+        <div class="background_video4">
+            <video autoplay muted loop id="background_Video4" width="100%">
+                <source src="./media/videos/WhatsApp Video 2024-01-18 at 5.27.44 PM.mp4" type="video/mp4">
+                Tu navegador no soporta el elemento de video.
+              </video>
+        </div>
+        <div class="fourth_section_text">
+            <div id="years">
+                <p id="years_num">+20</p>
+                <p>AÑOS DE EXPERIENCIA</p>
+            </div>
+            <div>
+                <p id="numbers">+1000</p>
+                <p class="fourth_section_text_animation" id="fourth_section_text_animation">COCINAS INSTALADAS</p>
+            </div>
         </div>
     </section>
 
-    <section class="fifth_section">
-        <img src="./media/img/03-home-muebles-1.jpg" alt="" class="img_2section">
-        <div class="card">
-            <h3><strong>Quienes somos</strong></h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur aut in maxime at dicta consectetur ab voluptatem culpa necessitatibus atque!</p>
+    <section class="fifth_section" data-aos="zoom-in-down">
+        <div class="card" id="card3" >
+            <div class="card_title">
+                <h3><strong>Obras</strong></h3>
+                <p class="card_text">Explora nuestra galería de proyectos para descubrir cómo hemos convertido espacios comunes en ambientes extraordinarios.</p>
+            </div>
+            <div class="card_link">
+                <a href="./pages/obras.html">Obras</a>
+            </div>
+        </div>
+        <div class="fifth_section_img">
+            <img src="./media/img/obras/541199_806fee616ce844cc9d8d084f832d491a~mv2.webp" alt="" class="img_2section" width="75%" height="90%">
         </div>
     </section>
     </main>
@@ -175,15 +240,18 @@
                 <ul>
                     <li>+54-0341-155899438</li>
                     <li> plakart@plakart.com.ar</li>
-                    <li><a href="https://www.google.com/maps/place/PLAKART/@-32.9380922,-60.6403294,15z/data=!4m6!3m5!1s0x95b7ab3b53d042f1:0xea15f4635582673a!8m2!3d-32.9380922!4d-60.6403294!16s%2Fg%2F1hm5njg03?entry=ttu" target="_blank">Corrientes 145</a></li>
-                    <li><a href="">2000 Rosario Santa fe</a></li>
+                    <li><a href="https://www.google.com/maps/place/PLAKART/@-32.9380922,-60.6403294,15z/data=!4m6!3m5!1s0x95b7ab3b53d042f1:0xea15f4635582673a!8m2!3d-32.9380922!4d-60.6403294!16s%2Fg%2F1hm5njg03?entry=ttu" target="_blank">Corrientes 145, Rosario Santa Fe</a></li>
                 </ul>
             </div>
         </div>
-        <small><a href="https://www.linkedin.com/in/gonzalo-molina-991345294/" target="_blank">Made by Gonzalo Molina</a></small>
+        <small>PlakartSRL ©, todos los derechos reservados. || <a href="https://www.linkedin.com/in/gonzalo-molina-991345294/" target="_blank" class="developer">< Developed by Gonzalo Molina  /></a></small>
     </footer>
     <!-- Scripts -->
-    <script src="./js/main.js"></script>
-</body>
+    <script src="./js/main.js"></script>  
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
+</body>    
 </html>
 
