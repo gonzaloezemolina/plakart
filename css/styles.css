@@ -423,7 +423,7 @@ small a {
 
 .portada_cocinas {
   width: 100%;
-  background-image: url("../../media/img/cocinas/portada3-1024x512-1.jpg");
+  background-image: url("../media/img/cocinas/portada3-1024x512-1.jpg");
   background-repeat: no-repeat;
   object-fit: cover;
   height: 88vh;
