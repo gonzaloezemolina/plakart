@@ -422,9 +422,10 @@ small a {
 }
 
 .portada_cocinas {
-  width: 100%;
   background-image: url("../media/img/cocinas/portada3-1024x512-1.jpg");
+  background-position: center;
   background-repeat: no-repeat;
+  background-size: cover;
   object-fit: cover;
   height: 88vh;
   display: flex;
@@ -448,7 +449,9 @@ small a {
 }
 
 .first_section_cocinas p {
-  margin: 8%;
+  margin-top: 8%;
+  margin-left: 8%;
+  margin-right: 8%;
   color: black;
   font-size: 15px;
   font-family: "AdelleL";
@@ -456,11 +459,17 @@ small a {
 }
 
 .galery_content {
+  margin: 0 auto;
   max-width: 820px;
 }
 
+.content {
+  text-align: center;
+  background-color: white;
+}
+
 .mosaics {
-  margin: 100px 0 250px;
+  margin: 100px auto;
 }
 
 .mosaics_type {
