@@ -50,6 +50,7 @@ nav {
   display: flex;
   align-items: center;
   flex-direction: row;
+  height: 100%;
   width: 100%;
 }
 
@@ -490,6 +491,62 @@ small a {
 .mosaics_type .mosaics_ph:nth-child(6n+3),
 .mosaics_type .mosaics_ph:nth-child(6n+4) {
   grid-row: span 2;
+}
+
+.nosotros_staff_section {
+  width: 100%;
+  height: 100vh;
+  background-color: black;
+}
+
+.portada_complementos {
+  background-image: url("../media/img/complementos/portadacom.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  object-fit: cover;
+  height: 88vh;
+  display: flex;
+  justify-content: start;
+  align-items: end;
+}
+.portada_complementos h1 {
+  font-family: "AdelleEB";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 100px;
+  color: white;
+}
+.portada_complementos .portada_complementos_titulo {
+  transform: translateY(40px);
+}
+
+.portada_pyv {
+  background-image: url("../media/img/cocinas/portada3-1024x512-1.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  object-fit: cover;
+  height: 88vh;
+  display: flex;
+  justify-content: start;
+  align-items: end;
+}
+.portada_pyv h1 {
+  font-family: "AdelleEB";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 50px;
+}
+.portada_pyv .portada_pyv_titulo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  width: 50%;
+  height: 90px;
 }
 
 .menu {

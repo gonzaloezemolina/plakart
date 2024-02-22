@@ -111,43 +111,51 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 
-  //Cambiar el texto en base al tiempo
-document.addEventListener('DOMContentLoaded', function () {
-    const textElement = document.getElementById('fourth_section_text_animation');
-    const textos = ['COCINAS INSTALADAS', 'PLACARES', 'VESTIDORES', 'COMPLEMENTOS']; // Puedes agregar más textos según sea necesario
-    let index = 0;
+//   //Cambiar el texto en base al tiempo
+// document.addEventListener('DOMContentLoaded', function () {
+//     const textElement = document.getElementById('fourth_section_text_animation');
+//     const textos = ['PLACARES', 'VESTIDORES', 'COMPLEMENTOS', 'COCINAS']; // Puedes agregar más textos según sea necesario
+//     let index = 0;
   
-    function cambiarTexto() {
-        textElement.style.opacity = 0
-        setTimeout(function(){
-            textElement.textContent = textos[index];
-            textElement.style.opacity = 1
-            index = (index + 1) % textos.length;
-        }, 2000)
-    }
+//     function cambiarTexto() {
+//         textElement.style.opacity = 0
+//         setTimeout(function(){
+//             textElement.textContent = textos[index];
+//             textElement.style.opacity = 1
+//             index = (index + 1) % textos.length;
+//         }, 2000)
+//     }
   
-    // Cambiar el texto cada 5 segundos
-    setInterval(cambiarTexto, 5000);
-  });
+//     // Cambiar el texto cada 5 segundos
+//     setInterval(cambiarTexto, 4000);
+//   });
 
 
 
 
   //Experiencia
   
-  let num = 1000;
+  let num = 0;
 
   function sumarCadaSegundo() {
-    if (num < 1501) {
+    if (num < 2001) {
         document.getElementById("numbers").textContent=num
         num++;
-      setTimeout(sumarCadaSegundo, 1000); 
+      setTimeout(sumarCadaSegundo, 10); 
     }
   }
 
   sumarCadaSegundo();
 
+// function resumar () {
+//     if (num == 2000) {
+//         num = 0
+//         document.getElementById("numbers").textContent=num
+//         num++;
+//     }
+//     setTimeout(resumar,0)
+// }
 
-
+// resumar()
 
 
