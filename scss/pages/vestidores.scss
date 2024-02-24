@@ -1,4 +1,4 @@
-.portada_pyv{
+.portada_vestidores{
     background-image: url("../media/img/cocinas/portada3-1024x512-1.jpg");
   background-position: center;
     background-repeat: no-repeat;
@@ -8,19 +8,16 @@
     display: flex;
     justify-content: start;
     align-items:end;
+    margin-bottom: 8%;
     h1{
         font-family: "AdelleEB";
         display: flex;
         justify-content: center;
         align-items: center;
-        font-size: 50px;
+        font-size: 100px;
+        color: white;
     }
-    .portada_pyv_titulo{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background-color: white;
-        width: 50%;
-        height: 90px;
+    .portada_vestidores_titulo{
+        transform: translateY(40px);
     }
 }

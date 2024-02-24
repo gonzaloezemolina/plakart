@@ -432,27 +432,23 @@ small a {
   display: flex;
   justify-content: start;
   align-items: end;
+  margin-bottom: 8%;
 }
 .portada_cocinas h1 {
   font-family: "AdelleEB";
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 50px;
+  font-size: 100px;
+  color: white;
 }
 .portada_cocinas .portada_cocinas_titulo {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: white;
-  width: 30%;
-  height: 90px;
+  transform: translateY(40px);
 }
 
 .first_section_cocinas p {
-  margin-top: 8%;
-  margin-left: 8%;
-  margin-right: 8%;
+  margin: 0 auto;
+  max-width: 820px;
   color: black;
   font-size: 15px;
   font-family: "AdelleL";
@@ -493,10 +489,72 @@ small a {
   grid-row: span 2;
 }
 
-.nosotros_staff_section {
-  width: 100%;
-  height: 100vh;
+.portada_nosotros {
   background-color: black;
+  height: 88vh;
+  display: flex;
+  justify-content: start;
+  align-items: end;
+  margin-bottom: 8%;
+}
+.portada_nosotros h1 {
+  font-family: "AdelleEB";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 100px;
+  color: white;
+}
+.portada_nosotros .portada_nosotros_titulo {
+  transform: translateY(40px);
+}
+
+.mision_section {
+  margin-top: 15%;
+  display: grid;
+  grid-template-columns: 55% 45%;
+  height: 85vh;
+  width: 100%;
+  background-color: black;
+}
+.mision_section p {
+  font-family: "AdelleL";
+}
+
+.mision_section_img {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  overflow: hidden; /* Para ocultar partes del video que excedan el contenedor */
+}
+
+.mision_img {
+  height: 75vh;
+  width: 70%;
+  object-fit: cover;
+}
+
+.mision_section_text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+.mision_section_text h2 {
+  font-size: 30px;
+  font-family: "AdelleEB";
+  color: #ffffff;
+}
+.mision_section_text p {
+  color: #ffffff;
+  text-align: justify;
+  font-size: 20px;
+  width: 400px;
+}
+.mision_section_text div {
+  margin-bottom: 50px;
 }
 
 .portada_complementos {
@@ -509,6 +567,7 @@ small a {
   display: flex;
   justify-content: start;
   align-items: end;
+  margin-bottom: 8%;
 }
 .portada_complementos h1 {
   font-family: "AdelleEB";
@@ -522,7 +581,21 @@ small a {
   transform: translateY(40px);
 }
 
-.portada_pyv {
+.contact_main_section {
+  display: grid;
+  grid-template-columns: 65%, 35%;
+  background: linear-gradient(to right, rgb(0, 0, 0) 65%, rgb(255, 255, 255) 0%);
+  width: 100%;
+  height: 100vh;
+}
+.contact_main_section .contact_left_side h1 {
+  font-size: 60px;
+  font-family: "AdelleEB";
+  color: white;
+  text-align: center;
+}
+
+.portada_vestidores {
   background-image: url("../media/img/cocinas/portada3-1024x512-1.jpg");
   background-position: center;
   background-repeat: no-repeat;
@@ -532,21 +605,66 @@ small a {
   display: flex;
   justify-content: start;
   align-items: end;
+  margin-bottom: 8%;
 }
-.portada_pyv h1 {
+.portada_vestidores h1 {
   font-family: "AdelleEB";
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 50px;
+  font-size: 100px;
+  color: white;
 }
-.portada_pyv .portada_pyv_titulo {
+.portada_vestidores .portada_vestidores_titulo {
+  transform: translateY(40px);
+}
+
+.portada_desarrollos {
+  background-image: url("../media/img/complementos/portadacom.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  object-fit: cover;
+  height: 88vh;
+  display: flex;
+  justify-content: start;
+  align-items: end;
+  margin-bottom: 8%;
+}
+.portada_desarrollos h1 {
+  font-family: "AdelleEB";
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: white;
-  width: 50%;
-  height: 90px;
+  font-size: 100px;
+  color: white;
+}
+.portada_desarrollos .portada_desarrollos_titulo {
+  transform: translateY(40px);
+}
+
+.portada_placares {
+  background-image: url("../media/img/cocinas/portada3-1024x512-1.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  object-fit: cover;
+  height: 88vh;
+  display: flex;
+  justify-content: start;
+  align-items: end;
+  margin-bottom: 8%;
+}
+.portada_placares h1 {
+  font-family: "AdelleEB";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 100px;
+  color: white;
+}
+.portada_placares .portada_placares_titulo {
+  transform: translateY(40px);
 }
 
 .menu {
