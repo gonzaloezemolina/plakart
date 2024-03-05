@@ -1,15 +1,112 @@
 .contact_main_section{
     display: grid;
-    grid-template-columns: 65%,35%;
-    background: linear-gradient(to right, rgb(0, 0, 0) 65%, rgb(255, 255, 255) 0%);
+    grid-template-columns: 60%,40%;
+    background: linear-gradient(to right, rgb(0, 0, 0) 60%, rgb(255, 255, 255) 0%);
     width: 100%;
     height: 100vh;
-    .contact_left_side{
-        h1{
-            font-size: 60px;
-            font-family: "AdelleEB";
-            color: white;
-            text-align: center;
-        }
+    display: flex;
+    a{
+        color: white;
+        text-decoration: none;
     }
+}
+
+.contact_left_side{
+    height: 100vh;
+
+    padding-top: 130px;
+    display: flex;
+    width: 65%;
+    padding-left: 80px;
+    flex-direction: column;
+    h1{
+        font-size: 70px;
+        font-family: "AdelleEB";
+        color: white;
+    }
+    p{
+        font-family: "AdelleL";
+        color: white;
+        font-size: 25px;
+    }
+}
+
+.contact_left_side_booking{
+    padding-top: 80px;
+    width: 65%;
+    font-family: "AdelleL";
+    h2{
+        color: white;
+        font-size: 25px;
+        padding-bottom: 20px;
+    }
+}
+
+
+.contact_left_side_information{
+    padding-top: 90px;
+    padding-bottom: 30px;
+    font-family: "AdelleL";
+}
+
+.contact_left_side_icons{
+    a{
+        padding-right: 6px;
+    }
+}
+
+
+.contact_right_side{
+    font-family: "AdelleL";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+width: 40%;
+height: 100vh;
+}
+
+input{
+    font-size: 20px;
+        height: 30px;
+    width: 100%;
+    border-top: none;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: black solid 2px;
+    margin-bottom: 25px;
+}
+
+.contact_form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+form{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+}
+
+.enviar{
+    text-align: center;
+    padding: 8px;
+    border: 0;
+    cursor: pointer;
+    font-size: 20px;
+    font-family: "AdelleEB";
+    color: white;
+    background-color: black;
+}
+
+.enviar:hover{
+    transition: .5s;
+    color: black;
+    background-color: white;
+}
+
+.maps{
+    filter: grayscale(100%) invert(100%) brightness(1);
 }

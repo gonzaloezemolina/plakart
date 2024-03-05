@@ -257,7 +257,7 @@ small a {
   display: flex;
   width: 100%;
   height: 65vh;
-  background: linear-gradient(to right, white 50%, black 0%);
+  background-color: #000;
   overflow: hidden;
 }
 .second_section img {
@@ -269,6 +269,10 @@ small a {
 #card1 {
   position: absolute;
   transform: translateX(90%) translateY(50%);
+}
+
+.img_2section {
+  transition: opacity 0.5s ease-in-out; /* Puedes ajustar la duración y el tipo de transición según tus preferencias */
 }
 
 .third_section {
@@ -320,6 +324,7 @@ small a {
 }
 
 #card2 {
+  z-index: 6;
   position: absolute;
   width: 60%;
   height: 40%;
@@ -346,6 +351,10 @@ small a {
 .com:hover {
   transform: scale(1.1);
   transition: 0.5s;
+}
+
+.img_3section {
+  transition: opacity 0.5s ease-in-out; /* Puedes ajustar la duración y el tipo de transición según tus preferencias */
 }
 
 .fourth_section {
@@ -489,6 +498,15 @@ small a {
   grid-row: span 2;
 }
 
+.image_btn_image {
+  filter: grayscale(70%);
+}
+
+.image_btn_image:hover {
+  transition: 0.6s;
+  filter: grayscale(0%);
+}
+
 .portada_nosotros {
   background-color: black;
   height: 88vh;
@@ -522,14 +540,17 @@ small a {
 }
 
 .mision_section_img {
+  z-index: 3;
   display: flex;
   justify-content: end;
-  align-items: center;
+  align-items: start;
+  transform: translateY(-80px);
   overflow: hidden; /* Para ocultar partes del video que excedan el contenedor */
 }
 
 .mision_img {
-  height: 75vh;
+  z-index: 3;
+  height: 100%;
   width: 70%;
   object-fit: cover;
 }
@@ -550,11 +571,147 @@ small a {
 .mision_section_text p {
   color: #ffffff;
   text-align: justify;
-  font-size: 20px;
+  font-size: 18px;
   width: 400px;
 }
 .mision_section_text div {
   margin-bottom: 50px;
+}
+
+.vision_section {
+  display: grid;
+  grid-template-columns: 45% 55%;
+  height: 85vh;
+  width: 100%;
+  background: linear-gradient(to right, rgb(255, 255, 255) 50%, rgb(0, 0, 0) 0%);
+}
+.vision_section p {
+  font-family: "AdelleL";
+}
+
+.vision_section_img {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  overflow: hidden; /* Para ocultar partes del video que excedan el contenedor */
+}
+
+.vision_img {
+  height: 75vh;
+  width: 75%;
+  object-fit: cover;
+}
+
+.vision_section_text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+.vision_section_text h2 {
+  font-size: 30px;
+  font-family: "AdelleEB";
+  color: #000000;
+}
+.vision_section_text p {
+  color: #000000;
+  text-align: justify;
+  font-size: 18px;
+  width: 400px;
+}
+.vision_section_text div {
+  margin-bottom: 50px;
+}
+
+.valores_section {
+  display: grid;
+  grid-template-columns: 55% 45%;
+  height: 85vh;
+  width: 100%;
+  background: linear-gradient(to right, rgb(0, 0, 0) 50%, rgb(255, 255, 255) 0%);
+}
+.valores_section p {
+  font-family: "AdelleL";
+}
+
+.valores_section_img {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  overflow: hidden; /* Para ocultar partes del video que excedan el contenedor */
+}
+
+.valores_img {
+  height: 75vh;
+  width: 75%;
+  object-fit: cover;
+}
+
+.valores_section_text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+.valores_section_text h2 {
+  font-size: 30px;
+  font-family: "AdelleEB";
+  color: #000000;
+}
+.valores_section_text p {
+  color: #000000;
+  text-align: justify;
+  font-size: 18px;
+  width: 400px;
+}
+.valores_section_text div {
+  margin-bottom: 50px;
+}
+
+.staff_h1 {
+  background-color: #000000;
+  text-align: center;
+  color: white;
+}
+.staff_h1 h1 {
+  font-size: 50px;
+  font-family: "AdelleEB";
+  padding-top: 10%;
+}
+
+.staff_section {
+  width: 100%;
+  height: 100vh;
+  background-color: #000000;
+  display: grid;
+  grid-gap: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  justify-items: center;
+}
+
+.retrato_description {
+  color: #000000;
+  background-color: white;
+  text-align: center;
+  transform: translateY(-4px);
+  padding: 5px;
+  font-family: "AdelleL";
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+.retrato_description h3 {
+  padding-bottom: 5px;
+}
+
+.retrato:hover .retrato_description {
+  opacity: 1;
 }
 
 .portada_complementos {
@@ -583,16 +740,110 @@ small a {
 
 .contact_main_section {
   display: grid;
-  grid-template-columns: 65%, 35%;
-  background: linear-gradient(to right, rgb(0, 0, 0) 65%, rgb(255, 255, 255) 0%);
+  grid-template-columns: 60%, 40%;
+  background: linear-gradient(to right, rgb(0, 0, 0) 60%, rgb(255, 255, 255) 0%);
   width: 100%;
   height: 100vh;
+  display: flex;
 }
-.contact_main_section .contact_left_side h1 {
-  font-size: 60px;
+.contact_main_section a {
+  color: white;
+  text-decoration: none;
+}
+
+.contact_left_side {
+  height: 100vh;
+  padding-top: 130px;
+  display: flex;
+  width: 65%;
+  padding-left: 80px;
+  flex-direction: column;
+}
+.contact_left_side h1 {
+  font-size: 70px;
   font-family: "AdelleEB";
   color: white;
+}
+.contact_left_side p {
+  font-family: "AdelleL";
+  color: white;
+  font-size: 25px;
+}
+
+.contact_left_side_booking {
+  padding-top: 80px;
+  width: 65%;
+  font-family: "AdelleL";
+}
+.contact_left_side_booking h2 {
+  color: white;
+  font-size: 25px;
+  padding-bottom: 20px;
+}
+
+.contact_left_side_information {
+  padding-top: 90px;
+  padding-bottom: 30px;
+  font-family: "AdelleL";
+}
+
+.contact_left_side_icons a {
+  padding-right: 6px;
+}
+
+.contact_right_side {
+  font-family: "AdelleL";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 40%;
+  height: 100vh;
+}
+
+input {
+  font-size: 20px;
+  height: 30px;
+  width: 100%;
+  border-top: none;
+  border-left: 0;
+  border-right: 0;
+  border-bottom: black solid 2px;
+  margin-bottom: 25px;
+}
+
+.contact_form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+form {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+}
+
+.enviar {
   text-align: center;
+  padding: 8px;
+  border: 0;
+  cursor: pointer;
+  font-size: 20px;
+  font-family: "AdelleEB";
+  color: white;
+  background-color: black;
+}
+
+.enviar:hover {
+  transition: 0.5s;
+  color: black;
+  background-color: white;
+}
+
+.maps {
+  filter: grayscale(100%) invert(100%) brightness(1);
 }
 
 .portada_vestidores {
@@ -641,6 +892,21 @@ small a {
 }
 .portada_desarrollos .portada_desarrollos_titulo {
   transform: translateY(40px);
+}
+
+.projects_section {
+  margin-top: 12%;
+  color: white;
+  background-color: black;
+}
+.projects_section h2 {
+  padding: 40px;
+  font-family: "AdelleEB";
+  font-size: 40px;
+  text-align: center;
+}
+.projects_section p {
+  font-family: "AdelleL";
 }
 
 .portada_placares {

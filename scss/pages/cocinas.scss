@@ -82,3 +82,13 @@
   .mosaics_type .mosaics_ph:nth-child(6n+4) {
     grid-row: span 2;
   }
+
+
+  .image_btn_image{
+    filter: grayscale(70%);
+  }
+
+  .image_btn_image:hover{
+    transition: .6s;
+    filter: grayscale(0%);
+  }
