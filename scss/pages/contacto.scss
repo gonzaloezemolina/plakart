@@ -103,10 +103,10 @@ form{
 
 .enviar:hover{
     transition: .5s;
-    color: black;
-    background-color: white;
+    background-color: rgb(26, 25, 25);
 }
 
-.maps{
-    filter: grayscale(100%) invert(100%) brightness(1);
+#direccion{
+    opacity: 0;
 }
+

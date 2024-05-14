@@ -6,6 +6,12 @@
     <title>Contacto</title>
     <link rel="stylesheet" href="../css/styles.css">
     <script src="https://maps.googleapis.com/maps/api/js?key=API_KEY&libraries=places"></script>
+    <script type="text/javascript"
+  src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+<script type="text/javascript">
+  emailjs.init('E8XpeYpwy31gDZm2R')
+</script>
 </head>
 <body>
     <header>
@@ -30,9 +36,11 @@
 
                 <div class="icons_in_menu">
                      <!-- WhatsApp -->
-            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-whatsapp" id="whatsApp_icon" viewBox="0 0 16 16">
-                <path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"/>
-              </svg>
+                     <a href="https://api.whatsapp.com/send?phone=5403414450110" target="_blank">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-whatsapp" id="whatsApp_icon" viewBox="0 0 16 16">
+                          <path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"/>
+                        </svg>
+                      </a>
                       <!-- Instagram -->
                       <a href="https://www.instagram.com/plakart/" target="_blank" rel="noopener noreferrer">
                         <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-instagram" id="instagram_icon" viewBox="0 0 16 16">
@@ -126,23 +134,44 @@
 
                 <div class="contact_right_side">
                     <div class="contact_form">
-                        <form id="contactForm" onsubmit="enviarFormulario(event)">
+                        <form id="contactForm" action=""">
                             <!-- <label for="nombre">Nombre:</label> -->
-                            <input type="text" id="nombre" placeholder="Nombre" name="nombre" required>
+                            <input type="text" id="nombre" placeholder="Nombre" name="nombre" autocomplete="name" required>
                 
                             <!-- <label for="email">Email:</label> -->
-                            <input type="email" id="email" placeholder="Email" name="email" required>
+                            <input type="email" id="email" placeholder="Email" name="email" autocomplete="email" required>
                 
                             <!-- <label for="mensaje">Mensaje:</label> -->
-                            <input type="text" id="message" placeholder="Mensaje" name="mensaje" required>
+                            <input type="text" id="message" placeholder="Mensaje" name="mensaje" autocomplete="off" required>
                             <!-- <textarea id="mensaje" name="mensaje" placeholder="Mensaje" required></textarea> -->
                 
                             <button class="enviar" type="submit">ENVIAR</button>
                         </form>
+                        <a href="mailto:gonzaloezemolina@gmail.com" id="direccion"></a>
                     </div>
 
+
+                    <!-- //emailjs -->
+                    <form id="form">
+                        <div class="field">
+                          <label for="from_name">from_name</label>
+                          <input type="text" name="from_name" id="from_name">
+                        </div>
+                        <div class="field">
+                          <label for="email_id">email_id</label>
+                          <input type="text" name="email_id" id="email_id">
+                        </div>
+                        <div class="field">
+                          <label for="message">message</label>
+                          <input type="text" name="message" id="message">
+                        </div>
+                      
+                        <input type="submit" id="button" value="Send Email" >
+                      </form>
+
+
                         <div class="map">
-                        <iframe class="maps" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13393.956680737776!2d-60.6403294!3d-32.9380922!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b7ab3b53d042f1%3A0xea15f4635582673a!2sPLAKART!5e0!3m2!1ses-419!2sar!4v1709072693306!5m2!1ses-419!2sar" width="300" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" >
+                        <iframe class="maps" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13393.956680737776!2d-60.6403294!3d-32.9380922!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b7ab3b53d042f1%3A0xea15f4635582673a!2sPLAKART!5e0!3m2!1ses-419!2sar!4v1709072693306!5m2!1ses-419!2sar&streetview=1" width="300" height="300" style="border:0;" allowfullscreen="" referrerpolicy="no-referrer-when-downgrade" >
                         
                         
                         </iframe>
@@ -157,7 +186,7 @@
     </main>
 
     <!-- scripts -->
-    <script src="../js/navbar.js"></script>
+    <script src="../js/contact.js"></script>
     
 </body>
 </html>

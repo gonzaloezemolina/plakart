@@ -107,32 +107,6 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 
 
-
-
-
-
-//   //Cambiar el texto en base al tiempo
-// document.addEventListener('DOMContentLoaded', function () {
-//     const textElement = document.getElementById('fourth_section_text_animation');
-//     const textos = ['PLACARES', 'VESTIDORES', 'COMPLEMENTOS', 'COCINAS']; // Puedes agregar más textos según sea necesario
-//     let index = 0;
-  
-//     function cambiarTexto() {
-//         textElement.style.opacity = 0
-//         setTimeout(function(){
-//             textElement.textContent = textos[index];
-//             textElement.style.opacity = 1
-//             index = (index + 1) % textos.length;
-//         }, 2000)
-//     }
-  
-//     // Cambiar el texto cada 5 segundos
-//     setInterval(cambiarTexto, 4000);
-//   });
-
-
-
-
   //Experiencia
   
   let num = 0;
@@ -185,22 +159,77 @@ document.addEventListener('DOMContentLoaded', function () {
 
 //Intercambiar imagen en la 3er section
 
+  // document.addEventListener('DOMContentLoaded', function () {
+  //   const images = [
+  //       "./media/img/cocinas/cocina-grande-blanco-negro.jpg",
+  //       "./media/img/vestidores/vestidor1.webp",
+
+  //   ];
+  
+  //   let currentIndex = 0;
+  //   const imgContainer = document.getElementById('img_3section');
+  
+  //   setInterval(function () {
+  //     currentIndex = (currentIndex + 1) % images.length;
+  //     imgContainer.style.opacity = 0; // Fade out
+  //     setTimeout(function () {
+  //       imgContainer.src = images[currentIndex];
+  //       imgContainer.style.opacity = 1; // Fade in
+  //     }, 500); // Espera 500 milisegundos antes de cambiar la imagen
+  //   }, 6000); // Cambia la imagen cada 6 segundos
+  // });
+
   document.addEventListener('DOMContentLoaded', function () {
     const images = [
         "./media/img/cocinas/cocina-grande-blanco-negro.jpg",
         "./media/img/vestidores/vestidor1.webp",
-
     ];
-  
+
     let currentIndex = 0;
     const imgContainer = document.getElementById('img_3section');
-  
+    const cardContainer = document.getElementById('card2');
+
     setInterval(function () {
-      currentIndex = (currentIndex + 1) % images.length;
-      imgContainer.style.opacity = 0; // Fade out
-      setTimeout(function () {
-        imgContainer.src = images[currentIndex];
-        imgContainer.style.opacity = 1; // Fade in
-      }, 500); // Espera 500 milisegundos antes de cambiar la imagen
-    }, 6000); // Cambia la imagen cada 6 segundos
-  });
+        currentIndex = (currentIndex + 1) % images.length;
+        
+        // Fade out the image
+        imgContainer.style.opacity = 0;
+        
+        setTimeout(function () {
+            // Change the image source
+            imgContainer.src = images[currentIndex];
+            
+            // Fade in the image
+            imgContainer.style.opacity = 1;
+            
+            // Ensure the card opacity remains constant
+            cardContainer.style.opacity = 1;
+        }, 500); // Wait 500 milliseconds before changing the image
+    }, 6000); // Change the image every 6 seconds
+});
+
+
+
+
+
+
+  //Intercambiar imagen en la quinta section
+
+document.addEventListener('DOMContentLoaded', function () {
+  const images = [
+    "./media/img/obras/noti.webp",
+    "./media/img/obras/uranovski.webp",
+  ];
+
+  let currentIndex = 0;
+  const imgContainer = document.getElementById('img_5section');
+
+  setInterval(function () {
+    currentIndex = (currentIndex + 1) % images.length;
+    imgContainer.style.opacity = 0; // Fade out
+    setTimeout(function () {
+      imgContainer.src = images[currentIndex];
+      imgContainer.style.opacity = 1; // Fade in
+    }, 500); // Espera 500 milisegundos antes de cambiar la imagen
+  }, 6000); // Cambia la imagen cada 6 segundos
+});

@@ -3,7 +3,8 @@
     width: 40%;
     background: white;
 box-shadow: 0 0 15px rgba(0, 0, 0, 0.5); /* Sombra */
-z-index: 2;
+z-index: 999;
+transition: opacity 0s;
     h3{
         font-family: "AdelleL";
     }

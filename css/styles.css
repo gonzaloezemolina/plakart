@@ -280,7 +280,7 @@ small a {
   grid-template-columns: 50% 50%;
   height: 90vh;
   width: 100%;
-  background: linear-gradient(to right, white 51%, rgb(0, 0, 0) 0%);
+  background: linear-gradient(to right, white 50%, rgb(0, 0, 0) 0%);
 }
 .third_section a {
   text-decoration: none;
@@ -324,13 +324,14 @@ small a {
 }
 
 #card2 {
-  z-index: 6;
+  z-index: 1;
   position: absolute;
   width: 60%;
   height: 40%;
   transform: translateY(100%) translateX(70%);
   margin-bottom: 0;
   margin-top: 90px;
+  transition: opacity 0s;
 }
 
 .c:hover {
@@ -351,10 +352,6 @@ small a {
 .com:hover {
   transform: scale(1.1);
   transition: 0.5s;
-}
-
-.img_3section {
-  transition: opacity 0.5s ease-in-out; /* Puedes ajustar la duración y el tipo de transición según tus preferencias */
 }
 
 .fourth_section {
@@ -694,6 +691,7 @@ small a {
   align-items: center;
   flex-direction: row;
   justify-items: center;
+  padding-bottom: 5%;
 }
 
 .retrato_description {
@@ -838,12 +836,11 @@ form {
 
 .enviar:hover {
   transition: 0.5s;
-  color: black;
-  background-color: white;
+  background-color: rgb(26, 25, 25);
 }
 
-.maps {
-  filter: grayscale(100%) invert(100%) brightness(1);
+#direccion {
+  opacity: 0;
 }
 
 .portada_vestidores {
@@ -1030,7 +1027,8 @@ form {
   width: 40%;
   background: white;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.5); /* Sombra */
-  z-index: 2;
+  z-index: 999;
+  transition: opacity 0s;
 }
 .card h3 {
   font-family: "AdelleL";
