@@ -86,25 +86,39 @@ function openingBar () {
 }
 
 
-//Contact logic
 
-const btn = document.getElementById('buttonContact');
 
-document.getElementById('form')
- .addEventListener('submit', function(event) {
-   event.preventDefault();
 
-   btn.value = 'Enviando...';
 
-   const serviceID = 'default_service';
-   const templateID = 'template_s7u3lpl';
 
-   emailjs.sendForm(serviceID, templateID, this)
-    .then(() => {
-      btn.value = 'ENVIAR';
-      alert('Sent!');
-    }, (err) => {
-      btn.value = 'ENVIAR';
-      alert(JSON.stringify(err));
+let currentIndex = 1;
+
+function showSlides() {
+    const items = document.querySelectorAll('.carousel_item');
+    items.forEach((item, index) => {
+        item.classList.remove('carousel_item--left', 'carousel_item--main', 'carousel_item--right');
+        if (index === currentIndex) {
+            item.classList.add('carousel_item--main');
+        } else if (index === (currentIndex - 1 + items.length) % items.length) {
+            item.classList.add('carousel_item--left');
+        } else if (index === (currentIndex + 1) % items.length) {
+            item.classList.add('carousel_item--right');
+        }
     });
+}
+
+function nextSlide() {
+    const items = document.querySelectorAll('.carousel_item');
+    currentIndex = (currentIndex + 1) % items.length;
+    showSlides();
+}
+
+function prevSlide() {
+    const items = document.querySelectorAll('.carousel_item');
+    currentIndex = (currentIndex - 1 + items.length) % items.length;
+    showSlides();
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+    showSlides();
 });

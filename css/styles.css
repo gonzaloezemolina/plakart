@@ -82,6 +82,22 @@ footer svg {
   cursor: pointer;
 }
 
+.first_container_footer {
+  padding-top: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+.first_container_footer img {
+  transform: translateX(-90px);
+  position: static;
+}
+
+.footer_iconos {
+  transform: translateY(10px);
+}
+
 #whatsApp_icon:hover {
   cursor: pointer;
   color: rgb(117, 116, 116);
@@ -112,8 +128,8 @@ footer svg {
   display: flex;
   justify-content: center;
   text-align: justify;
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
 
 .container_texts_footer {
@@ -136,7 +152,7 @@ footer svg {
 
 small {
   font-family: Arial, Helvetica, sans-serif;
-  padding-top: 30px;
+  padding-bottom: 20px;
   color: #ffffff;
 }
 small a {
@@ -144,9 +160,18 @@ small a {
   color: white;
 }
 
+.developer {
+  color: white;
+}
+
 .developer:hover {
   text-decoration: underline;
   transition: 0.5s;
+}
+
+.last_container_footer {
+  display: flex;
+  flex-direction: column;
 }
 
 .first_section {
@@ -797,6 +822,7 @@ small a {
   flex-direction: column;
   width: 40%;
   height: 100vh;
+  padding-top: 110px;
 }
 
 input {
@@ -823,7 +849,7 @@ form {
   flex-direction: column;
 }
 
-.enviar {
+#buttonContact {
   text-align: center;
   padding: 8px;
   border: 0;
@@ -834,13 +860,17 @@ form {
   background-color: black;
 }
 
-.enviar:hover {
+#buttonContact:hover {
   transition: 0.5s;
-  background-color: rgb(26, 25, 25);
+  background-color: rgb(37, 37, 37);
 }
 
 #direccion {
   opacity: 0;
+}
+
+.map {
+  width: 80%;
 }
 
 .portada_vestidores {
@@ -895,6 +925,9 @@ form {
   margin-top: 12%;
   color: white;
   background-color: black;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
 .projects_section h2 {
   padding: 40px;
@@ -904,6 +937,31 @@ form {
 }
 .projects_section p {
   font-family: "AdelleL";
+}
+
+.projects_section_title {
+  border-bottom: 1px solid salmon;
+}
+
+.projects_view_list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.projects_view_list button {
+  margin: 20px;
+  font-size: 20px;
+  border: 0;
+  background: transparent;
+  color: black;
+  font-family: "AdelleL";
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.projects_view_list button p {
+  padding-right: 10px;
 }
 
 .portada_placares {

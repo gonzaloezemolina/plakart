@@ -85,26 +85,10 @@ function openingBar () {
     }
 }
 
+function openCarousel(index) {
+    $('#imageCarousel').carousel(index);
+    $('#imageCarousel').modal('show');
+}
 
-//Contact logic
-
-const btn = document.getElementById('buttonContact');
-
-document.getElementById('form')
- .addEventListener('submit', function(event) {
-   event.preventDefault();
-
-   btn.value = 'Enviando...';
-
-   const serviceID = 'default_service';
-   const templateID = 'template_s7u3lpl';
-
-   emailjs.sendForm(serviceID, templateID, this)
-    .then(() => {
-      btn.value = 'ENVIAR';
-      alert('Sent!');
-    }, (err) => {
-      btn.value = 'ENVIAR';
-      alert(JSON.stringify(err));
-    });
-});
+const getImage = document.getElementById("imagen1");
+getImage.addEventListener("click", openCarousel)

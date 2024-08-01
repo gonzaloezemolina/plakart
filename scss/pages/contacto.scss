@@ -64,6 +64,7 @@
     flex-direction: column;
 width: 40%;
 height: 100vh;
+padding-top: 110px;
 }
 
 input{
@@ -90,7 +91,7 @@ form{
     flex-direction: column;
 }
 
-.enviar{
+#buttonContact{
     text-align: center;
     padding: 8px;
     border: 0;
@@ -101,12 +102,15 @@ form{
     background-color: black;
 }
 
-.enviar:hover{
+#buttonContact:hover{
     transition: .5s;
-    background-color: rgb(26, 25, 25);
+    background-color: rgb(37, 37, 37);
 }
 
 #direccion{
     opacity: 0;
 }
 
+.map{
+    width: 80%;
+}

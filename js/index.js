@@ -115,22 +115,22 @@ document.addEventListener('DOMContentLoaded', function () {
     if (num < 2001) {
         document.getElementById("numbers").textContent=num
         num++;
-      setTimeout(sumarCadaSegundo, 10); 
+      setTimeout(sumarCadaSegundo); 
     }
   }
 
   sumarCadaSegundo();
 
-function resumar () {
-    if (num == 2000) {
-        num = 0
-        document.getElementById("numbers").textContent=num
-        num++;
-    }
-    setTimeout(resumar,0)
-}
+// function resumar () {
+//     if (num == 2000) {
+//         num = 0
+//         document.getElementById("numbers").textContent=num
+//         num++;
+//     }
+//     setTimeout(resumar,0)
+// }
 
-resumar()
+// resumar()
 
 
 
