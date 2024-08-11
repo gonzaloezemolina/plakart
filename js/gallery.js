@@ -85,10 +85,66 @@ function openingBar () {
     }
 }
 
-function openCarousel(index) {
-    $('#imageCarousel').carousel(index);
-    $('#imageCarousel').modal('show');
+
+const getModal = document.getElementById("modal")
+const getModalImage = document.getElementById("modal_image")
+const getClose = document.getElementById("cerrar")
+const getBack = document.getElementById("atras")
+const getForward = document.getElementById("adelante")
+const galery = document.getElementById("galery_images");
+
+
+let currentIndex = 0;
+
+const arrayOfImages = [
+    "../media/img/cocinas/cocina-grande-blanco-negro.jpg", 
+    "../media/img/cocinas/15b1ca_7bc9409baaf5465f8a7fd0ad98138bee~mv2.webp",
+    "../media/img/cocinas/6d63b4b5e642a9c78bf4280502d41421.jpg",
+    "../media/img/cocinas/0646c3b75db349db92299e5ec9bd54c8.jpg",
+    "../media/img/cocinas/por-que-elegir-electrodomesticos-integrables-en-la-cocina.jpg",
+    "../media/img/cocinas/electrodomesticos-integrables-ventajas.jpg",
+    "../media/img/cocinas/EDJoOOlWsAAcEdN.jpg",
+    "../media/img/cocinas/KI2.jpg",
+    "../media/img/cocinas/0d94a22be70a648497561db36110bfd1.jpg",
+    "../media/img/cocinas/6d63b4b5e642a9c78bf4280502d41421.jpg",
+    "../media/img/cocinas/15b1ca_73e7fe478a8e414fb6016434874d2ee3~mv2_d_3264_1955_s_2.webp"
+];
+
+const updateModalImage = () => {
+    getModalImage.src = arrayOfImages[currentIndex];
 }
 
-const getImage = document.getElementById("imagen1");
-getImage.addEventListener("click", openCarousel)
+getClose.addEventListener("click", function(){
+    getModal.classList.remove("active_modal")
+})
+
+getModal.addEventListener("click", function(event){
+    event.stopPropagation();
+})
+
+galery.addEventListener("click", function (e) {
+    const obtainingID = parseInt(e.target.id);
+    if (!isNaN(obtainingID)) {
+        currentIndex = obtainingID;
+        updateModalImage();
+        getModal.classList.add("active_modal");
+    }
+});
+
+getBack.addEventListener("click", function() {
+    if (currentIndex > 0) {
+        currentIndex--;
+    } else {
+        currentIndex = arrayOfImages.length - 1; 
+    }
+    updateModalImage();
+});
+
+getForward.addEventListener("click", function() {
+    if (currentIndex < arrayOfImages.length - 1) {
+        currentIndex++;
+    } else {
+        currentIndex = 0; 
+    }
+    updateModalImage();
+});

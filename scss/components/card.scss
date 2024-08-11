@@ -55,3 +55,32 @@ transition: opacity 0s;
 .card_link a:hover {
     text-decoration: underline;
 }
+
+
+
+#card2{
+    z-index: 999;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-left: 40px;
+    background: white;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5); /* Sombra */
+    z-index: 999;
+    transition: opacity 0s;
+        h3{
+            font-family: "AdelleL";
+        }
+        p{
+            color: black;
+            font-size: 15px;
+        }
+    position: absolute;
+    width: 60%;
+    height: 40%;
+    transform: translateY(100%) translateX(70%);
+    margin-bottom: 0;
+    margin-top: 90px;
+    opacity: 1; 
+    transition: opacity 0.5s ease-in-out; 
+}

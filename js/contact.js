@@ -102,9 +102,23 @@ document.getElementById('form')
    emailjs.sendForm(serviceID, templateID, this)
     .then(() => {
       btn.value = 'ENVIAR';
-      alert('Sent!');
+      Toastify({
+        text: "Gracias por tu mensaje. Te contactaremos pronto.",
+        duration: 3000,
+        newWindow: true,
+        close: true,
+        gravity: "top", // `top` or `bottom`
+        position: "center", // `left`, `center` or `right`
+        stopOnFocus: true, // Prevents dismissing of toast on hover
+        style: {
+          background: "white",
+          color: "black",
+          fontFamily: "AdelleL"
+        },
+        onClick: function(){} // Callback after click
+      }).showToast();
     }, (err) => {
-      btn.value = 'ENVIAR';
+      btn.value = 'Enviar';
       alert(JSON.stringify(err));
     });
 });

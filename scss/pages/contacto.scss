@@ -44,9 +44,8 @@
 
 
 .contact_left_side_information{
-    padding-top: 90px;
-    padding-bottom: 30px;
     font-family: "AdelleL";
+    margin-top: 30%;
 }
 
 .contact_left_side_icons{
@@ -113,4 +112,12 @@ form{
 
 .map{
     width: 80%;
+}
+
+input:focus {
+    border-bottom: black solid 2px; /* Cambia el color del borde inferior en focus */
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    outline: none; /* Evita el borde azul de enfoque por defecto */
 }

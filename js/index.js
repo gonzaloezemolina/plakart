@@ -107,30 +107,53 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 
 
-  //Experiencia
+  let numProjects = 0;
+  let numYears = 0;
+  let hasAnimated = false;
   
-  let num = 0;
-
-  function sumarCadaSegundo() {
-    if (num < 2001) {
-        document.getElementById("numbers").textContent=num
-        num++;
-      setTimeout(sumarCadaSegundo); 
+  const targetProjects = 2000;
+  const targetYears = 20;
+  const duration = 2000; // 3 seconds
+  
+  function animateNumbers() {
+    const yearsElement = document.getElementById('years_num');
+    const projectsElement = document.getElementById('numbers');
+  
+    const incrementProjects = targetProjects / (duration / 10); // Incremento para proyectos
+    const incrementYears = targetYears / (duration / 10); // Incremento para años
+  
+    const interval = setInterval(() => {
+      if (numYears < targetYears) {
+        numYears += incrementYears;
+        if (numYears > targetYears) numYears = targetYears; // Asegurarse de no exceder el objetivo
+        yearsElement.textContent = `+${Math.floor(numYears)}`;
+      }
+  
+      if (numProjects < targetProjects) {
+        numProjects += incrementProjects;
+        if (numProjects > targetProjects) numProjects = targetProjects; // Asegurarse de no exceder el objetivo
+        projectsElement.textContent = `+${Math.floor(numProjects)}`;
+      }
+  
+      if (numYears >= targetYears && numProjects >= targetProjects) {
+        clearInterval(interval);
+      }
+    }, 10); // Intervalo de actualización
+  }
+  
+  function checkIfInView() {
+    const section = document.querySelector('.fourth_section');
+    const header = document.getElementsByTagName("header");
+    const rect = section.getBoundingClientRect();
+  
+    if (rect.top <= 60 && rect.bottom >= 60 && !hasAnimated) {
+      hasAnimated = true;
+      animateNumbers();
     }
   }
-
-  sumarCadaSegundo();
-
-// function resumar () {
-//     if (num == 2000) {
-//         num = 0
-//         document.getElementById("numbers").textContent=num
-//         num++;
-//     }
-//     setTimeout(resumar,0)
-// }
-
-// resumar()
+  
+  window.addEventListener('scroll', checkIfInView);
+  window.addEventListener('load', checkIfInView); 
 
 
 
@@ -144,7 +167,7 @@ document.addEventListener('DOMContentLoaded', function () {
   
     let currentIndex = 0;
     const imgContainer = document.getElementById('img_2section');
-  
+    
     setInterval(function () {
       currentIndex = (currentIndex + 1) % images.length;
       imgContainer.style.opacity = 0; // Fade out
@@ -157,57 +180,27 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 
-//Intercambiar imagen en la 3er section
 
-  // document.addEventListener('DOMContentLoaded', function () {
-  //   const images = [
-  //       "./media/img/cocinas/cocina-grande-blanco-negro.jpg",
-  //       "./media/img/vestidores/vestidor1.webp",
+function changeImg () {
+  const images = ["./media/img/cocinas/cocina-grande-blanco-negro.jpg", "./media/img/obras/noti.webp"]
+  let currentIndex = 0;
+  const getImageFromSection3 = document.getElementById("img_3section");
 
-  //   ];
-  
-  //   let currentIndex = 0;
-  //   const imgContainer = document.getElementById('img_3section');
-  
-  //   setInterval(function () {
-  //     currentIndex = (currentIndex + 1) % images.length;
-  //     imgContainer.style.opacity = 0; // Fade out
-  //     setTimeout(function () {
-  //       imgContainer.src = images[currentIndex];
-  //       imgContainer.style.opacity = 1; // Fade in
-  //     }, 500); // Espera 500 milisegundos antes de cambiar la imagen
-  //   }, 6000); // Cambia la imagen cada 6 segundos
-  // });
+  const interval = setInterval(() => {
+          currentIndex = (currentIndex + 1) % images.length;
+          getImageFromSection3.style.opacity = 0
+        setTimeout(() => {
+            if (currentIndex >= images.length) {
+                currentIndex = 0; // Reiniciar el índice
+            }
+            getImageFromSection3.src = images[currentIndex];
+            getImageFromSection3.style.opacity = 1
+            // Volver a mostrar la imagen
+        }, 500);
+  },5000);
+}
 
-  document.addEventListener('DOMContentLoaded', function () {
-    const images = [
-        "./media/img/cocinas/cocina-grande-blanco-negro.jpg",
-        "./media/img/vestidores/vestidor1.webp",
-    ];
-
-    let currentIndex = 0;
-    const imgContainer = document.getElementById('img_3section');
-    const cardContainer = document.getElementById('card2');
-
-    setInterval(function () {
-        currentIndex = (currentIndex + 1) % images.length;
-        
-        // Fade out the image
-        imgContainer.style.opacity = 0;
-        
-        setTimeout(function () {
-            // Change the image source
-            imgContainer.src = images[currentIndex];
-            
-            // Fade in the image
-            imgContainer.style.opacity = 1;
-            
-            // Ensure the card opacity remains constant
-            cardContainer.style.opacity = 1;
-        }, 500); // Wait 500 milliseconds before changing the image
-    }, 6000); // Change the image every 6 seconds
-});
-
+changeImg();
 
 
 
