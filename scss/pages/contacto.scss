@@ -13,9 +13,9 @@
 
 .contact_left_side{
     height: 100vh;
-
-    padding-top: 130px;
+    padding-top: 100px;
     display: flex;
+    justify-content: space-evenly;
     width: 65%;
     padding-left: 80px;
     flex-direction: column;
@@ -32,7 +32,7 @@
 }
 
 .contact_left_side_booking{
-    padding-top: 80px;
+    flex-direction: column;
     width: 65%;
     font-family: "AdelleL";
     h2{
@@ -40,15 +40,22 @@
         font-size: 25px;
         padding-bottom: 20px;
     }
+    li{
+        padding-bottom: 5px;
+    }
 }
 
 
 .contact_left_side_information{
     font-family: "AdelleL";
     margin-top: 30%;
+    border: 1px solid indigo;
+
 }
 
 .contact_left_side_icons{
+
+    margin-top: 45px;
     a{
         padding-right: 6px;
     }

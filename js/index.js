@@ -113,7 +113,7 @@ document.addEventListener('DOMContentLoaded', function () {
   
   const targetProjects = 2000;
   const targetYears = 20;
-  const duration = 2000; // 3 seconds
+  const duration = 1000; // 1 seconds
   
   function animateNumbers() {
     const yearsElement = document.getElementById('years_num');
