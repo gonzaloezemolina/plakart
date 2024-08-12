@@ -1314,6 +1314,7 @@ input:focus {
 }
 
 .options_container.active {
+  height: 100%;
   left: 0;
   width: 40%;
   display: block;
@@ -1382,11 +1383,12 @@ input:focus {
   .options_container.active {
     left: 0;
     width: 70%;
+    height: 100%;
     display: block;
   }
   .icons_in_menu {
     width: 100%;
-    margin-left: 45%;
+    margin-left: 30%;
     text-align: end;
   }
 }
