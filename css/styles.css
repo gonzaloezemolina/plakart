@@ -1262,6 +1262,7 @@ input:focus {
   display: flex;
   flex-direction: column;
   cursor: pointer;
+  position: fixed;
 }
 
 .menu span {
@@ -1345,6 +1346,9 @@ input:focus {
 }
 
 @media (max-width: 600px) {
+  body.menu-open {
+    overflow: hidden;
+  }
   .menu {
     border: 0;
     justify-content: center;
@@ -1390,7 +1394,7 @@ input:focus {
   }
   .icons_in_menu {
     width: 100%;
-    margin-left: 30%;
+    margin-left: 45%;
     text-align: end;
   }
 }

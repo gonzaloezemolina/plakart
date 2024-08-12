@@ -70,6 +70,7 @@ const menuEvent = menu.addEventListener('click',()=>{
 
 function openingBar () {
     const sidebar = options.classList.toggle("active")
+    document.body.classList.toggle('menu-open', sidebar);
     if (sidebar) {
         line1.style.background = "black"
         line2.style.background = "black"
@@ -84,7 +85,6 @@ function openingBar () {
         line3.style.background = "black"
     }
 }
-
 
 
 
