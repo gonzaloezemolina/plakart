@@ -52,8 +52,6 @@ nav {
   flex-direction: row;
   height: 100%;
   width: 100%;
-  position: fixed;
-  overflow: hidden;
 }
 
 nav img {
@@ -1057,7 +1055,6 @@ small a {
 .contact_left_side_information {
   font-family: "AdelleL";
   margin-top: 30%;
-  border: 1px solid indigo;
 }
 
 .contact_left_side_icons {
@@ -1134,6 +1131,113 @@ input:focus {
   outline: none; /* Evita el borde azul de enfoque por defecto */
 }
 
+.contact_h1_right, .text_right_mobile {
+  display: none;
+}
+
+@media (max-width: 600px) {
+  .contact_main_section {
+    width: 100%;
+    height: 100%;
+    background: rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .contact_left_side {
+    padding: 0;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    flex-direction: column;
+    order: 2;
+  }
+  .contact_left_side h1 {
+    display: none;
+    font-size: 70px;
+    font-family: "AdelleEB";
+    color: white;
+  }
+  .contact_left_side p {
+    display: none;
+    font-family: "AdelleL";
+    color: white;
+    font-size: 25px;
+  }
+  .contact_right_side {
+    width: 100%;
+    order: 1;
+  }
+  form {
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+  }
+  input {
+    font-size: 20px;
+    height: 30px;
+    width: 100%;
+    border: 1px solid white;
+    border-radius: 5px;
+    padding-left: 5px;
+    margin-bottom: 25px;
+  }
+  .contact_h1_right, .text_right_mobile {
+    display: block;
+    color: white;
+    margin-bottom: 40px;
+  }
+  .contact_h1_right h1, .text_right_mobile h1 {
+    font-size: 40px;
+    font-family: "AdelleEB";
+  }
+  #buttonContact {
+    border-radius: 5px;
+    text-align: center;
+    padding: 8px;
+    border: 1px solid white;
+    cursor: pointer;
+    font-size: 20px;
+    font-family: "AdelleEB";
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
+  }
+  #buttonContact:hover {
+    transition: 0.5s;
+    color: black;
+    background-color: rgb(255, 255, 255);
+  }
+  .map {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 75%;
+  }
+  .map iframe {
+    border: 1px solid white;
+    border-radius: 5px;
+    width: 100%;
+  }
+  .contact_left_side_booking {
+    text-align: center;
+    flex-direction: column;
+    font-family: "AdelleL";
+    order: 1;
+    margin-top: 40px;
+  }
+  .contact_left_side_booking h2 {
+    color: white;
+    font-size: 25px;
+    padding-bottom: 20px;
+  }
+  .contact_left_side_booking li {
+    padding-bottom: 5px;
+  }
+}
 .portada_vestidores {
   background-image: url("../media/img/cocinas/portada3-1024x512-1.jpg");
   background-position: center;
