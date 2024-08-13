@@ -25,6 +25,10 @@ body::-webkit-scrollbar-thumb {
   background: rgb(255, 255, 255);
 }
 
+body.menu-open {
+  overflow: hidden;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -62,6 +66,8 @@ nav img {
 }
 
 footer {
+  margin: 0;
+  padding: 0;
   bottom: 0;
   background-color: black;
   color: white;
@@ -504,6 +510,146 @@ small a {
   transform: translateY(70%) translateX(85%);
 }
 
+@media (max-width: 600px) {
+  .first_section_portal {
+    display: none;
+  }
+  .first_section {
+    display: flex;
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+  }
+  .background_video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .first_section_content {
+    border: 1px solid khaki;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    color: #fff; /* Asegúrate de que el texto sea legible sobre el video */
+    text-align: center;
+  }
+  .logo {
+    border: 1px solid rgb(33, 255, 3);
+    margin: 0;
+    width: 300px;
+    margin-bottom: 10px;
+  }
+  .first_section_slogan {
+    border: 1px solid red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
+    padding: 0;
+  }
+  .first_section_slogan p {
+    font-size: 17px;
+    padding: 0;
+  }
+  .second_section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: 70vh;
+    background-image: url("../media/img/socialcontent/WhatsApp Image 2024-02-13 at 5.25.12 PM(1).jpeg");
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    object-fit: cover;
+    transform: none;
+  }
+  #img_2section {
+    display: none;
+  }
+  #card1 {
+    transform: none;
+    width: 280px;
+  }
+  #card1 a {
+    text-decoration: underline;
+  }
+  .circulo {
+    display: none;
+  }
+  .fourth_section {
+    position: relative;
+    height: 70vh; /* Ajusta la altura según necesites */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    margin: 0;
+  }
+  .background_video4 {
+    object-fit: cover;
+    position: absolute;
+    width: 70%; /* Ajusta el ancho según necesites */
+    z-index: 1;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  #background_Video4 {
+    width: 100%;
+    height: 500px;
+    display: block;
+  }
+  .fourth_section_text {
+    position: absolute;
+    z-index: 2;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .fourth_section_text p {
+    font-size: 30px;
+    color: white;
+  }
+  .fourth_section_text .trajectory {
+    width: 300px;
+  }
+  .fifth_section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: 70vh;
+    background-image: url("../media/img/obras/noti.webp");
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    object-fit: cover;
+    transform: none;
+  }
+  #img_5section {
+    display: none;
+  }
+  #card3 {
+    transform: none;
+    width: 280px;
+  }
+  #card3 a {
+    text-decoration: underline;
+  }
+}
 .portada_cocinas {
   background-image: url("../media/img/cocinas/COCINAS/portadapkt.jpg");
   background-position: center;
@@ -1585,6 +1731,39 @@ input:focus {
   font-size: 15px;
 }
 
+@media (max-width: 600px) {
+  .card {
+    height: 35vh;
+    width: 40%;
+    background: white;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    z-index: 1;
+    padding-left: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .card_title h3 {
+    padding-bottom: 35px;
+    text-align: start;
+  }
+  .card_title p {
+    padding-right: 20px;
+    text-align: justify;
+    font-family: "AdelleL";
+  }
+  .card_link {
+    padding-top: 30px;
+    padding-right: 25px;
+    display: flex;
+    justify-content: end;
+  }
+  .card_link a {
+    font-family: "AdelleL";
+    color: black;
+    text-decoration: none;
+  }
+}
 .modal {
   display: none;
 }
