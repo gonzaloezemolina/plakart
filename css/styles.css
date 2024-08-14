@@ -797,6 +797,25 @@ small a {
   filter: grayscale(0%);
 }
 
+@media (max-width: 600px) {
+  .portada_cocinas {
+    height: 73vh;
+  }
+  .portada_cocinas_titulo {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .portada_cocinas_titulo h1 {
+    font-family: "AdelleEB";
+    text-align: center;
+    font-size: 70px;
+    color: white;
+    padding-bottom: 8px;
+  }
+}
 .portada_nosotros {
   background-color: black;
   height: 88vh;
@@ -1222,6 +1241,25 @@ small a {
   transform: translateY(40px);
 }
 
+@media (max-width: 600px) {
+  .portada_complementos {
+    height: 73vh;
+  }
+  .portada_complementos_titulo {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .portada_complementos_titulo h1 {
+    font-family: "AdelleEB";
+    text-align: center;
+    font-size: 40px;
+    color: white;
+    padding-bottom: 20px;
+  }
+}
 .contact_main_section {
   display: grid;
   grid-template-columns: 60%, 40%;
@@ -1479,6 +1517,25 @@ input:focus {
   transform: translateY(40px);
 }
 
+@media (max-width: 600px) {
+  .portada_vestidores {
+    height: 73vh;
+  }
+  .portada_vestidores_titulo {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .portada_vestidores_titulo h1 {
+    font-family: "AdelleEB";
+    text-align: center;
+    font-size: 53px;
+    color: white;
+    padding-bottom: 15px;
+  }
+}
 .portada_desarrollos {
   background-image: url("../media/img/complementos/portadacom.webp");
   background-position: center;
@@ -1570,6 +1627,25 @@ input:focus {
   transform: translateY(40px);
 }
 
+@media (max-width: 600px) {
+  .portada_placares {
+    height: 73vh;
+  }
+  .portada_placares_titulo {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .portada_placares_titulo h1 {
+    font-family: "AdelleEB";
+    text-align: center;
+    font-size: 60px;
+    color: white;
+    padding-bottom: 13px;
+  }
+}
 .menu {
   border: 0;
   justify-content: center;

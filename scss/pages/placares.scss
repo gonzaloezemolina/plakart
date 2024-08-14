@@ -21,3 +21,24 @@
         transform: translateY(40px);
     }
 }
+
+
+@media(max-width:600px){
+    .portada_placares{
+      height: 73vh;
+      }
+      .portada_placares_titulo{
+          width: 100%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          text-align: center;
+          h1{
+              font-family: "AdelleEB";
+              text-align: center;
+              font-size: 60px;
+              color: white;
+              padding-bottom: 13px;
+          }
+      }
+  }
