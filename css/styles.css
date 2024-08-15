@@ -768,7 +768,7 @@ small a {
   margin: 100px auto;
 }
 
-.mosaics_type {
+.mosaics {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-auto-rows: 300px;
@@ -776,20 +776,32 @@ small a {
   grid-gap: 15px;
 }
 
-.mosaics_type .mosaics_ph:nth-child(6n+1),
-.mosaics_type .mosaics_ph:nth-child(6n+2),
-.mosaics_type .mosaics_ph:nth-child(6n+5),
-.mosaics_type .mosaics_ph:nth-child(6n+6) {
+.mosaics .mosaics_ph:nth-child(6n+1),
+.mosaics .mosaics_ph:nth-child(6n+2),
+.mosaics .mosaics_ph:nth-child(6n+5),
+.mosaics .mosaics_ph:nth-child(6n+6) {
   grid-column: span 2;
 }
 
-.mosaics_type .mosaics_ph:nth-child(6n+3),
-.mosaics_type .mosaics_ph:nth-child(6n+4) {
+.mosaics .mosaics_ph:nth-child(6n+3),
+.mosaics .mosaics_ph:nth-child(6n+4) {
   grid-row: span 2;
 }
 
+.image_btn_image.large {
+  width: 540px;
+  height: 300px;
+}
+
+.image_btn_image.tall {
+  width: 260px;
+  height: 615px;
+}
+
 .image_btn_image {
+  object-fit: cover;
   filter: grayscale(70%);
+  object-position: center;
 }
 
 .image_btn_image:hover {
@@ -814,6 +826,23 @@ small a {
     font-size: 70px;
     color: white;
     padding-bottom: 8px;
+  }
+  .galery_content {
+    max-width: 410px;
+  }
+  .mosaics {
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 200px;
+    grid-gap: 18px;
+    margin: 50px auto;
+  }
+  .image_btn_image.large {
+    width: 100%;
+    height: 197px;
+  }
+  .image_btn_image.tall {
+    width: 140px;
+    height: 415px;
   }
 }
 .portada_nosotros {
