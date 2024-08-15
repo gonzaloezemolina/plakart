@@ -124,3 +124,97 @@ function prevSlide() {
 document.addEventListener('DOMContentLoaded', () => {
     showSlides();
 });
+
+
+
+
+// Datos de proyectos: nombre y dirección
+const projects = [
+    { name: "Condominios Dolfines", address: "Dirección 1" },
+    { name: "Guarani", address: "Dirección 2" },
+    { name: "Torre Nordlink", address: "Dirección 3" },
+    { name: "Torre Embarcadero", address: "Dirección 3" },
+    { name: "Torre Victoria Río", address: "Dirección 3" },
+    { name: "Torre Felicitas", address: "Dirección 3" },
+    { name: "Edificio Duomo", address: "Dirección 3" },
+    { name: "Edificio Teruel II", address: "Dirección 3" },
+    { name: "Edificio Base 6", address: "Dirección 3" },
+    { name: "Edificio Rocamaru", address: "Dirección 3" },
+    { name: "Edificio Corrientes I", address: "Dirección 3" },
+    { name: "Edificio San Martín", address: "Dirección 3" },
+    { name: "Fideicomiso Mendoza", address: "Dirección 3" },
+    { name: "Fideicomiso Pueyrredón", address: "Dirección 3" },
+    { name: "Kolimpo II, III y IV", address: "Dirección 3" },
+    { name: "Edificio Z 1350", address: "Dirección 3" },
+    { name: "Excelsia Italia", address: "Dirección 3" },
+    { name: "Optimia Catamarca", address: "Dirección 3" },
+    { name: "Optimia Ituzaingo", address: "Dirección 3" },
+    { name: "Attica Rosetti", address: "Dirección 3" },
+    { name: "Condominio Los Capellanes", address: "Dirección 3" },
+    { name: "Pinamar", address: "Dirección 3" },
+    { name: "Optimia Laprida", address: "Dirección 3" },
+    { name: "Taka I", address: "Dirección 3" },
+    { name: "Pje. Indarte", address: "Dirección 3" },
+    { name: "Optimia Catamarca", address: "Dirección 3" },
+    { name: "Edificio Ov.Lagos 347", address: "Dirección 3" },
+    { name: "Avellaneda 1014 Bis", address: "Dirección 3" },
+    { name: "Edificio San Lorenzo", address: "Dirección 3" },
+    { name: "Edificio Valderrey", address: "Dirección 3" },
+    { name: "NB Construcciones", address: "Dirección 3" },
+    { name: "Werk Construcciones", address: "Dirección 3" },
+    { name: "Fisherton Park", address: "Dirección 3" },
+    { name: "Optimia Brown", address: "Dirección 3" },
+    { name: "Icaro 21", address: "Dirección 3" },
+    { name: "Organic", address: "Dirección 3" },
+    { name: "Optimia San Martin", address: "Dirección 3" },
+    // Continúa añadiendo hasta el proyecto 38
+];
+
+// Obtener elementos del DOM
+const modal = document.getElementById("projectsModal");
+const btn = document.getElementById("openModalBtn");
+const span = document.getElementsByClassName("close")[0];
+const projectsContainer = document.getElementById("projectsContainer");
+
+// Función para generar la lista de proyectos dinámicamente
+function generateProjects() {
+    projects.forEach(project => {
+        // Crear el contenedor de cada proyecto
+        let projectItem = document.createElement('div');
+        projectItem.className = 'project-item';
+
+        // Crear el título del proyecto
+        let projectTitle = document.createElement('h3');
+        projectTitle.textContent = project.name;
+
+        // Crear la dirección del proyecto
+        let projectAddress = document.createElement('p');
+        projectAddress.textContent = project.address;
+
+        // Añadir el título y la dirección al contenedor del proyecto
+        projectItem.appendChild(projectTitle);
+        projectItem.appendChild(projectAddress);
+
+        // Añadir el proyecto al contenedor de proyectos
+        projectsContainer.appendChild(projectItem);
+    });
+}
+
+// Abrir el modal y generar los proyectos
+btn.onclick = function() {
+    modal.style.display = "block";
+    projectsContainer.innerHTML = ""; // Limpiar el contenido anterior (si es necesario)
+    generateProjects(); // Generar los proyectos dinámicamente
+}
+
+// Cerrar el modal
+span.onclick = function() {
+    modal.style.display = "none";
+}
+
+// Cerrar el modal haciendo clic fuera de él
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}

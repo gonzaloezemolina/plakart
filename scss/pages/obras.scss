@@ -129,12 +129,14 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: black;
     button{
         margin: 20px;
         font-size: 20px;
         border: 0;
         background: transparent;
         color: black;
+        background-color: white;
         font-family: "AdelleL";
         cursor: pointer;
         display: flex;
@@ -145,4 +147,125 @@
         }
     }
     
+}
+
+
+
+/* Modal */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+/* Modal content */
+.modal-content {
+    position: relative;
+    margin: 5% auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    width: 80%;
+    max-width: 1200px;
+    height: 80%; /* Limitar la altura del modal */
+    display: flex;
+    flex-direction: column;
+}
+
+/* Modal header */
+.modal-header {
+    padding-bottom: 10px;
+    font-family: "AdelleB";
+}
+
+/* Modal body with scroll */
+.modal-body {
+    flex-grow: 1;
+    overflow-y: auto; /* Agregar scroll vertical cuando sea necesario */
+}
+
+/* Project grid with 4 columns */
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Ajuste a 4 columnas */
+    grid-gap: 20px;
+}
+
+.project-item {
+    padding: 10px;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    text-align: center;
+    font-family: "AdelleL";
+}
+
+/* Close button */
+.close {
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    font-size: 28px;
+    cursor: pointer;
+    color: #aaa;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+    .projects-grid {
+        grid-template-columns: repeat(3, 1fr); /* Reducir a 3 columnas */
+    }
+}
+
+@media (max-width: 768px) {
+    .projects-grid {
+        grid-template-columns: repeat(2, 1fr); /* Reducir a 2 columnas */
+    }
+}
+
+@media (max-width: 480px) {
+    .projects-grid {
+        grid-template-columns: 1fr; /* En pantallas pequeñas, mostrar 1 columna */
+    }
+}
+
+
+.modal-body::-webkit-scrollbar {
+    width: 12px; /* Ancho de la barra de desplazamiento */
+}
+
+/* El track (fondo de la barra) */
+.modal-body::-webkit-scrollbar-track {
+    background: #f4f4f4; /* Color de fondo */
+    border-radius: 10px;
+}
+
+/* La parte "thumb" (la barra que se mueve) */
+.modal-body::-webkit-scrollbar-thumb {
+    background-color: #000000; /* Color de la barra */
+    border-radius: 10px; /* Bordes redondeados */
+    border: 3px solid #f4f4f4; /* Espaciado alrededor de la barra */
+}
+
+/* Hover effect para la barra */
+.modal-body::-webkit-scrollbar-thumb:hover {
+    background-color: #000000; /* Color de la barra al pasar el cursor */
+}
+
+/* Para Firefox (con el pseudo-elemento scrollbar) */
+.modal-body {
+    scrollbar-width: thin; /* Define el ancho de la barra */
+    scrollbar-color: #000000 #c7c7c7; /* Color del thumb y del track */
 }

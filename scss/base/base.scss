@@ -29,12 +29,15 @@ body::-webkit-scrollbar-thumb{
     background: rgb(255, 255, 255);
 }
 
-body.menu-open {
-    overflow: hidden;
-}
 
 html {
     scroll-behavior: smooth;
+  }
+
+  @media(max-width:600px){
+    body.menu-open {
+        overflow: hidden;
+    }
   }
 
 
