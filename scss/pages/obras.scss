@@ -46,82 +46,6 @@
 }
 
 
-// Carrousel
-// .carousel {
-//     // position: relative;
-//     display: flex;
-//     justify-content: center;
-//     align-items: center;
-//     width: 80%;
-//     margin: 0 auto;
-//     overflow: hidden;
-// }
-
-// .carousel_item {
-//     position: relative;
-//     height: 35rem;
-//     width: 25rem;
-//     border-radius: 3px;
-//     overflow: hidden;
-//     box-shadow: 0 1rem 4rem rgba(0, 0, 0, 0.5);
-//     position: absolute;
-//     transform: translate(-50%, -50%) scale(0.1);
-//     z-index: 0;
-//     transition: all 0.2s linear;
-// }
-
-// .carousel_item img {
-//     width: 100%;
-//     min-height: 100%;
-//     object-fit: cover;
-// }
-
-// .carousel_item--main {
-//     transform: translate(-50%, -50%) scale(1);
-//     z-index: 2;
-//     cursor: pointer;
-// }
-
-// .carousel_item--left {
-//     transform: translate(-110%, -50%) scale(0.9);
-//     z-index: 1;
-// }
-
-// .carousel_item--right {
-//     transform: translate(10%, -50%) scale(0.9);
-//     z-index: 1;
-// }
-
-// .carousel_button {
-//     position: absolute;
-//     top: 50%;
-//     transform: translateY(-50%);
-//     background: rgba(255, 255, 255, 0.5);
-//     color: rgb(107, 14, 14);
-//     border: none;
-//     padding: 1rem;
-//     cursor: pointer;
-//     z-index: 3;
-// }
-
-// .carousel_button--left {
-//     left: 10px;
-// }
-
-// .carousel_button--right {
-//     right: 10px;
-// }
-
-// .caption {
-//     position: absolute;
-//     bottom: 20px;
-//     left: 50%;
-//     transform: translateX(-50%);
-//     background: rgba(0, 0, 0, 0.5);
-//     color: white;
-//     padding: 10px;
-//     border-radius: 5px;
-// }
 
 
 
@@ -268,4 +192,65 @@
 .modal-body {
     scrollbar-width: thin; /* Define el ancho de la barra */
     scrollbar-color: #000000 #c7c7c7; /* Color del thumb y del track */
+}
+
+
+
+// carrusel
+
+.projects_carrousel {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+}
+
+.carousel-wrapper {
+    width: 100%;
+    overflow: hidden;
+}
+
+.carousel-slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-slide {
+    min-width: 100%;
+    box-sizing: border-box;
+}
+
+.carousel-slide img {
+    width: 100%;
+    height: auto;
+}
+
+.carousel-control {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    border: none;
+    color: white;
+    font-size: 2rem;
+    cursor: pointer;
+    padding: 10px;
+    z-index: 10;
+}
+
+.carousel-control.prev {
+    left: 10px;
+}
+
+.carousel-control.next {
+    right: 10px;
+}
+
+.projects_carrousel:hover .carousel-control {
+    opacity: 1;
+}
+
+.carousel-control:hover {
+    background: rgba(0, 0, 0, 0.8);
 }
