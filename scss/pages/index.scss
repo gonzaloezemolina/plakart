@@ -48,7 +48,14 @@
 .logo{
     margin-top: 130px;
     margin-left: 70px;
+    // width: 385px;
+    // height: 102px;
 }
+
+// #logo{
+//     width: 385px;
+//     height: 102px;
+// }
 
 .first_section_slogan{
     p{  
@@ -159,7 +166,7 @@ align-items: center;
     }
     li{
         font-family: "AdelleL";
-        font-size: 40px;
+        font-size: 30px;
     }
     img{
         height: 100%;
@@ -173,7 +180,7 @@ align-items: center;
 
 .vertical_line{
     width: 1px; /* Ancho de la línea */
-    height: 46%; /* Altura de la línea (ajusta según sea necesario) */
+    height: 40%; /* Altura de la línea (ajusta según sea necesario) */
     background-color: #000; /* Color de la línea */
     margin-right: 25px; 
     margin-bottom: 50px;/* Margen a la derecha de la línea (ajusta según sea necesario) */
@@ -182,6 +189,7 @@ align-items: center;
 
 
 .third_section_photos{
+    width: 100%;
     display: flex;
     justify-content: start;
     align-items: center;
@@ -189,9 +197,13 @@ align-items: center;
 
 .third_section_img_container{
     height: 100%;
-    width: 100%;
-    overflow: hidden;
+    width: 90%;
+    background-size: cover;
+    background-position: center;
+    transition: background-image 0.5s ease-in-out;
+    background-color: transparent; /* Evitar fondo blanco */
 }
+
 
 .third_section_links{
     display: flex;
@@ -358,7 +370,6 @@ align-items: center;
     }
 
     .first_section_content {
-        border: 1px solid khaki;
         padding: 0;
         margin: 0;
         width: 100%;  //Solo cubre la mitad..
@@ -374,7 +385,6 @@ align-items: center;
     }
 
     .logo{
-        border: 1px solid rgb(33, 255, 3);
         margin:0;
         width: 300px;
         margin-bottom: 10px;
@@ -492,9 +502,6 @@ align-items: center;
 
 .third_section_img_container{
     width: 100%;
-    img{
-        width: 100%;
-    }
 }
 
 

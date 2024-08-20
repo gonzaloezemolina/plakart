@@ -221,61 +221,47 @@ window.onclick = function(event) {
 
 
 
-const imagePaths = [
-    "../media/img/cocinas/cocina-grande-blanco-negro.jpg", 
-    "../media/img/cocinas/15b1ca_7bc9409baaf5465f8a7fd0ad98138bee~mv2.webp",
-    "../media/img/cocinas/6d63b4b5e642a9c78bf4280502d41421.jpg",
-    // Agrega todas las rutas de tus imágenes aquí
-];
-
-
-document.addEventListener('DOMContentLoaded', () => {
-    const slidesContainer = document.querySelector('.carousel-slides');
-    const slideCount = imagePaths.length; // Número total de imágenes
-    const slideWidth = 100; // Porcentaje del ancho de cada slide (100% para que ocupe todo el contenedor)
-    let currentIndex = 0;
-    let intervalId;
-
-    // Crea las imágenes dinámicamente
-    imagePaths.forEach((path) => {
-        const slide = document.createElement('div');
-        slide.className = 'carousel-slide';
-        const img = document.createElement('img');
-        img.src = path; // Usa la ruta del array
-        img.alt = `Proyecto ${currentIndex + 1}`; // Alternativa para la imagen
-        slide.appendChild(img);
-        slidesContainer.appendChild(slide);
-    });
-
-    function goToSlide(index) {
-        slidesContainer.style.transform = `translateX(-${index * slideWidth}%)`;
-        currentIndex = index;
-    }
-
-    function nextSlide() {
-        currentIndex = (currentIndex + 1) % slideCount;
-        goToSlide(currentIndex);
-    }
-
-    function prevSlide() {
-        currentIndex = (currentIndex - 1 + slideCount) % slideCount;
-        goToSlide(currentIndex);
-    }
-
-    function startAutoSlide() {
-        intervalId = setInterval(nextSlide, 3000); // Cambia cada 3 segundos
-    }
-
-    function stopAutoSlide() {
-        clearInterval(intervalId);
-    }
-
-    document.querySelector('.carousel-control.next').addEventListener('mouseenter', startAutoSlide);
-    document.querySelector('.carousel-control.next').addEventListener('mouseleave', stopAutoSlide);
-    document.querySelector('.carousel-control.prev').addEventListener('mouseenter', startAutoSlide);
-    document.querySelector('.carousel-control.prev').addEventListener('mouseleave', stopAutoSlide);
-    document.querySelector('.carousel-control.next').addEventListener('click', nextSlide);
-    document.querySelector('.carousel-control.prev').addEventListener('click', prevSlide);
-
-    startAutoSlide();
-});
+          let i = 0;
+          let slides = document.querySelectorAll(".slide");
+          let slider = document.querySelector(".slider");
+          var pause = false;
+        
+          function moveRight() {
+            slides[i].className = "slide";
+            i = (i + 1) % slides.length;
+            slides[i].className = "slide active";
+            let Xvalue = -160 * i;
+            slider.style.transform = `translateX(${Xvalue}px)`;
+          }
+        
+          function moveLeft() {
+            slides[i].className = "slide";
+            i = (i - 1 + slides.length) % slides.length;
+            slides[i].className = "slide active";
+            let Xvalue = -160 * i;
+            slider.style.transform = `translateX(${Xvalue}px)`;
+          }
+        
+          const interval = setInterval(() => {
+            if (!pause) {
+              moveRight();
+            }
+          }, 2000);
+        
+          function playPause() {
+            let icon = document.getElementById("playPauseIcon");
+        
+            if (!pause) {
+              pause = true;
+              icon.innerHTML = `
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-play" viewBox="0 0 16 16">
+                  <path d="M10.804 8 5 4.633v6.734zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696z"/>
+                </svg>`;
+            } else {
+              pause = false;
+              icon.innerHTML = `
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pause" viewBox="0 0 16 16">
+                  <path d="M6 3.5a.5.5 0 0 1 .5.5v8a.5.5 0 0 1-1 0V4a.5.5 0 0 1 .5-.5m4 0a.5.5 0 0 1 .5.5v8a.5.5 0 0 1-1 0V4a.5.5 0 0 1 .5-.5"/>
+                </svg>`;
+            }
+          }

@@ -164,7 +164,7 @@ document.addEventListener('DOMContentLoaded', function () {
 document.addEventListener('DOMContentLoaded', function () {
     const images = [
       "./media/img/socialcontent/WhatsApp Image 2024-02-13 at 5.25.12 PM(1).jpeg",
-      "./media/img/cocinas/secondsection.webp"
+      "./media/img/socialcontent/WhatsApp Image 2024-02-13 at 5.25.12 PM.jpeg"
     ];
   
     let currentIndex = 0;
@@ -182,27 +182,35 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 
-
-function changeImg () {
-  const images = ["./media/img/cocinas/cocina-grande-blanco-negro.jpg", "./media/img/obras/noti.webp"]
-  let currentIndex = 0;
-  const getImageFromSection3 = document.getElementById("img_3section");
-
-  const interval = setInterval(() => {
-          currentIndex = (currentIndex + 1) % images.length;
-          getImageFromSection3.style.opacity = 0
+  function changeImg () {
+    const images = [
+      "./media/img/cocinas/cocina-grande-blanco-negro.jpg", 
+      "./media/img/obras/noti.webp"
+    ];
+    
+    let currentIndex = 0;
+    const getImageFromSection3 = document.getElementById("third_section_img_container");
+  
+    const interval = setInterval(() => {
+      // Reducimos la opacidad a 0 para iniciar la transición de desvanecimiento
+      getImageFromSection3.style.opacity = 0;
+  
+      // Esperamos a que la opacidad llegue a 0 (0.5s)
+      setTimeout(() => {
+        // Cambiamos la imagen justo cuando la opacidad es 0
+        currentIndex = (currentIndex + 1) % images.length;
+        getImageFromSection3.style.backgroundImage = `url(${images[currentIndex]})`;
+  
+        // Restauramos la opacidad a 1 para la nueva imagen
         setTimeout(() => {
-            if (currentIndex >= images.length) {
-                currentIndex = 0; // Reiniciar el índice
-            }
-            getImageFromSection3.src = images[currentIndex];
-            getImageFromSection3.style.opacity = 1
-            // Volver a mostrar la imagen
-        }, 500);
-  },5000);
-}
-
-changeImg();
+          getImageFromSection3.style.opacity = 1;
+        }, 50); // Pequeña espera para asegurar que la imagen ya esté actualizada
+      }, 500); // El tiempo aquí coincide con la duración de la transición de opacidad
+    }, 5000); // Intervalo de 5 segundos entre cambios de imagen
+  }
+  
+  changeImg();
+  
 
 
 

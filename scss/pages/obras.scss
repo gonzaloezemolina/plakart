@@ -1,5 +1,5 @@
 .portada_desarrollos{
-    background-image: url("../media/img/complementos/portadacom.webp");
+    background-image: url("../media/img/obras/capellanes.webp");
   background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -41,15 +41,10 @@
     flex-direction: column;
 }
 
-.projects_section_title{
-    border-bottom: 1px solid salmon;
-}
-
-
-
 
 
 .projects_view_list{
+    padding: 40px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -195,62 +190,3 @@
 }
 
 
-
-// carrusel
-
-.projects_carrousel {
-    position: relative;
-    width: 100%;
-    overflow: hidden;
-    display: flex;
-    align-items: center;
-}
-
-.carousel-wrapper {
-    width: 100%;
-    overflow: hidden;
-}
-
-.carousel-slides {
-    display: flex;
-    transition: transform 0.5s ease-in-out;
-}
-
-.carousel-slide {
-    min-width: 100%;
-    box-sizing: border-box;
-}
-
-.carousel-slide img {
-    width: 100%;
-    height: auto;
-}
-
-.carousel-control {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background: rgba(0, 0, 0, 0.5);
-    border: none;
-    color: white;
-    font-size: 2rem;
-    cursor: pointer;
-    padding: 10px;
-    z-index: 10;
-}
-
-.carousel-control.prev {
-    left: 10px;
-}
-
-.carousel-control.next {
-    right: 10px;
-}
-
-.projects_carrousel:hover .carousel-control {
-    opacity: 1;
-}
-
-.carousel-control:hover {
-    background: rgba(0, 0, 0, 0.8);
-}
