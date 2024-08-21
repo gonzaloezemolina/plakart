@@ -166,7 +166,7 @@ align-items: center;
     }
     li{
         font-family: "AdelleL";
-        font-size: 30px;
+        font-size: 32px;
     }
     img{
         height: 100%;
@@ -175,7 +175,6 @@ align-items: center;
         transition: opacity 0.5s ease-in-out;
     }
 }
-
 
 
 .vertical_line{
@@ -188,21 +187,58 @@ align-items: center;
 }
 
 
+
+
+
+
 .third_section_photos{
+    // border: 1px solid khaki;
+    position: static;
     width: 100%;
     display: flex;
     justify-content: start;
     align-items: center;
 }
 
-.third_section_img_container{
-    height: 100%;
-    width: 90%;
-    background-size: cover;
-    background-position: center;
-    transition: background-image 0.5s ease-in-out;
-    background-color: transparent; /* Evitar fondo blanco */
+.carousel-wrapper {
+    // height: 100%;
+    height: 580px;
+    width: 95%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
+.carousel-slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-slide {
+    flex: 0 0 auto;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.carousel-slide img {
+    width: 100%;
+    height: 100%;
+    // height: 580px;
+    object-fit: cover;
+    object-position: center;
+}
+
+
+
+// .third_section_img_container{
+//     height: 100%;
+//     width: 90%;
+//     background-size: cover;
+//     background-position: center;
+//     transition: background-image 0.5s ease-in-out;
+//     background-color: transparent; /* Evitar fondo blanco */
+// }
 
 
 .third_section_links{
@@ -216,16 +252,16 @@ align-items: center;
         list-style: none;
     }
     .c{
-        width: 180px;
+        width: 145px;
     }
     .p{
-        width: 190px;
+        width: 155px;
     }
     .v{
-        width: 225px;
+        width: 185px;
     }
     .com{
-        width: 310px;
+        width: 255px;
     }
 }
 
@@ -254,11 +290,17 @@ align-items: center;
 }
 
 
-
-// .img_2section {
-//     transition: opacity 0.5s ease-in-out; /* Puedes ajustar la duración y el tipo de transición según tus preferencias */
-//   }
-
+.third_section_btn_container {
+    padding: 10px;
+    width: 50px;
+    height: 100px;
+    background-color: #000000;
+    // clip-path: polygon(100% 0, 0 50%, 100% 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateX(-30px);
+  }
 
 
 
@@ -446,7 +488,7 @@ align-items: center;
             p{
                 color: rgb(0, 0, 0);
             }
-            transform:translateY(200px);
+            transform:translateY(-300px);
             z-index: 2;
             width: 250px;
             height: 250px;

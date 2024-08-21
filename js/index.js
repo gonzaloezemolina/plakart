@@ -182,35 +182,29 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 
-  function changeImg () {
-    const images = [
-      "./media/img/cocinas/cocina-grande-blanco-negro.jpg", 
-      "./media/img/obras/noti.webp"
-    ];
-    
+
+
+document.addEventListener('DOMContentLoaded', () => {
+    const slides = document.getElementById('carousel_slides');
+    const slideCount = slides.children.length;
     let currentIndex = 0;
-    const getImageFromSection3 = document.getElementById("third_section_img_container");
-  
-    const interval = setInterval(() => {
-      // Reducimos la opacidad a 0 para iniciar la transición de desvanecimiento
-      getImageFromSection3.style.opacity = 0;
-  
-      // Esperamos a que la opacidad llegue a 0 (0.5s)
-      setTimeout(() => {
-        // Cambiamos la imagen justo cuando la opacidad es 0
-        currentIndex = (currentIndex + 1) % images.length;
-        getImageFromSection3.style.backgroundImage = `url(${images[currentIndex]})`;
-  
-        // Restauramos la opacidad a 1 para la nueva imagen
-        setTimeout(() => {
-          getImageFromSection3.style.opacity = 1;
-        }, 50); // Pequeña espera para asegurar que la imagen ya esté actualizada
-      }, 500); // El tiempo aquí coincide con la duración de la transición de opacidad
-    }, 5000); // Intervalo de 5 segundos entre cambios de imagen
-  }
-  
-  changeImg();
-  
+
+    function nextImage() {
+        currentIndex = (currentIndex + 1) % slideCount;
+        const translateXValue = -(currentIndex * 100); // Desplazamos en base al índice
+        slides.style.transform = `translateX(${translateXValue}%)`;
+    }
+
+    // Cambiar la imagen al hacer clic en el botón
+    const nextButton = document.querySelector('.third_section_btn');
+    nextButton.addEventListener('click', () => {
+        nextImage();
+    });
+
+    // Iniciar el carrusel automáticamente
+    let intervalId = setInterval(nextImage, 8000); // Cambia cada 3 segundos
+});
+
 
 
 
