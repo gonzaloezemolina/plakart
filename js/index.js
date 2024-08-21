@@ -182,17 +182,57 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 
-
-
-document.addEventListener('DOMContentLoaded', () => {
+  document.addEventListener('DOMContentLoaded', () => {
     const slides = document.getElementById('carousel_slides');
     const slideCount = slides.children.length;
+    const slideIndicators = document.querySelectorAll('#slide-indicators li')
     let currentIndex = 0;
+    updateSlideIndicators(currentIndex);
 
+    // Array con los textos y títulos de cada slide
+    const slideData = [
+        { title: 'Cocinas', text: 'Encuentra inspiración en cada rincón de nuestras cocinas que fusionan estilo y funcionalidad a la perfección.', count: '1/4' },
+        { title: 'Placares', text: 'Optimiza cada espacio con nuestros placares, donde diseño y practicidad se encuentran.', count: '2/4' },
+        { title: 'Vestidores', text: 'Descubre la elegancia y el orden en nuestros vestidores personalizados.', count: '3/4' },
+        { title: 'Complementos', text: 'Añade los detalles finales con nuestros complementos de alta calidad.', count: '4/4' }
+    ];
+
+    const getC = document.getElementById("c");
+    const getP = document.getElementById("p");
+    const getV = document.getElementById("v");
+    const getCom = document.getElementById("com");
+
+
+    // Función para actualizar la tarjeta con el contenido correspondiente
+    function updateCardContent(index) {
+      const cardTitle = document.querySelector('#card2 h3');
+      const cardText = document.querySelector('#card2 .card_text');
+      const cardCount = document.querySelector('#card2 .card_link p:first-child');
+
+      // Actualizar el contenido
+      cardTitle.textContent = slideData[index].title;
+      cardText.textContent = slideData[index].text;
+      cardCount.textContent = slideData[index].count;
+      updateSlideIndicators(index);
+  };
+
+  function updateSlideIndicators(index) {
+    // Quitar el estilo de negrita de todos los li
+    slideIndicators.forEach(li => {
+        li.style.fontWeight = 'normal'; // Normal para los demás
+    });
+
+    // Resaltar el li correspondiente al índice actual
+    slideIndicators[index].style.fontWeight = 'bold'; // Negrita para el seleccionado
+}
+
+    // Función para cambiar la imagen y actualizar la tarjeta
     function nextImage() {
         currentIndex = (currentIndex + 1) % slideCount;
         const translateXValue = -(currentIndex * 100); // Desplazamos en base al índice
         slides.style.transform = `translateX(${translateXValue}%)`;
+        // Actualizar el contenido de la tarjeta
+        updateCardContent(currentIndex);
     }
 
     // Cambiar la imagen al hacer clic en el botón
@@ -202,8 +242,9 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     // Iniciar el carrusel automáticamente
-    let intervalId = setInterval(nextImage, 8000); // Cambia cada 3 segundos
+    let intervalId = setInterval(nextImage, 7000); 
 });
+
 
 
 

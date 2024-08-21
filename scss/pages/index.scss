@@ -166,6 +166,7 @@ align-items: center;
     }
     li{
         font-family: "AdelleL";
+        font-weight: normal;
         font-size: 32px;
     }
     img{
@@ -189,11 +190,8 @@ align-items: center;
 
 
 
-
-
 .third_section_photos{
-    // border: 1px solid khaki;
-    position: static;
+    height: 100%;
     width: 100%;
     display: flex;
     justify-content: start;
@@ -201,8 +199,7 @@ align-items: center;
 }
 
 .carousel-wrapper {
-    // height: 100%;
-    height: 580px;
+    height: 90vh;
     width: 95%;
     overflow: hidden;
     display: flex;

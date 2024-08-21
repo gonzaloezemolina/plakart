@@ -360,6 +360,7 @@ small a {
 }
 .third_section li {
   font-family: "AdelleL";
+  font-weight: normal;
   font-size: 32px;
 }
 .third_section img {
@@ -379,7 +380,7 @@ small a {
 }
 
 .third_section_photos {
-  position: static;
+  height: 100%;
   width: 100%;
   display: flex;
   justify-content: start;
@@ -387,7 +388,7 @@ small a {
 }
 
 .carousel-wrapper {
-  height: 580px;
+  height: 90vh;
   width: 95%;
   overflow: hidden;
   display: flex;
