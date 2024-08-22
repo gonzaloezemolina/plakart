@@ -326,6 +326,8 @@ small a {
 
 .cta-icon {
   display: none;
+  margin-top: 20px;
+  color: white;
 }
 
 .second_section {
