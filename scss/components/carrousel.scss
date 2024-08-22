@@ -187,4 +187,35 @@ transition: .5s;
       flex-direction: column;
       background: rgb(0, 0, 0);
     }
+
+    .slide {
+      width: 140px;
+      height: 175px;
+      position: relative;
+      border-radius: 2mm;
+      margin: 0 10px;
+      transition: 0.25s;
+    }
+    .slide img {
+      width: 140px;
+      height: 175px;
+      /* border-radius: 2mm; */
+      -webkit-box-reflect: below 0px
+        linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.4));
+      transition: 0.25s;
+    }
+    .slide::before {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      box-shadow: inset 5px 5px 15px rgba(255, 255, 255, 0.5);
+      /* border-radius: 2mm; */
+      top: 0;
+      left: 0;
+      z-index: 1;
+    }
+    .slide .desc {
+      opacity: 1;
+    }
   }
