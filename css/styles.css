@@ -590,17 +590,24 @@ small a {
     margin-bottom: 10px;
   }
   .first_section_slogan {
-    border: 1px solid red;
     display: flex;
-    justify-content: center;
+    justify-content: end;
     align-items: center;
     flex-direction: row;
     width: 100%;
+    text-align: center;
     padding: 0;
+    padding-right: 15px;
   }
   .first_section_slogan p {
     font-size: 17px;
     padding: 0;
+  }
+  .first_section_slogan_word {
+    padding: 0;
+    margin: 0;
+    width: 40%;
+    text-align: start;
   }
   .cta-icon {
     display: block;
