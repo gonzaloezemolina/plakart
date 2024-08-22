@@ -661,10 +661,10 @@ small a {
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
     background-color: #ffffff;
     color: rgb(0, 0, 0);
-    transform: translateY(-300px);
+    transform: translateY(-280px);
     z-index: 2;
-    width: 250px;
-    height: 250px;
+    width: 300px;
+    height: 200px;
   }
   .third_section #card2 p {
     color: rgb(0, 0, 0);
@@ -711,10 +711,17 @@ small a {
     width: 100%;
   }
   .third_section_photos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 100%;
-    height: 40%;
+    height: 40vh;
   }
-  .third_section_img_container {
+  .third_section_btn_container {
+    display: none;
+  }
+  .carousel-wrapper {
+    height: 40vh;
     width: 100%;
   }
   .circulo {

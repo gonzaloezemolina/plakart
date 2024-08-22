@@ -88,46 +88,6 @@ function openingBar () {
 }
 
 
-
-
-
-
-
-let currentIndex = 1;
-
-function showSlides() {
-    const items = document.querySelectorAll('.carousel_item');
-    items.forEach((item, index) => {
-        item.classList.remove('carousel_item--left', 'carousel_item--main', 'carousel_item--right');
-        if (index === currentIndex) {
-            item.classList.add('carousel_item--main');
-        } else if (index === (currentIndex - 1 + items.length) % items.length) {
-            item.classList.add('carousel_item--left');
-        } else if (index === (currentIndex + 1) % items.length) {
-            item.classList.add('carousel_item--right');
-        }
-    });
-}
-
-function nextSlide() {
-    const items = document.querySelectorAll('.carousel_item');
-    currentIndex = (currentIndex + 1) % items.length;
-    showSlides();
-}
-
-function prevSlide() {
-    const items = document.querySelectorAll('.carousel_item');
-    currentIndex = (currentIndex - 1 + items.length) % items.length;
-    showSlides();
-}
-
-document.addEventListener('DOMContentLoaded', () => {
-    showSlides();
-});
-
-
-
-
 // Datos de proyectos: nombre y dirección
 const projects = [
     { name: "Condominios Dolfines", address: "Dirección 1" },
@@ -200,22 +160,36 @@ function generateProjects() {
     });
 }
 
+function disableScroll() {
+    document.body.style.overflow = 'hidden';
+    document.documentElement.style.overflow = 'hidden';
+}
+
+// Función para activar el scroll del body y html
+function enableScroll() {
+    document.body.style.overflow = '';
+    document.documentElement.style.overflow = '';
+}
+
 // Abrir el modal y generar los proyectos
 btn.onclick = function() {
     modal.style.display = "block";
     projectsContainer.innerHTML = ""; // Limpiar el contenido anterior (si es necesario)
     generateProjects(); // Generar los proyectos dinámicamente
+    disableScroll();
 }
 
 // Cerrar el modal
 span.onclick = function() {
     modal.style.display = "none";
+    enableScroll();
 }
 
 // Cerrar el modal haciendo clic fuera de él
 window.onclick = function(event) {
     if (event.target == modal) {
         modal.style.display = "none";
+        enableScroll();
     }
 }
 
