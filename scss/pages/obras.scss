@@ -1,5 +1,5 @@
 .portada_desarrollos{
-    background-image: url("../media/img/obras/capellanes.webp");
+    background-image: url("../media/img/obras/noti.webp");
   background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -21,6 +21,7 @@
         transform: translateY(40px);
     }
 }
+
 
 
 .projects_section{
@@ -190,3 +191,38 @@
 }
 
 
+@media(max-width:600px){
+    .portada_desarrollos{
+      height: 73vh;
+      }
+      .portada_desarrollos_titulo{
+          width: 100%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          text-align: center;
+          h1{
+              font-family: "AdelleEB";
+              text-align: center;
+              font-size: 45px;
+              color: white;
+              padding-bottom: 20px;
+          }
+      }
+      .projects_section{
+        color: white;
+        background-color: black;
+        h2{
+            font-family: "AdelleEB";
+            font-size: 30px;
+            text-align: center;
+        }
+        p{
+            font-family: "AdelleL", "RobotoL", sans-serif;
+        }
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    
+  }
