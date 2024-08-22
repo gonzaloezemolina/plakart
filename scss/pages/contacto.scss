@@ -158,7 +158,7 @@ input:focus {
         }
         p{
             display: none;
-            font-family: "AdelleL";
+            font-family: "AdelleL", "RobotoL", sans-serif;
             color: white;
             font-size: 25px;
         }
@@ -230,7 +230,7 @@ input:focus {
     .contact_left_side_booking{
         text-align: center;
         flex-direction: column;
-        font-family: "AdelleL";
+        font-family: "AdelleL", "RobotoL", sans-serif;
         order: 1;
         margin-top: 40px;
         h2{

@@ -9,16 +9,29 @@
     src: url(../media/font/Adelle_ExtraBold.otf);
 }
 
+@font-face {
+    font-family: "RobotoB";
+    src: url(../media/font/Roboto-Bold.ttf);
+}
 
 @font-face {
     font-family: "AdelleB";
     src: url(../media/font/adelle-sans-bold.otf);
 }
 
+@font-face {
+    font-family: "RobotoR";
+    src: url(../media/font/Roboto-Regular.ttf);
+}
 
 @font-face {
     font-family: "AdelleL";
     src: url(../media/font/adelle-sans-light.otf);
+}
+
+@font-face {
+    font-family: "RobotoL";
+    src: url(../media/font/Roboto-Light.ttf);
 }
 
 body::-webkit-scrollbar{

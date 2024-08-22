@@ -59,7 +59,7 @@
 
 .first_section_slogan{
     p{  
-        font-family: "AdelleL";
+        font-family: "AdelleL", "RobotoL", sans-serif;
         color: white;
         font-size: 25px;
         padding-top: 15px;
@@ -93,7 +93,7 @@ align-items: center;
             a{
                 text-decoration: none;
                 color: white;
-                font-family: "AdelleL";
+        font-family: "AdelleL", "RobotoL", sans-serif;
                 font-size: 35px;
             }
         }
@@ -170,7 +170,7 @@ align-items: center;
         color: black;
     }
     li{
-        font-family: "AdelleL";
+        font-family: "AdelleL", "RobotoL", sans-serif;
         font-weight: normal;
         font-size: 32px;
     }

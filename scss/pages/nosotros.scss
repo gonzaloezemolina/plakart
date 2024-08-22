@@ -34,7 +34,7 @@ background-color: black;
     width: 100%;
     background-color: black;
     p{
-        font-family: "AdelleL";
+        font-family: "AdelleL", "RobotoL", sans-serif;
     }
 }
 
@@ -147,7 +147,7 @@ background-color: black;
     width: 100%;
     background: linear-gradient(to right, rgb(0, 0, 0) 50%, rgb(255, 255, 255) 0%);
     p{
-        font-family: "AdelleL";
+        font-family: "AdelleL", "RobotoL", sans-serif;
     }
 }
 
@@ -227,7 +227,7 @@ background-color: black;
     text-align: center;
     transform: translateY(-4px);
     padding: 5px;
-    font-family: "AdelleL";
+    font-family: "AdelleL", "RobotoL", sans-serif;
     opacity: 0; 
     transition: opacity 0.5s ease; 
     h3{
