@@ -247,16 +247,12 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 
-
-
-
-
   //Intercambiar imagen en la quinta section
 
 document.addEventListener('DOMContentLoaded', function () {
   const images = [
     "./media/img/obras/noti.webp",
-    "./media/img/obras/uranovski.webp",
+    "./media/img/obras/terraz.webp",
   ];
 
   let currentIndex = 0;

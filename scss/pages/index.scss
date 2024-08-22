@@ -123,6 +123,9 @@ align-items: center;
     }
 }
 
+.cta-icon{
+    display: none;
+}
 
 //Segunda seccion
 
@@ -441,6 +444,12 @@ align-items: center;
             font-size: 17px;
             padding: 0;
         }
+    }
+
+    .cta-icon{
+        display: block;
+        margin-top: 20px;
+        color: white;
     }
 
     // segunda seccion

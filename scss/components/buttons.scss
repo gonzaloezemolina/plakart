@@ -19,3 +19,22 @@
     transition: .5s;
     color: rgba(255, 255, 255, 0.4);
 }
+
+
+@keyframes bounce {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(10px); /* El chevron baja */
+    }
+    100% {
+        transform: translateY(0); /* El chevron vuelve a su posición original */
+    }
+}
+
+.chevron-down {
+    display: inline-block;
+    animation: bounce 2s infinite;
+    animation-timing-function: cubic-bezier(0.68, -0.55, 0.27, 1.55); /* Personaliza el easing */
+}
