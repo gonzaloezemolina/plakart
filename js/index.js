@@ -267,3 +267,34 @@ document.addEventListener('DOMContentLoaded', function () {
     }, 500); // Espera 500 milisegundos antes de cambiar la imagen
   }, 6000); // Cambia la imagen cada 6 segundos
 });
+
+
+
+
+
+
+
+const imagesOfFirstCarrousel = [
+  { src: '../media/img/vestidores/Screenshot_1.png', href: './pages/vestidores.html' },
+  { src: '../media/img/complementos/COMPLEMENTOS/DSC_0049.JPG', href: './pages/complementos.html' },
+  { src: '../media/img/cocinas/COCINAS/IMG_2829.jpg', href: './pages/cocinas.html' },
+  { src: '../media/img/placares/PLACARES/GAS_6899.jpg', href: './pages/placares.html' }
+];
+
+let firstImage = 0;
+
+const portalImgElement = document.querySelector('.first_section_portal_img');
+const linkElement = document.getElementById('more-link');
+
+function updateCarousel() {
+  portalImgElement.style.backgroundImage = `url(${imagesOfFirstCarrousel[firstImage].src})`;
+  linkElement.href = imagesOfFirstCarrousel[firstImage].href;
+}
+
+document.getElementById('first_section_portal_button').addEventListener('click', () => {
+  firstImage = (firstImage + 1) % imagesOfFirstCarrousel.length;
+  updateCarousel();
+});
+
+// Iniciar el carrusel con la primera imagen
+updateCarousel();

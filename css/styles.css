@@ -237,6 +237,7 @@ small a {
   display: grid;
   grid-template-columns: 50% 50%;
   height: 100vh;
+  overflow: hidden;
 }
 
 .background_video {
@@ -286,30 +287,33 @@ small a {
   padding-left: 80px;
 }
 
+.first_section_content {
+  height: 100%;
+}
+
 .first_section_portal {
+  height: 100%;
+  z-index: -1;
   display: flex;
-  height: 276px;
 }
 .first_section_portal .first_section_portal_img {
-  position: relative;
-  align-items: center;
-}
-.first_section_portal .first_section_portal_img iframe {
-  padding-top: 20px;
+  background-image: url("../media/img/vestidores/Screenshot_1.png");
+  background-size: contain;
+  background-repeat: no-repeat;
   width: 420px;
-  height: 100%;
-  object-fit: cover;
+  transition: transform 0.5s ease-in-out;
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
 }
 .first_section_portal .first_section_portal_img .more {
-  position: absolute;
-  margin-left: 35%;
-  transform: translateY(-370%);
+  margin-top: 100px;
   text-align: center;
-  z-index: 9;
+  height: 42px;
 }
 .first_section_portal .first_section_portal_img .more a {
-  text-decoration: none;
-  color: white;
+  text-decoration: underline;
+  color: rgb(0, 0, 0);
   font-family: "AdelleL", "RobotoL", sans-serif;
   font-size: 35px;
 }
