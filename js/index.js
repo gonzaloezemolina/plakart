@@ -278,7 +278,7 @@ const imagesOfFirstCarrousel = [
   { src: '../media/img/vestidores/Screenshot_1.png', href: './pages/vestidores.html' },
   { src: '../media/img/complementos/COMPLEMENTOS/DSC_0049.JPG', href: './pages/complementos.html' },
   { src: '../media/img/cocinas/COCINAS/IMG_2829.jpg', href: './pages/cocinas.html' },
-  { src: '../media/img/placares/PLACARES/GAS_6899.jpg', href: './pages/placares.html' }
+  { src: '../media/img/placares/PLACARES/cajon-placard-blanco.jpg', href: './pages/placares.html' }
 ];
 
 let firstImage = 0;

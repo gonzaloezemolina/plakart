@@ -1345,7 +1345,7 @@ small a {
   }
 }
 .portada_complementos {
-  background-image: url("../media/img/complementos/portadacom.webp");
+  background-image: url("../media/img/complementos/COMPLEMENTOS/WhatsApp Image 2024-07-24 at 9.52.22 AM (1).jpeg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1621,7 +1621,7 @@ input:focus {
   }
 }
 .portada_vestidores {
-  background-image: url("../media/img/cocinas/portada3-1024x512-1.jpg");
+  background-image: url("../media/img/vestidores/WhatsApp Image 2024-04-18 at 1.38.17 PM (2).jpeg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1879,7 +1879,7 @@ input:focus {
   }
 }
 .portada_placares {
-  background-image: url("../media/img/cocinas/portada3-1024x512-1.jpg");
+  background-image: url("../media/img/placares/PLACARES/cajon-placard-blanco.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -2116,14 +2116,10 @@ input:focus {
 .card_link a {
   font-family: "AdelleL", "RobotoL", sans-serif;
   color: black;
-  text-decoration: none;
+  text-decoration: underline;
 }
 .card_link p {
   font-family: "AdelleL", "RobotoL", sans-serif;
-}
-
-.card_link a:hover {
-  text-decoration: underline;
 }
 
 #card2 {
@@ -2183,7 +2179,6 @@ input:focus {
   .card_link a {
     font-family: "AdelleL", "RobotoL", sans-serif;
     color: black;
-    text-decoration: none;
   }
 }
 .modal {
