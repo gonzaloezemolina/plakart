@@ -721,6 +721,9 @@ small a {
     width: 100%;
     height: 40vh;
   }
+  .third_section_btn_container_left {
+    display: none;
+  }
   .third_section_btn_container {
     display: none;
   }
@@ -2282,6 +2285,22 @@ input:focus {
 .third_section_btn:hover {
   transition: 0.5s;
   color: rgba(255, 255, 255, 0.4);
+}
+
+.third_section_btn_container_left {
+  height: 50px;
+  width: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translate(160px, 50px);
+}
+
+#third_btn_left {
+  cursor: pointer;
+  border: 0;
+  background: none;
+  color: rgb(0, 0, 0);
 }
 
 @keyframes bounce {

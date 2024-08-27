@@ -21,6 +21,21 @@
 }
 
 
+.third_section_btn_container_left{
+    height: 50px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform:translate(160px, 50px);
+}
+#third_btn_left{
+    cursor: pointer;
+    border: 0;
+    background: none;
+    color: rgb(0, 0, 0);
+}
+
 @keyframes bounce {
     0% {
         transform: translateY(0);

@@ -235,10 +235,23 @@ document.addEventListener('DOMContentLoaded', function () {
         updateCardContent(currentIndex);
     }
 
+    function prevImage() {
+      currentIndex = (currentIndex - 1  + slideCount) % slideCount;
+      const translateXValue = -(currentIndex * 100); // Desplazamos en base al índice
+      slides.style.transform = `translateX(${translateXValue}%)`;
+      // Actualizar el contenido de la tarjeta
+      updateCardContent(currentIndex);
+  }
+
     // Cambiar la imagen al hacer clic en el botón
     const nextButton = document.querySelector('.third_section_btn');
     nextButton.addEventListener('click', () => {
         nextImage();
+    });
+
+    const prevButton = document.querySelector('#third_btn_left');
+    prevButton.addEventListener('click', () => {
+        prevImage();
     });
 
     // Iniciar el carrusel automáticamente
