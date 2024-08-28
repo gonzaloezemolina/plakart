@@ -99,17 +99,12 @@ const galery = document.getElementById("galery_images");
 let currentIndex = 0;
 
 const arrayOfImages = [
-    "../media/img/cocinas/cocina-grande-blanco-negro.jpg", 
-    "../media/img/cocinas/15b1ca_7bc9409baaf5465f8a7fd0ad98138bee~mv2.webp",
-    "../media/img/cocinas/6d63b4b5e642a9c78bf4280502d41421.jpg",
-    "../media/img/cocinas/0646c3b75db349db92299e5ec9bd54c8.jpg",
-    "../media/img/cocinas/por-que-elegir-electrodomesticos-integrables-en-la-cocina.jpg",
-    "../media/img/cocinas/electrodomesticos-integrables-ventajas.jpg",
-    "../media/img/cocinas/EDJoOOlWsAAcEdN.jpg",
-    "../media/img/cocinas/KI2.jpg",
-    "../media/img/cocinas/0d94a22be70a648497561db36110bfd1.jpg",
-    "../media/img/cocinas/6d63b4b5e642a9c78bf4280502d41421.jpg",
-    "../media/img/cocinas/15b1ca_73e7fe478a8e414fb6016434874d2ee3~mv2_d_3264_1955_s_2.webp"
+"../media/img/placares/placard-ancho-habitacion.jpeg",
+"../media/img/placares/placard-espejo.png",
+"../media/img/placares/placard-espejo-habitacion.jpeg",
+"../media/img/placares/placard-espejo-ancho.jpeg",
+"../media/img/placares/placard-sin-puertas.png",
+"../media/img/placares/placard-cajon.png"
 ];
 
 const updateModalImage = () => {
