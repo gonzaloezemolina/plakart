@@ -193,11 +193,11 @@ background-color: black;
 
 //Staff
 
-.staff_h1{
+.staff_h3{
     background-color: #000000;
     text-align: center;
     color: white;
-    h1{
+    h3{
         font-size: 50px;
         font-family: "AdelleEB";
         padding-top: 10%;
@@ -228,9 +228,8 @@ background-color: black;
     transform: translateY(-4px);
     padding: 5px;
     font-family: "AdelleL", "RobotoL", sans-serif;
-    opacity: 0; 
-    transition: opacity 0.5s ease; 
-    h3{
+    h4{
+        font-size: 19px;
         padding-bottom: 5px;
     }
 }
@@ -247,9 +246,6 @@ background-color: black;
     height: 320px;
 }
 
-.retrato:hover .retrato_description {
-    opacity: 1; 
-}
 
 
 @media(max-width:600px){
@@ -424,18 +420,17 @@ background-color: black;
         object-fit: cover;
     }
 
-    .staff_h1{
+    .staff_h3{
         height: 200px;
+        width: 100%;
         transform: none;
         padding: 0;
         margin: 0;
-        h1{
         transform: none;
+        h3{
+            transform: none;
             font-size: 35px;
         }
-    }
-    .retrato_description{
-        opacity: 1;
     }
     .staff_section{
         transform: none;

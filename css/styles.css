@@ -1091,12 +1091,12 @@ small a {
   margin-bottom: 50px;
 }
 
-.staff_h1 {
+.staff_h3 {
   background-color: #000000;
   text-align: center;
   color: white;
 }
-.staff_h1 h1 {
+.staff_h3 h3 {
   font-size: 50px;
   font-family: "AdelleEB";
   padding-top: 10%;
@@ -1125,10 +1125,9 @@ small a {
   transform: translateY(-4px);
   padding: 5px;
   font-family: "AdelleL", "RobotoL", sans-serif;
-  opacity: 0;
-  transition: opacity 0.5s ease;
 }
-.retrato_description h3 {
+.retrato_description h4 {
+  font-size: 19px;
   padding-bottom: 5px;
 }
 
@@ -1142,10 +1141,6 @@ small a {
   object-position: center;
   width: 100%;
   height: 320px;
-}
-
-.retrato:hover .retrato_description {
-  opacity: 1;
 }
 
 @media (max-width: 600px) {
@@ -1308,18 +1303,17 @@ small a {
     width: 85%;
     object-fit: cover;
   }
-  .staff_h1 {
+  .staff_h3 {
     height: 200px;
+    width: 100%;
     transform: none;
     padding: 0;
     margin: 0;
+    transform: none;
   }
-  .staff_h1 h1 {
+  .staff_h3 h3 {
     transform: none;
     font-size: 35px;
-  }
-  .retrato_description {
-    opacity: 1;
   }
   .staff_section {
     transform: none;
@@ -1667,7 +1661,7 @@ input:focus {
   }
 }
 .portada_desarrollos {
-  background-image: url("../media/img/obras/noti.webp");
+  background-image: url("../media/img/obras/nordlink.webp");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;

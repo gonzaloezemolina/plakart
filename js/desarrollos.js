@@ -91,7 +91,7 @@ function openingBar () {
 // Datos de proyectos: nombre y dirección
 const projects = [
     { name: "Condominios Dolfines", address: "Dirección 1" },
-    { name: "Guarani", address: "Dirección 2" },
+    { name: "Dolfines Guaraní", address: "Dirección 2" },
     { name: "Torre Nordlink", address: "Dirección 3" },
     { name: "Torre Embarcadero", address: "Dirección 3" },
     { name: "Torre Victoria Río", address: "Dirección 3" },

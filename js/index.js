@@ -264,7 +264,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 document.addEventListener('DOMContentLoaded', function () {
   const images = [
-    "./media/img/obras/noti.webp",
+    "./media/img/obras/nordlink.webp",
     "./media/img/obras/terraz.webp",
   ];
 
