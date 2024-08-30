@@ -1,5 +1,6 @@
 .portada_cocinas{
     background-image: url("../media/img/cocinas/portada-cocina.jpg");
+    filter: grayscale(100%);
   background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -142,6 +143,9 @@
         margin: 50px auto;
       }
     
+      .image_btn_image{
+    filter: grayscale(0%);
+      }
       .image_btn_image.large {
         width: 100%;
         height: 197px;

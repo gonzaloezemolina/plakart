@@ -264,7 +264,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 document.addEventListener('DOMContentLoaded', function () {
   const images = [
-    "./media/img/obras/nordlink.webp",
+    "./media/img/obras/nordlink.jpeg",
     "./media/img/obras/terraz.webp",
   ];
 
@@ -288,10 +288,10 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 const imagesOfFirstCarrousel = [
-  { src: './media/img/vestidores/Screenshot_1.png', href: './pages/vestidores.html' },
-  { src: './media/img/complementos/COMPLEMENTOS/DSC_0049.JPG', href: './pages/complementos.html' },
-  { src: './media/img/cocinas/COCINAS/IMG_2829.jpg', href: './pages/cocinas.html' },
-  { src: './media/img/placares/PLACARES/cajon-placard-blanco.jpg', href: './pages/placares.html' }
+  { src: './media/img/vestidores/vestidor.png', href: './pages/vestidores.html' },
+  { src: './media/img/complementos/estanteria.jpg', href: './pages/complementos.html' },
+  { src: './media/img/cocinas/cocinas.jpg', href: './pages/cocinas.html' },
+  { src: './media/img/placares/placard.png', href: './pages/placares.html' }
 ];
 
 let firstImage = 0;
