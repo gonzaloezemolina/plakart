@@ -504,6 +504,9 @@ small a {
 .fourth_section p {
   font-family: "AdelleEB";
 }
+.fourth_section h3 {
+  font-family: "AdelleEB";
+}
 .fourth_section .circulo {
   width: 220px;
   height: 220px;
@@ -535,6 +538,11 @@ small a {
   flex-direction: column;
 }
 .fourth_section_text p {
+  color: #000;
+  text-align: center;
+  font-size: 30px;
+}
+.fourth_section_text h3 {
   color: #000;
   text-align: center;
   font-size: 30px;
@@ -2083,7 +2091,7 @@ input:focus {
   z-index: 999;
   transition: opacity 0s;
 }
-.card h3 {
+.card h2 {
   font-family: "AdelleL", "RobotoL", sans-serif;
 }
 .card p {
@@ -2102,9 +2110,19 @@ input:focus {
   flex-direction: column;
   text-align: justify;
 }
-.card_title h3 {
+.card_title h2 {
   padding-bottom: 35px;
   text-align: start;
+  font-size: 20px;
+}
+
+.card_title h4 {
+  font-size: 20px;
+  padding-bottom: 35px;
+  text-align: start;
+  font-family: "AdelleL", "RobotoL", sans-serif;
+  flex-direction: column;
+  text-align: justify;
 }
 
 .card_text {
@@ -2146,7 +2164,7 @@ input:focus {
   opacity: 1;
   transition: opacity 0.5s ease-in-out;
 }
-#card2 h3 {
+#card2 h2 {
   font-family: "AdelleL", "RobotoL", sans-serif;
 }
 #card2 p {
@@ -2166,7 +2184,11 @@ input:focus {
     flex-direction: column;
     justify-content: center;
   }
-  .card_title h3 {
+  .card_title h2 {
+    padding-bottom: 35px;
+    text-align: start;
+  }
+  .card_title h4 {
     padding-bottom: 35px;
     text-align: start;
   }

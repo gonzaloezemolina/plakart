@@ -205,7 +205,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // Función para actualizar la tarjeta con el contenido correspondiente
     function updateCardContent(index) {
-      const cardTitle = document.querySelector('#card2 h3');
+      const cardTitle = document.querySelector('#card2 h2');
       const cardText = document.querySelector('#card2 .card_text');
       const cardCount = document.querySelector('#card2 .card_link p:first-child');
 
@@ -280,11 +280,6 @@ document.addEventListener('DOMContentLoaded', function () {
     }, 500); // Espera 500 milisegundos antes de cambiar la imagen
   }, 6000); // Cambia la imagen cada 6 segundos
 });
-
-
-
-
-
 
 
 const imagesOfFirstCarrousel = [

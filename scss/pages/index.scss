@@ -297,6 +297,9 @@
     p{
         font-family: "AdelleEB";
     }
+    h3{
+        font-family: "AdelleEB";
+    }
     .circulo {
         width: 220px;
         height: 220px;
@@ -330,6 +333,11 @@
     align-items: center;
     flex-direction: column;
     p{
+        color: #000;
+        text-align: center;
+        font-size: 30px;
+    }
+    h3{
         color: #000;
         text-align: center;
         font-size: 30px;
