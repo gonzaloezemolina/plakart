@@ -937,7 +937,8 @@ small a {
   }
 }
 .portada_nosotros {
-  background-image: url("../media/img/socialcontent/local.png");
+  background-image: url("../media/img/nosotros/IMG_0768.JPG");
+  filter: grayscale(100%);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -2035,6 +2036,9 @@ input:focus {
 }
 
 @media (max-width: 600px) {
+  body.menu-open {
+    overflow: hidden;
+  }
   .menu {
     border: 0;
     justify-content: center;
