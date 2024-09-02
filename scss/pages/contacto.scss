@@ -132,7 +132,8 @@ input:focus {
     outline: none; /* Evita el borde azul de enfoque por defecto */
 }
 
-.contact_h1_right, .text_right_mobile{
+
+.contact_right_side_booking, .contact_right_side_icons{
     display: none;
 }
 
@@ -151,14 +152,14 @@ input:focus {
         transform: none;
         padding: 0;
         margin: 0;
-        height: 250px;
+        height: 220px;
         display: flex;
         justify-content: end;
         align-items: center;
         width: 100%;
         flex-direction: column;
         h1{
-            font-size: 35px;
+            font-size: 38px;
             font-family: "AdelleEB";
             color: white;
         }
@@ -181,6 +182,7 @@ input:focus {
         transform: none;
         width: 100%;
         order: 2;
+        background: linear-gradient(to bottom, rgb(0, 0, 0) 50%, rgb(255, 255, 255) 0%);
     }
 
     form{
@@ -200,15 +202,6 @@ input:focus {
         margin-bottom: 25px;
     }
 
-    .contact_h1_right, .text_right_mobile{
-        display: block;
-        color: white;
-        margin-bottom: 40px;
-        h1{
-            font-size: 40px;
-            font-family: "AdelleEB";
-        }
-    }
 
     #buttonContact{
         border-radius: 5px;
@@ -229,6 +222,7 @@ input:focus {
     }
 
     .map{
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.8);
         margin-top: 10px;
         display: flex;
         justify-content: center;
@@ -244,20 +238,31 @@ input:focus {
         }
     }
 
-    .contact_left_side_booking{
+    .contact_right_side_icons{
+        display: block;
+        svg{
+            color: black;
+        }
+        margin-top: 45px;
+        a{
+            padding-right: 6px;
+        }
+    }
+
+    .contact_right_side_booking{
+        display: block;
         text-align: center;
         flex-direction: column;
         font-family: "AdelleL", "RobotoL", sans-serif;
         text-decoration: none;
         order: 1;
         margin-top: 40px;
-        h2{
-            color: white;
-            font-size: 25px;
-            padding-bottom: 20px;
-        }
         li{
+            list-style: none;
             padding-bottom: 5px;
+            a{
+                color: black;
+            }
         }
     }
 

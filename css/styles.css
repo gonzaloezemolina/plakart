@@ -1533,7 +1533,7 @@ input:focus {
   outline: none; /* Evita el borde azul de enfoque por defecto */
 }
 
-.contact_h1_right, .text_right_mobile {
+.contact_right_side_booking, .contact_right_side_icons {
   display: none;
 }
 
@@ -1551,7 +1551,7 @@ input:focus {
     transform: none;
     padding: 0;
     margin: 0;
-    height: 250px;
+    height: 220px;
     display: flex;
     justify-content: end;
     align-items: center;
@@ -1560,7 +1560,7 @@ input:focus {
     order: 1;
   }
   .contact_left_side h1 {
-    font-size: 35px;
+    font-size: 38px;
     font-family: "AdelleEB";
     color: white;
   }
@@ -1580,6 +1580,7 @@ input:focus {
     transform: none;
     width: 100%;
     order: 2;
+    background: linear-gradient(to bottom, rgb(0, 0, 0) 50%, rgb(255, 255, 255) 0%);
   }
   form {
     transform: none;
@@ -1595,15 +1596,6 @@ input:focus {
     border-radius: 5px;
     padding-left: 5px;
     margin-bottom: 25px;
-  }
-  .contact_h1_right, .text_right_mobile {
-    display: block;
-    color: white;
-    margin-bottom: 40px;
-  }
-  .contact_h1_right h1, .text_right_mobile h1 {
-    font-size: 40px;
-    font-family: "AdelleEB";
   }
   #buttonContact {
     border-radius: 5px;
@@ -1622,6 +1614,7 @@ input:focus {
     background-color: rgb(255, 255, 255);
   }
   .map {
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.8);
     margin-top: 10px;
     display: flex;
     justify-content: center;
@@ -1636,7 +1629,18 @@ input:focus {
     border-radius: 5px;
     width: 100%;
   }
-  .contact_left_side_booking {
+  .contact_right_side_icons {
+    display: block;
+    margin-top: 45px;
+  }
+  .contact_right_side_icons svg {
+    color: black;
+  }
+  .contact_right_side_icons a {
+    padding-right: 6px;
+  }
+  .contact_right_side_booking {
+    display: block;
     text-align: center;
     flex-direction: column;
     font-family: "AdelleL", "RobotoL", sans-serif;
@@ -1644,13 +1648,12 @@ input:focus {
     order: 1;
     margin-top: 40px;
   }
-  .contact_left_side_booking h2 {
-    color: white;
-    font-size: 25px;
-    padding-bottom: 20px;
-  }
-  .contact_left_side_booking li {
+  .contact_right_side_booking li {
+    list-style: none;
     padding-bottom: 5px;
+  }
+  .contact_right_side_booking li a {
+    color: black;
   }
 }
 .portada_vestidores {
