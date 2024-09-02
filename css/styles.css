@@ -937,7 +937,7 @@ small a {
   }
 }
 .portada_nosotros {
-  background-image: url("../media/img/nosotros/IMG_0768.JPG");
+  background-image: url("../media/img/nosotros/empresa.JPG");
   filter: grayscale(100%);
   background-position: center;
   background-repeat: no-repeat;
@@ -1435,6 +1435,11 @@ small a {
   font-size: 25px;
 }
 
+address {
+  font-style: normal;
+  font-family: "AdelleL";
+}
+
 .contact_left_side_booking {
   flex-direction: column;
   width: 65%;
@@ -1543,32 +1548,41 @@ input:focus {
     flex-direction: column;
   }
   .contact_left_side {
+    transform: none;
     padding: 0;
+    margin: 0;
     height: 250px;
     display: flex;
-    justify-content: center;
+    justify-content: end;
     align-items: center;
     width: 100%;
     flex-direction: column;
-    order: 2;
+    order: 1;
   }
   .contact_left_side h1 {
-    display: none;
-    font-size: 70px;
+    font-size: 35px;
     font-family: "AdelleEB";
     color: white;
   }
   .contact_left_side p {
-    display: none;
     font-family: "AdelleL", "RobotoL", sans-serif;
     color: white;
-    font-size: 25px;
+    font-size: 15px;
+  }
+  .contact_left_side .contact_left_side_booking {
+    display: none;
+  }
+  .contact_left_side .contact_left_side_icons {
+    display: none;
   }
   .contact_right_side {
+    padding: 0;
+    transform: none;
     width: 100%;
-    order: 1;
+    order: 2;
   }
   form {
+    transform: none;
     width: 75%;
     display: flex;
     flex-direction: column;
@@ -1608,13 +1622,16 @@ input:focus {
     background-color: rgb(255, 255, 255);
   }
   .map {
-    margin-top: 40px;
+    margin-top: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
     width: 75%;
   }
   .map iframe {
+    margin: 0;
+    padding: 0;
+    height: 300px;
     border: 1px solid white;
     border-radius: 5px;
     width: 100%;
@@ -1623,6 +1640,7 @@ input:focus {
     text-align: center;
     flex-direction: column;
     font-family: "AdelleL", "RobotoL", sans-serif;
+    text-decoration: none;
     order: 1;
     margin-top: 40px;
   }
