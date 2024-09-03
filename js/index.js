@@ -1,9 +1,7 @@
-//Menu movement
 const menu = document.querySelector('.menu');
 const l1 = document.querySelector(".l1")
 const l2 = document.querySelector(".l2")
 const l3 = document.querySelector(".l3")
-
 
 menu.addEventListener("click", function(){
     animateBars()
@@ -15,8 +13,6 @@ function animateBars (){
     l3.classList.toggle("activel3")
 }
 
-
-// Cambio de color en scroll:
 window.addEventListener("scroll", function () {
     const header = document.querySelector("header");
     const navLogo = document.getElementById("navLogo");
@@ -26,13 +22,10 @@ window.addEventListener("scroll", function () {
     const line2 = document.getElementById("l2");
     const line3 = document.getElementById("l3");
 
-    // Obtener la posición de desplazamiento vertical
     const scrollPosition = window.scrollY;
 
-    // Verificar si el menú está abierto
     const isMenuOpen = options.classList.contains('active');
 
-    // Cambiar el fondo y mostrar/ocultar la imagen según la posición de desplazamiento y el estado del menú
     if (scrollPosition > 0) {
         header.style.backgroundColor = "black";
         menu.style.backgroundColor = "transparent";
@@ -56,7 +49,6 @@ window.addEventListener("scroll", function () {
     }
 });
 
-//Desplegar navbar
 const menu1 = document.getElementById("menu")
 const options = document.getElementById("options_container")
 const line1 = document.getElementById("l1")
@@ -87,12 +79,9 @@ function openingBar () {
     }
 }
 
-
-
-//Cambiar el slogan en base al tiempo
 document.addEventListener('DOMContentLoaded', function () {
     const sloganElement = document.getElementById('slogan');
-    const textos = ['tus expectativas', 'tu espíritu', 'tu inspiración', 'tus sentidos']; // Puedes agregar más textos según sea necesario
+    const textos = ['tus expectativas', 'tu espíritu', 'tu inspiración', 'tus sentidos']; 
     let index = 0;
   
     function cambiarTexto() {
@@ -104,7 +93,6 @@ document.addEventListener('DOMContentLoaded', function () {
         }, 2000)
     }
   
-    // Cambiar el texto cada 5 segundos
     setInterval(cambiarTexto, 5000);
   });
 
@@ -115,32 +103,32 @@ document.addEventListener('DOMContentLoaded', function () {
   
   const targetProjects = 2000;
   const targetYears = 20;
-  const duration = 2000; // 1 seconds
+  const duration = 2000; 
   
   function animateNumbers() {
     const yearsElement = document.getElementById('years_num');
     const projectsElement = document.getElementById('numbers');
   
-    const incrementProjects = targetProjects / (duration / 10); // Incremento para proyectos
-    const incrementYears = targetYears / (duration / 10); // Incremento para años
+    const incrementProjects = targetProjects / (duration / 10); 
+    const incrementYears = targetYears / (duration / 10);
   
     const interval = setInterval(() => {
       if (numYears < targetYears) {
         numYears += incrementYears;
-        if (numYears > targetYears) numYears = targetYears; // Asegurarse de no exceder el objetivo
+        if (numYears > targetYears) numYears = targetYears; 
         yearsElement.textContent = `+${Math.floor(numYears)}`;
       }
   
       if (numProjects < targetProjects) {
         numProjects += incrementProjects;
-        if (numProjects > targetProjects) numProjects = targetProjects; // Asegurarse de no exceder el objetivo
+        if (numProjects > targetProjects) numProjects = targetProjects; 
         projectsElement.textContent = `+${Math.floor(numProjects)}`;
       }
   
       if (numYears >= targetYears && numProjects >= targetProjects) {
         clearInterval(interval);
       }
-    }, 10); // Intervalo de actualización
+    }, 10); 
   }
   
   function checkIfInView() {
@@ -158,9 +146,6 @@ document.addEventListener('DOMContentLoaded', function () {
   window.addEventListener('load', checkIfInView); 
 
 
-
-//Intercambiar imagen en la segunda section
-
 document.addEventListener('DOMContentLoaded', function () {
     const images = [
       "./media/img/socialcontent/complemento-index-modulo.jpeg",
@@ -172,14 +157,13 @@ document.addEventListener('DOMContentLoaded', function () {
     
     setInterval(function () {
       currentIndex = (currentIndex + 1) % images.length;
-      imgContainer.style.opacity = 0; // Fade out
+      imgContainer.style.opacity = 0;
       setTimeout(function () {
         imgContainer.src = images[currentIndex];
-        imgContainer.style.opacity = 1; // Fade in
-      }, 500); // Espera 500 milisegundos antes de cambiar la imagen
-    }, 6000); // Cambia la imagen cada 6 segundos
+        imgContainer.style.opacity = 1; 
+      }, 500); 
+    }, 6000); 
   });
-
 
 
   document.addEventListener('DOMContentLoaded', () => {
@@ -189,7 +173,6 @@ document.addEventListener('DOMContentLoaded', function () {
     let currentIndex = 0;
     updateSlideIndicators(currentIndex);
 
-    // Array con los textos y títulos de cada slide
     const slideData = [
         { title: 'Cocinas', text: 'Encuentra inspiración en cada rincón de nuestras cocinas que fusionan estilo y funcionalidad a la perfección.', count: '1/4' },
         { title: 'Placares', text: 'Optimiza cada espacio con nuestros placares, donde diseño y practicidad se encuentran.', count: '2/4' },
@@ -203,13 +186,11 @@ document.addEventListener('DOMContentLoaded', function () {
     const getCom = document.getElementById("com");
 
 
-    // Función para actualizar la tarjeta con el contenido correspondiente
     function updateCardContent(index) {
       const cardTitle = document.querySelector('#card2 h2');
       const cardText = document.querySelector('#card2 .card_text');
       const cardCount = document.querySelector('#card2 .card_link p:first-child');
 
-      // Actualizar el contenido
       cardTitle.textContent = slideData[index].title;
       cardText.textContent = slideData[index].text;
       cardCount.textContent = slideData[index].count;
@@ -217,33 +198,27 @@ document.addEventListener('DOMContentLoaded', function () {
   };
 
   function updateSlideIndicators(index) {
-    // Quitar el estilo de negrita de todos los li
     slideIndicators.forEach(li => {
-        li.style.fontWeight = 'normal'; // Normal para los demás
+        li.style.fontWeight = 'normal'; 
     });
 
-    // Resaltar el li correspondiente al índice actual
-    slideIndicators[index].style.fontWeight = 'bold'; // Negrita para el seleccionado
+    slideIndicators[index].style.fontWeight = 'bold'; 
 }
 
-    // Función para cambiar la imagen y actualizar la tarjeta
     function nextImage() {
         currentIndex = (currentIndex + 1) % slideCount;
-        const translateXValue = -(currentIndex * 100); // Desplazamos en base al índice
+        const translateXValue = -(currentIndex * 100);
         slides.style.transform = `translateX(${translateXValue}%)`;
-        // Actualizar el contenido de la tarjeta
         updateCardContent(currentIndex);
     }
 
     function prevImage() {
       currentIndex = (currentIndex - 1  + slideCount) % slideCount;
-      const translateXValue = -(currentIndex * 100); // Desplazamos en base al índice
+      const translateXValue = -(currentIndex * 100); 
       slides.style.transform = `translateX(${translateXValue}%)`;
-      // Actualizar el contenido de la tarjeta
       updateCardContent(currentIndex);
   }
 
-    // Cambiar la imagen al hacer clic en el botón
     const nextButton = document.querySelector('.third_section_btn');
     nextButton.addEventListener('click', () => {
         nextImage();
@@ -254,13 +229,9 @@ document.addEventListener('DOMContentLoaded', function () {
         prevImage();
     });
 
-    // Iniciar el carrusel automáticamente
     let intervalId = setInterval(nextImage, 7000); 
 });
 
-
-
-  //Intercambiar imagen en la quinta section
 
 document.addEventListener('DOMContentLoaded', function () {
   const images = [
@@ -273,14 +244,13 @@ document.addEventListener('DOMContentLoaded', function () {
 
   setInterval(function () {
     currentIndex = (currentIndex + 1) % images.length;
-    imgContainer.style.opacity = 0; // Fade out
+    imgContainer.style.opacity = 0; 
     setTimeout(function () {
       imgContainer.src = images[currentIndex];
-      imgContainer.style.opacity = 1; // Fade in
-    }, 500); // Espera 500 milisegundos antes de cambiar la imagen
-  }, 6000); // Cambia la imagen cada 6 segundos
+      imgContainer.style.opacity = 1; 
+    }, 500); 
+  }, 6000); 
 });
-
 
 const imagesOfFirstCarrousel = [
   { src: './media/img/vestidores/vestidor.png', href: './pages/vestidores.html' },
@@ -304,5 +274,4 @@ document.getElementById('first_section_portal_button').addEventListener('click',
   updateCarousel();
 });
 
-// Iniciar el carrusel con la primera imagen
 updateCarousel();
