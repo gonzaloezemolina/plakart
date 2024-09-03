@@ -163,8 +163,8 @@ document.addEventListener('DOMContentLoaded', function () {
 
 document.addEventListener('DOMContentLoaded', function () {
     const images = [
-      "./media/img/socialcontent/WhatsApp Image 2024-02-13 at 5.25.12 PM(1).jpeg",
-      "./media/img/socialcontent/WhatsApp Image 2024-02-13 at 5.25.12 PM.jpeg"
+      "./media/img/socialcontent/complemento-index-modulo.jpeg",
+      "./media/img/socialcontent/complemento-index-plakart.jpeg"
     ];
   
     let currentIndex = 0;

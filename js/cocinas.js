@@ -104,7 +104,7 @@ const arrayOfImages = [
 "../media/img/cocinas/cocina-isla-sillas.jpeg",
 "../media/img/cocinas/cocina-madera-cuarzo.jpg",
 "../media/img/cocinas/cocina-frutero.jpg",
-"../media/img/cocinas/cocina-moderna-isla-negra-madera-natural.jpg.jpg",
+"../media/img/cocinas/cocina-moderna-isla-negra-madera-natural.jpg",
 "../media/img/cocinas/cocina-madera-oscura.jpeg",
 "../media/img/cocinas/cocina-blanco-negro.jpeg",
 "../media/img/cocinas/cocina-moderna-ambiente.jpeg",

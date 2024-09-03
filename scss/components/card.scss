@@ -2,7 +2,7 @@
     height: 35vh;
     width: 40%;
     background: white;
-box-shadow: 0 0 15px rgba(0, 0, 0, 0.5); /* Sombra */
+box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
 z-index: 999;
 transition: opacity 0s;
     h2{
@@ -13,7 +13,6 @@ transition: opacity 0s;
         font-size: 15px;
     }
 }
-
 
 .card{
     display: flex;
@@ -53,13 +52,11 @@ transition: opacity 0s;
     justify-content: end;
     a{
     font-family: "AdelleL", "RobotoL", sans-serif;
-
         color: black;
         text-decoration: underline;
     }
     p{
     font-family: "AdelleL", "RobotoL", sans-serif;
-
     }
 }
 
@@ -75,7 +72,6 @@ transition: opacity 0s;
     transition: opacity 0s;
         h2{
     font-family: "AdelleL", "RobotoL", sans-serif;
-
         }
         p{
             color: black;
@@ -90,7 +86,6 @@ transition: opacity 0s;
     opacity: 1; 
     transition: opacity 0.5s ease-in-out; 
 }
-
 
 @media(max-width:600px){
     .card {
@@ -130,7 +125,6 @@ transition: opacity 0s;
     
     .card_link a {
     font-family: "AdelleL", "RobotoL", sans-serif;
-
         color: black;
     }
 }

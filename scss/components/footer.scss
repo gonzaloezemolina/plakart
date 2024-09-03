@@ -1,4 +1,3 @@
-//Footer main container
 footer{
     margin: 0;
     padding: 0;
@@ -23,7 +22,6 @@ footer{
 }
 
 .first_container_footer{
-    // border: 1px solid salmon;
     padding-top: 25px;
     display: flex;
     justify-content: center;
@@ -36,12 +34,10 @@ footer{
 
 .footer_iconos{
     transform: translateY(10px);
-    // border: 1px solid salmon ;
 }
 
 //Icons
 #whatsApp_icon:hover{
-    // color: rgb(37 211 102);
     cursor: pointer;
     color: rgb(117, 116, 116);
     transition: .5s;
@@ -49,31 +45,25 @@ footer{
 
 
   #instagram_icon:hover path {
-    // color: color-mix(in srgb, rgb(255, 0, 221) 50%, rgb(255, 166, 0) 50%);
     color: rgb(117, 116, 116);
     transition: .5s;
   }
 
 #facebook_icon:hover{
-    // color: #4267B2;
     color: rgb(117, 116, 116);
     transition: .5s;
 }
 
 #pinterest_icon:hover{
-    // color: #c8232c;
     color: rgb(117, 116, 116);
 
     transition: .5s;
 }
 
 #linkedin_icon:hover{
-    // color:#0e76a8;
     color: rgb(117, 116, 116);
     transition: .5s;
 }
-
-//Texts
 
 .container_links_footer{
     display: flex;
@@ -101,8 +91,6 @@ footer{
     }
 }
 
-
-
 small{
     font-family: Arial, Helvetica, sans-serif;
     padding-bottom: 20px;
@@ -122,12 +110,10 @@ small{
     transition: .5s;
 }
 
-
 .last_container_footer{
     display: flex;
     flex-direction: column;
 }
-
 
 @media(max-width:600px){
     footer{
@@ -138,18 +124,15 @@ small{
         justify-content: center;
         align-items: center;
         text-align: center;
-        // border: 1px solid indigo;
         width: 100%;
     }
     .first_container_footer img {
         transform: none;
     }
     .footer_iconos{
-        // border: 1px solid rebeccapurple;
         transform: none;
     }
     .first_container_footer{
-        // border: 1px solid salmon;
         width: 100%;
         display: flex;
         justify-content: center;
@@ -159,14 +142,10 @@ small{
         gap: 10px;
     }
     .container_links_footer{
-        // display: grid;
-        // grid-template-columns: repeat(2,1fr);
         width: 100%;
-        // border: 1px solid red;
     }
     .container_texts_footer{
         width: 100%;
-        // border: 1px solid red;
         padding: 5px;
         ul{
             font-size: 13px;

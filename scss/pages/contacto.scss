@@ -50,7 +50,6 @@ address{
     }
 }
 
-
 .contact_left_side_information{
     font-family: "AdelleL";
     margin-top: 30%;
@@ -63,7 +62,6 @@ address{
         padding-right: 6px;
     }
 }
-
 
 .contact_right_side{
     font-family: "AdelleL";
@@ -122,14 +120,15 @@ form{
 
 .map{
     width: 80%;
+    outline: none;
 }
 
 input:focus {
-    border-bottom: black solid 2px; /* Cambia el color del borde inferior en focus */
+    border-bottom: black solid 2px; 
     border-top: none;
     border-left: none;
     border-right: none;
-    outline: none; /* Evita el borde azul de enfoque por defecto */
+    outline: none;
 }
 
 
@@ -202,7 +201,6 @@ input:focus {
         margin-bottom: 25px;
     }
 
-
     #buttonContact{
         border-radius: 5px;
         text-align: center;
@@ -229,6 +227,7 @@ input:focus {
         align-items: center;
         width: 75%;
         iframe{
+            outline: none;
             margin: 0;
             padding: 0;
             height: 300px;
@@ -265,5 +264,4 @@ input:focus {
             }
         }
     }
-
 }

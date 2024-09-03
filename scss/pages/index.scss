@@ -8,7 +8,7 @@
 
 .background_video {
     height: 100vh;
-    overflow: hidden; /* Para ocultar partes del video que excedan el contenedor */
+    overflow: hidden; 
 }
 
 #background_Video {
@@ -16,8 +16,6 @@
     height: 100%; 
     object-fit: cover; 
 }
-
-
 
   .content {
     background-color: black;
@@ -27,9 +25,6 @@
     align-items: center;
     flex-direction: column;
   }
-
-
-  //Slogan
 
 .first_section_slogan{
     display: flex;
@@ -44,7 +39,6 @@
     opacity: 1;
     transition: opacity 2s ease-in-out;
 }
-
 
 .logo{
     margin-top: 130px;
@@ -121,9 +115,6 @@
         color: white;
 }
 
-//Segunda seccion
-
-
 .second_section{
     display: flex;
     width: 100%;
@@ -144,11 +135,8 @@
 
 
 .img_2section {
-    transition: opacity 0.5s ease-in-out; /* Puedes ajustar la duración y el tipo de transición según tus preferencias */
+    transition: opacity 0.5s ease-in-out;
   }
-
-
-//Tercer seccion
 
 .third_section{
     display: grid;
@@ -174,18 +162,14 @@
     }
 }
 
-
 .vertical_line{
-    width: 1px; /* Ancho de la línea */
-    height: 40%; /* Altura de la línea (ajusta según sea necesario) */
-    background-color: #000; /* Color de la línea */
+    width: 1px;
+    height: 40%; 
+    background-color: #000; 
     margin-right: 25px; 
-    margin-bottom: 50px;/* Margen a la derecha de la línea (ajusta según sea necesario) */
-    display: inline-block; /* Para que la línea no afecte el diseño de la lista */
+    margin-bottom: 50px;
+    display: inline-block; 
 }
-
-
-
 
 .third_section_photos{
     height: 100%;
@@ -218,7 +202,6 @@
 .carousel-slide img {
     width: 100%;
     height: 100%;
-    // height: 580px;
     object-fit: cover;
     object-position: center;
 }
@@ -247,7 +230,6 @@
     }
 }
 
-
 .c:hover{
     transform: scale(1.1);
     padding-bottom: 10px;
@@ -271,22 +253,16 @@
     transition: .5s;
 }
 
-
 .third_section_btn_container {
     padding: 10px;
     width: 50px;
     height: 100px;
     background-color: #000000;
-    // clip-path: polygon(100% 0, 0 50%, 100% 100%);
     display: flex;
     justify-content: center;
     align-items: center;
     transform: translateX(-30px);
   }
-
-
-
-//Cuarta seccion
 
 .fourth_section{
     display: grid;
@@ -312,12 +288,11 @@
       }
 }
 
-
 .background_video4 {
     display: flex;
     justify-content: end;
     align-items: center;
-    overflow: hidden; /* Para ocultar partes del video que excedan el contenedor */
+    overflow: hidden;
 }
 
 #background_Video4 {
@@ -325,7 +300,6 @@
     width: 60%; 
     object-fit: cover; 
 }
-
 
 .fourth_section_text{
     display: flex;
@@ -347,12 +321,9 @@
     }
 }
 
-
 #fourth_section_text_animation{
     transition: opacity 2s ease-in-out;
 }
-
-//Quinta seccion
 
 .fifth_section{
     display: grid;
@@ -370,12 +341,10 @@
     object-fit: cover;
 }
 
-
 #card3{
     width: 65%;
     transform: translateY(70%) translateX(85%);
 }
-// responsive
 
 @media(max-width:600px){
     .first_section_portal{
@@ -401,7 +370,7 @@
     .first_section_content {
         padding: 0;
         margin: 0;
-        width: 100%;  //Solo cubre la mitad..
+        width: 100%;  
         position: relative;
         z-index: 1;
         display: flex;
@@ -409,7 +378,7 @@
         align-items: center;
         justify-content: center;
         height: 100%;
-        color: #fff; /* Asegúrate de que el texto sea legible sobre el video */
+        color: #fff; 
         text-align: center;
     }
 
@@ -420,7 +389,6 @@
     }
 
     .first_section_slogan{
-        // border: 1px solid red;
         display: flex;
         justify-content: end;
         align-items: center;
@@ -439,7 +407,6 @@
         padding: 0;
         margin: 0;
         width: 40%;
-        // border: 1px solid olive;
         text-align: start;
     }
 
@@ -449,7 +416,6 @@
         color: white;
     }
 
-    // segunda seccion
     .second_section {
         display: flex;
         justify-content: center;
@@ -476,7 +442,6 @@
         }
     }
 
-// tercer seccion
     .third_section{
         display:flex;
         justify-content:space-between;
@@ -561,16 +526,13 @@
     height: 40vh;
     width: 100%;
 }
-
-
-    // cuarta seccion
     .circulo{
         display: none;
     }
 
     .fourth_section {
         position: relative;
-        height: 90vh; /* Ajusta la altura según necesites */
+        height: 90vh;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -581,7 +543,7 @@
     .background_video4 {
         object-fit: cover;
         position: absolute;
-        width: 70%; /* Ajusta el ancho según necesites */
+        width: 70%;
         z-index: 1;
         left: 50%;
         transform: translateX(-50%);
@@ -614,9 +576,6 @@
         }
     }
 
-
-    // quinta seccion
-
     .fifth_section {
         display: flex;
         justify-content: center;
@@ -642,6 +601,4 @@
             text-decoration: underline;
         }
     }
-
-
 }

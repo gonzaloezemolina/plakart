@@ -1,4 +1,3 @@
-@charset "UTF-8";
 * {
   padding: 0px;
   margin: 0px;
@@ -242,7 +241,7 @@ small a {
 
 .background_video {
   height: 100vh;
-  overflow: hidden; /* Para ocultar partes del video que excedan el contenedor */
+  overflow: hidden;
 }
 
 #background_Video {
@@ -365,7 +364,7 @@ small a {
 }
 
 .img_2section {
-  transition: opacity 0.5s ease-in-out; /* Puedes ajustar la duración y el tipo de transición según tus preferencias */
+  transition: opacity 0.5s ease-in-out;
 }
 
 .third_section {
@@ -393,12 +392,12 @@ small a {
 }
 
 .vertical_line {
-  width: 1px; /* Ancho de la línea */
-  height: 40%; /* Altura de la línea (ajusta según sea necesario) */
-  background-color: #000; /* Color de la línea */
+  width: 1px;
+  height: 40%;
+  background-color: #000;
   margin-right: 25px;
-  margin-bottom: 50px; /* Margen a la derecha de la línea (ajusta según sea necesario) */
-  display: inline-block; /* Para que la línea no afecte el diseño de la lista */
+  margin-bottom: 50px;
+  display: inline-block;
 }
 
 .third_section_photos {
@@ -522,7 +521,7 @@ small a {
   display: flex;
   justify-content: end;
   align-items: center;
-  overflow: hidden; /* Para ocultar partes del video que excedan el contenedor */
+  overflow: hidden;
 }
 
 #background_Video4 {
@@ -605,7 +604,7 @@ small a {
     align-items: center;
     justify-content: center;
     height: 100%;
-    color: #fff; /* Asegúrate de que el texto sea legible sobre el video */
+    color: #fff;
     text-align: center;
   }
   .logo {
@@ -744,7 +743,7 @@ small a {
   }
   .fourth_section {
     position: relative;
-    height: 90vh; /* Ajusta la altura según necesites */
+    height: 90vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -754,7 +753,7 @@ small a {
   .background_video4 {
     object-fit: cover;
     position: absolute;
-    width: 70%; /* Ajusta el ancho según necesites */
+    width: 70%;
     z-index: 1;
     left: 50%;
     transform: translateX(-50%);
@@ -981,7 +980,7 @@ small a {
   justify-content: end;
   align-items: start;
   transform: translateY(-80px);
-  overflow: hidden; /* Para ocultar partes del video que excedan el contenedor */
+  overflow: hidden;
 }
 
 .mision_img {
@@ -1029,7 +1028,7 @@ small a {
   display: flex;
   justify-content: start;
   align-items: center;
-  overflow: hidden; /* Para ocultar partes del video que excedan el contenedor */
+  overflow: hidden;
 }
 
 .vision_img {
@@ -1076,7 +1075,7 @@ small a {
   display: flex;
   justify-content: end;
   align-items: center;
-  overflow: hidden; /* Para ocultar partes del video que excedan el contenedor */
+  overflow: hidden;
 }
 
 .valores_img {
@@ -1186,7 +1185,7 @@ small a {
   .mision_section {
     display: flex;
     flex-direction: column;
-    height: 100vh; /* Por defecto, para mobile */
+    height: 100vh;
   }
   .mision_section_text {
     padding: 0;
@@ -1230,7 +1229,7 @@ small a {
     display: flex;
     flex-direction: column;
     background: white;
-    height: 100vh; /* Por defecto, para mobile */
+    height: 100vh;
   }
   .vision_section_text {
     padding: 0;
@@ -1275,7 +1274,7 @@ small a {
     display: flex;
     flex-direction: column;
     background: black;
-    height: 100vh; /* Por defecto, para mobile */
+    height: 100vh;
   }
   .valores_section_text {
     color: white;
@@ -1523,14 +1522,15 @@ form {
 
 .map {
   width: 80%;
+  outline: none;
 }
 
 input:focus {
-  border-bottom: black solid 2px; /* Cambia el color del borde inferior en focus */
+  border-bottom: black solid 2px;
   border-top: none;
   border-left: none;
   border-right: none;
-  outline: none; /* Evita el borde azul de enfoque por defecto */
+  outline: none;
 }
 
 .contact_right_side_booking, .contact_right_side_icons {
@@ -1622,6 +1622,7 @@ input:focus {
     width: 75%;
   }
   .map iframe {
+    outline: none;
     margin: 0;
     padding: 0;
     height: 300px;
@@ -1767,7 +1768,6 @@ input:focus {
   padding-right: 10px;
 }
 
-/* Modal */
 .modal {
   display: none;
   position: fixed;
@@ -1780,7 +1780,6 @@ input:focus {
   background-color: rgba(0, 0, 0, 0.6);
 }
 
-/* Modal content */
 .modal-content {
   position: relative;
   margin: 5% auto;
@@ -1789,27 +1788,24 @@ input:focus {
   border-radius: 8px;
   width: 80%;
   max-width: 1200px;
-  height: 80%; /* Limitar la altura del modal */
+  height: 80%;
   display: flex;
   flex-direction: column;
 }
 
-/* Modal header */
 .modal-header {
   padding-bottom: 10px;
   font-family: "AdelleB";
 }
 
-/* Modal body with scroll */
 .modal-body {
   flex-grow: 1;
-  overflow-y: auto; /* Agregar scroll vertical cuando sea necesario */
+  overflow-y: auto;
 }
 
-/* Project grid with 4 columns */
 .projects-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr); /* Ajuste a 4 columnas */
+  grid-template-columns: repeat(4, 1fr);
   grid-gap: 20px;
 }
 
@@ -1821,7 +1817,6 @@ input:focus {
   font-family: "AdelleL";
 }
 
-/* Close button */
 .close {
   position: absolute;
   right: 15px;
@@ -1838,48 +1833,43 @@ input:focus {
   cursor: pointer;
 }
 
-/* Responsive adjustments */
 @media (max-width: 1024px) {
   .projects-grid {
-    grid-template-columns: repeat(3, 1fr); /* Reducir a 3 columnas */
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 @media (max-width: 768px) {
   .projects-grid {
-    grid-template-columns: repeat(2, 1fr); /* Reducir a 2 columnas */
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 @media (max-width: 480px) {
   .projects-grid {
-    grid-template-columns: 1fr; /* En pantallas pequeñas, mostrar 1 columna */
+    grid-template-columns: 1fr;
   }
 }
 .modal-body::-webkit-scrollbar {
-  width: 12px; /* Ancho de la barra de desplazamiento */
+  width: 12px;
 }
 
-/* El track (fondo de la barra) */
 .modal-body::-webkit-scrollbar-track {
-  background: #f4f4f4; /* Color de fondo */
+  background: #f4f4f4;
   border-radius: 10px;
 }
 
-/* La parte "thumb" (la barra que se mueve) */
 .modal-body::-webkit-scrollbar-thumb {
-  background-color: #000000; /* Color de la barra */
-  border-radius: 10px; /* Bordes redondeados */
-  border: 3px solid #f4f4f4; /* Espaciado alrededor de la barra */
+  background-color: #000000;
+  border-radius: 10px;
+  border: 3px solid #f4f4f4;
 }
 
-/* Hover effect para la barra */
 .modal-body::-webkit-scrollbar-thumb:hover {
-  background-color: #000000; /* Color de la barra al pasar el cursor */
+  background-color: #000000;
 }
 
-/* Para Firefox (con el pseudo-elemento scrollbar) */
 .modal-body {
-  scrollbar-width: thin; /* Define el ancho de la barra */
-  scrollbar-color: #000000 #c7c7c7; /* Color del thumb y del track */
+  scrollbar-width: thin;
+  scrollbar-color: #000000 #c7c7c7;
 }
 
 @media (max-width: 600px) {
@@ -1977,7 +1967,6 @@ input:focus {
 }
 
 .menu span {
-  /* margin-left: 23px; */
   display: block;
   width: 40%;
   height: 2px;
@@ -1987,7 +1976,6 @@ input:focus {
   transition: all 600ms;
 }
 
-/*ANIMACION*/
 .activel1 {
   transform: rotate(45deg) translate(-3px, 1px);
   background: #000000;
@@ -2016,10 +2004,9 @@ input:focus {
   height: 100%;
   background-color: #ffffff;
   color: #000000;
-  /* display: none;  */
   padding-right: 100px;
   padding-bottom: 100px;
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5); /* Sombra */
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
   position: fixed;
   left: -40%;
   width: 40%;
@@ -2034,7 +2021,6 @@ input:focus {
   display: block;
 }
 
-/* Estilos para los enlaces en la barra lateral */
 .options_container ul {
   margin-left: 68%;
   align-items: center;
@@ -2078,8 +2064,7 @@ input:focus {
     background-color: #ffffff;
     color: #000000;
     height: 100%;
-    /* display: none;  */
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5); /* Sombra */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
     position: fixed;
     left: -70%;
     width: 70%;
@@ -2110,7 +2095,7 @@ input:focus {
   height: 35vh;
   width: 40%;
   background: white;
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5); /* Sombra */
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
   z-index: 999;
   transition: opacity 0s;
 }
@@ -2367,16 +2352,16 @@ input:focus {
     transform: translateY(0);
   }
   50% {
-    transform: translateY(10px); /* El chevron baja */
+    transform: translateY(10px);
   }
   100% {
-    transform: translateY(0); /* El chevron vuelve a su posición original */
+    transform: translateY(0);
   }
 }
 .chevron-down {
   display: inline-block;
   animation: bounce 2s infinite;
-  animation-timing-function: cubic-bezier(0.68, -0.55, 0.27, 1.55); /* Personaliza el easing */
+  animation-timing-function: cubic-bezier(0.68, -0.55, 0.27, 1.55);
 }
 
 .center {
@@ -2461,7 +2446,6 @@ input:focus {
 .slide img {
   width: 140px;
   height: 175px;
-  /* border-radius: 2mm; */
   -webkit-box-reflect: below 0px linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.4));
   transition: 0.25s;
 }
@@ -2472,7 +2456,6 @@ input:focus {
   width: 100%;
   height: 100%;
   box-shadow: inset 5px 5px 15px rgba(255, 255, 255, 0.5);
-  /* border-radius: 2mm; */
   top: 0;
   left: 0;
   z-index: 1;
@@ -2485,7 +2468,6 @@ input:focus {
   bottom: 10px;
   left: 50%;
   transform: translate(-50%, 0);
-  /* border-radius: 10mm; */
   background: rgba(0, 0, 0, 0.7);
   font-family: "AdelleL", "RobotoL", sans-serif;
   font-size: 18px;
@@ -2529,7 +2511,7 @@ input:focus {
   position: absolute;
   top: 0;
   bottom: 0;
-  width: 100px; /* Ajusta el tamaño según tu preferencia */
+  width: 100px;
   pointer-events: none;
   z-index: 2;
 }
@@ -2592,7 +2574,6 @@ input:focus {
   .slide img {
     width: 140px;
     height: 175px;
-    /* border-radius: 2mm; */
     -webkit-box-reflect: below 0px linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.4));
     transition: 0.25s;
   }
@@ -2602,7 +2583,6 @@ input:focus {
     width: 100%;
     height: 100%;
     box-shadow: inset 5px 5px 15px rgba(255, 255, 255, 0.5);
-    /* border-radius: 2mm; */
     top: 0;
     left: 0;
     z-index: 1;

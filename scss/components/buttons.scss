@@ -20,7 +20,6 @@
     color: rgba(255, 255, 255, 0.4);
 }
 
-
 .third_section_btn_container_left{
     height: 50px;
     width: 50px;
@@ -41,15 +40,15 @@
         transform: translateY(0);
     }
     50% {
-        transform: translateY(10px); /* El chevron baja */
+        transform: translateY(10px);
     }
     100% {
-        transform: translateY(0); /* El chevron vuelve a su posición original */
+        transform: translateY(0);
     }
 }
 
 .chevron-down {
     display: inline-block;
     animation: bounce 2s infinite;
-    animation-timing-function: cubic-bezier(0.68, -0.55, 0.27, 1.55); /* Personaliza el easing */
+    animation-timing-function: cubic-bezier(0.68, -0.55, 0.27, 1.55); 
 }

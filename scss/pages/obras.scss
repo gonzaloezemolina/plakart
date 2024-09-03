@@ -1,7 +1,6 @@
 .portada_desarrollos{
     background-image: url("../media/img/obras/nordlink.jpeg");
     filter: grayscale(100%);
-
   background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -24,8 +23,6 @@
     }
 }
 
-
-
 .projects_section{
     margin-top: 12%;
     color: white;
@@ -43,8 +40,6 @@
     justify-content: center;
     flex-direction: column;
 }
-
-
 
 .projects_view_list{
     padding: 40px;
@@ -71,9 +66,6 @@
     
 }
 
-
-
-/* Modal */
 .modal {
     display: none;
     position: fixed;
@@ -86,7 +78,6 @@
     background-color: rgba(0, 0, 0, 0.6);
 }
 
-/* Modal content */
 .modal-content {
     position: relative;
     margin: 5% auto;
@@ -95,27 +86,24 @@
     border-radius: 8px;
     width: 80%;
     max-width: 1200px;
-    height: 80%; /* Limitar la altura del modal */
+    height: 80%; 
     display: flex;
     flex-direction: column;
 }
 
-/* Modal header */
 .modal-header {
     padding-bottom: 10px;
     font-family: "AdelleB";
 }
 
-/* Modal body with scroll */
 .modal-body {
     flex-grow: 1;
-    overflow-y: auto; /* Agregar scroll vertical cuando sea necesario */
+    overflow-y: auto; 
 }
 
-/* Project grid with 4 columns */
 .projects-grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr); /* Ajuste a 4 columnas */
+    grid-template-columns: repeat(4, 1fr); 
     grid-gap: 20px;
 }
 
@@ -126,8 +114,6 @@
     text-align: center;
     font-family: "AdelleL";
 }
-
-/* Close button */
 .close {
     position: absolute;
     right: 15px;
@@ -144,54 +130,48 @@
     cursor: pointer;
 }
 
-/* Responsive adjustments */
 @media (max-width: 1024px) {
     .projects-grid {
-        grid-template-columns: repeat(3, 1fr); /* Reducir a 3 columnas */
+        grid-template-columns: repeat(3, 1fr); 
     }
 }
 
 @media (max-width: 768px) {
     .projects-grid {
-        grid-template-columns: repeat(2, 1fr); /* Reducir a 2 columnas */
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 
 @media (max-width: 480px) {
     .projects-grid {
-        grid-template-columns: 1fr; /* En pantallas pequeñas, mostrar 1 columna */
+        grid-template-columns: 1fr; 
     }
 }
 
 
 .modal-body::-webkit-scrollbar {
-    width: 12px; /* Ancho de la barra de desplazamiento */
+    width: 12px; 
 }
 
-/* El track (fondo de la barra) */
 .modal-body::-webkit-scrollbar-track {
-    background: #f4f4f4; /* Color de fondo */
+    background: #f4f4f4; 
     border-radius: 10px;
 }
 
-/* La parte "thumb" (la barra que se mueve) */
 .modal-body::-webkit-scrollbar-thumb {
-    background-color: #000000; /* Color de la barra */
-    border-radius: 10px; /* Bordes redondeados */
-    border: 3px solid #f4f4f4; /* Espaciado alrededor de la barra */
+    background-color: #000000; 
+    border-radius: 10px; 
+    border: 3px solid #f4f4f4;
 }
 
-/* Hover effect para la barra */
 .modal-body::-webkit-scrollbar-thumb:hover {
-    background-color: #000000; /* Color de la barra al pasar el cursor */
+    background-color: #000000;
 }
 
-/* Para Firefox (con el pseudo-elemento scrollbar) */
 .modal-body {
-    scrollbar-width: thin; /* Define el ancho de la barra */
-    scrollbar-color: #000000 #c7c7c7; /* Color del thumb y del track */
+    scrollbar-width: thin; 
+    scrollbar-color: #000000 #c7c7c7; 
 }
-
 
 @media(max-width:600px){
     .portada_desarrollos{
@@ -226,5 +206,4 @@
         justify-content: center;
         flex-direction: column;
     }
-    
   }

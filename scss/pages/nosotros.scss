@@ -25,8 +25,6 @@ background-color: black;
     }
 }
 
-
-
 .mision_section{
     margin-top: 15%;
     display: grid;
@@ -39,14 +37,13 @@ background-color: black;
     }
 }
 
-
 .mision_section_img{
     z-index: 3;
     display: flex;
     justify-content: end;
     align-items: start;
     transform: translateY(-80px);
-    overflow: hidden; /* Para ocultar partes del video que excedan el contenedor */
+    overflow: hidden; 
 }
 
 .mision_img{
@@ -54,10 +51,7 @@ background-color: black;
     height: 100%;
     width: 70%; 
     object-fit: cover;
-    
-    // transform: translateY(-40px);
 }
-
 
 .mision_section_text{
     display: flex;
@@ -82,10 +76,6 @@ background-color: black;
     }
 }
 
-
-//Vision
-
-
 .vision_section{
     display: grid;
     grid-template-columns: 45% 55%;
@@ -97,21 +87,18 @@ background-color: black;
     }
 }
 
-
 .vision_section_img{
     display: flex;
     justify-content: start;
     align-items: center;
-    overflow: hidden; /* Para ocultar partes del video que excedan el contenedor */
+    overflow: hidden; 
 }
 
 .vision_img{
     height: 75vh;
     width: 75%; 
     object-fit: cover;
-    // transform: translateY(40px);
 }
-
 
 .vision_section_text{
     display: flex;
@@ -135,13 +122,6 @@ background-color: black;
         margin-bottom: 50px;
     }
 }
-
-
-
-
-
-
-//Valores
 .valores_section{
     display: grid;
     grid-template-columns: 55% 45%;
@@ -153,21 +133,18 @@ background-color: black;
     }
 }
 
-
 .valores_section_img{
     display: flex;
     justify-content: end;
     align-items: center;
-    overflow: hidden; /* Para ocultar partes del video que excedan el contenedor */
+    overflow: hidden;
 }
 
 .valores_img{
     height: 75vh;
     width: 75%; 
     object-fit: cover;
-    // transform: translateY(40px);
 }
-
 
 .valores_section_text{
     display: flex;
@@ -191,9 +168,6 @@ background-color: black;
         margin-bottom: 50px;
     }
 }
-
-
-//Staff
 
 .staff_h3{
     background-color: #000000;
@@ -219,7 +193,6 @@ background-color: black;
     justify-items: center;
     padding-bottom: 5%;
 }
-
 
 .retrato_description{
     height: 56px;
@@ -248,8 +221,6 @@ background-color: black;
     height: 320px;
 }
 
-
-
 @media(max-width:600px){
     .portada_nosotros{
     height: 73vh;
@@ -276,7 +247,7 @@ background-color: black;
     .mision_section {
         display: flex;
         flex-direction: column;
-        height: 100vh; /* Por defecto, para mobile */
+        height: 100vh; 
       }
       
       .mision_section_text {
@@ -319,13 +290,11 @@ background-color: black;
         object-fit: cover;
     }
     
-    // vision
-
     .vision_section {
         display: flex;
         flex-direction: column;
         background: white;
-        height: 100vh; /* Por defecto, para mobile */
+        height: 100vh; 
       }
       
       .vision_section_text {
@@ -374,7 +343,7 @@ background-color: black;
         display: flex;
         flex-direction: column;
         background: black;
-        height: 100vh; /* Por defecto, para mobile */
+        height: 100vh; 
       }
       
       .valores_section_text {
