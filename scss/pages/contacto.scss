@@ -119,7 +119,16 @@ form{
 }
 
 .map{
+    height: 45%;
+    resize: both;
+    overflow: auto;
     width: 80%;
+    outline: none;
+}
+
+.maps{
+    width: 100%;
+    height: 100%;
     outline: none;
 }
 
@@ -232,7 +241,6 @@ input:focus {
             padding: 0;
             height: 300px;
             border: 1px solid white;
-            border-radius: 5px;
             width: 100%;
         }
     }
