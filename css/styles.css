@@ -1815,6 +1815,14 @@ input:focus {
   .projects_section p {
     font-family: "AdelleL", "RobotoL", sans-serif;
   }
+  .projects_view_list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    text-align: center;
+  }
+  .proyecto {
+    font-size: 11px;
+  }
 }
 .portada_placares {
   background-image: url("../media/img/placares/cajon-placard-blanco.jpg");
@@ -2464,6 +2472,9 @@ input:focus {
 }
 
 @media (max-width: 600px) {
+  .bigger_container {
+    height: 60vh;
+  }
   .center {
     width: 100%;
     height: 100%;
@@ -2499,6 +2510,9 @@ input:focus {
   }
   .slide .desc {
     opacity: 1;
+  }
+  .slide-center {
+    margin-bottom: 40px;
   }
 }
 

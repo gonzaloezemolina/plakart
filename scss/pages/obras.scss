@@ -104,4 +104,12 @@
         justify-content: center;
         flex-direction: column;
     }
+    .projects_view_list{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        text-align: center;
+    }
+    .proyecto{
+        font-size: 11px;
+    }
   }
