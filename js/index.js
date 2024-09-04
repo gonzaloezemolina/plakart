@@ -170,6 +170,11 @@ document.addEventListener('DOMContentLoaded', function () {
     const slideCount = slides.children.length;
     const slideIndicators = document.querySelectorAll('#slide-indicators li')
     let currentIndex = 0;
+    let startX = 0;
+    let moveX = 0;
+    let threshold = 50; 
+    let isDragging = false;
+    
     updateSlideIndicators(currentIndex);
 
     const slideData = [
@@ -229,72 +234,33 @@ document.addEventListener('DOMContentLoaded', function () {
     prevButton.addEventListener('click', () => {
         prevImage();
     });
+
+    
+  slides.addEventListener('touchstart', (e) => {
+    startX = e.touches[0].clientX;
+    isDragging = true;
 });
 
-document.addEventListener('DOMContentLoaded', () => {
-  const slides = document.getElementById('carousel_slides');
-  const slideCount = slides.children.length;
-  let currentIndex = 0;
-  let startX = 0;
-  let moveX = 0;
-  let threshold = 50; 
-  let isDragging = false;
+slides.addEventListener('touchmove', (e) => {
+    if (!isDragging) return;
+    moveX = e.touches[0].clientX;
+});
 
-  function updateCardContent(index) {
-      const cardTitle = document.querySelector('#card2 h2');
-      const cardText = document.querySelector('#card2 .card_text');
-      const cardCount = document.querySelector('#card2 .card_link p:first-child');
+slides.addEventListener('touchend', () => {
+    if (!isDragging) return;
 
-      const slideData = [
-          { title: 'Cocinas', text: 'Encuentra inspiración en cada rincón de nuestras cocinas que fusionan estilo y funcionalidad a la perfección.', count: '1/4' },
-          { title: 'Placares', text: 'Optimiza cada espacio con nuestros placares, donde diseño y practicidad se encuentran.', count: '2/4' },
-          { title: 'Vestidores', text: 'Descubre la elegancia y el orden en nuestros vestidores personalizados.', count: '3/4' },
-          { title: 'Complementos', text: 'Añade los detalles finales con nuestros complementos de alta calidad.', count: '4/4' }
-      ];
+    const diffX = startX - moveX;
+    if (Math.abs(diffX) > threshold) {
+        if (diffX > 0) {
+            nextImage();
+        } else {
+            prevImage();
+        }
+    }
 
-      cardTitle.textContent = slideData[index].title;
-      cardText.textContent = slideData[index].text;
-      cardCount.textContent = slideData[index].count;
-  }
+    isDragging = false;
+});
 
-  function nextImage() {
-      currentIndex = (currentIndex + 1) % slideCount;
-      const translateXValue = -(currentIndex * 100);
-      slides.style.transform = `translateX(${translateXValue}%)`;
-      updateCardContent(currentIndex);
-  }
-
-  function prevImage() {
-      currentIndex = (currentIndex - 1 + slideCount) % slideCount;
-      const translateXValue = -(currentIndex * 100);
-      slides.style.transform = `translateX(${translateXValue}%)`;
-      updateCardContent(currentIndex);
-  }
-
-  slides.addEventListener('touchstart', (e) => {
-      startX = e.touches[0].clientX;
-      isDragging = true;
-  });
-
-  slides.addEventListener('touchmove', (e) => {
-      if (!isDragging) return;
-      moveX = e.touches[0].clientX;
-  });
-
-  slides.addEventListener('touchend', () => {
-      if (!isDragging) return;
-
-      const diffX = startX - moveX;
-      if (Math.abs(diffX) > threshold) {
-          if (diffX > 0) {
-              nextImage();
-          } else {
-              prevImage();
-          }
-      }
-
-      isDragging = false;
-  });
 });
 
 
