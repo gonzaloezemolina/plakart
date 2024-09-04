@@ -80,19 +80,18 @@ function openingBar () {
 }
 
 document.addEventListener('DOMContentLoaded', function () {
-    const sloganElement = document.getElementById('slogan');
     const textos = ['tus expectativas', 'tu espíritu', 'tu inspiración', 'tus sentidos']; 
+    const sloganElement = document.getElementById('slogan');
+    sloganElement.innerHTML = "tus sentidos"
     let index = 0;
-  
     function cambiarTexto() {
         sloganElement.style.opacity = 0
         setTimeout(function(){
             sloganElement.textContent = textos[index];
-            sloganElement.style.opacity = 1
+            sloganElement.style.opacity = 1;
             index = (index + 1) % textos.length;
         }, 2000)
     }
-  
     setInterval(cambiarTexto, 5000);
   });
 
@@ -254,9 +253,9 @@ document.addEventListener('DOMContentLoaded', function () {
 
 const imagesOfFirstCarrousel = [
   { src: './media/img/vestidores/vestidor.png', href: './pages/vestidores.html' },
-  { src: './media/img/complementos/estanteria.jpg', href: './pages/complementos.html' },
-  { src: './media/img/cocinas/cocinas.jpg', href: './pages/cocinas.html' },
-  { src: './media/img/placares/placard.png', href: './pages/placares.html' }
+  { src: './media/img/complementos/complemento-naranja-guitarra.webp', href: './pages/complementos.html' },
+  { src: './media/img/cocinas/cocina-gris-plakart.jpg', href: './pages/cocinas.html' },
+  { src: './media/img/placares/placard-ancho-habitacion.jpeg', href: './pages/placares.html' }
 ];
 
 let firstImage = 0;

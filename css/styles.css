@@ -195,27 +195,25 @@ small a {
   footer {
     width: 100%;
   }
-  .logo_in_footer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    width: 100%;
-  }
   .first_container_footer img {
     transform: none;
+    width: 150px;
+    padding: 0;
   }
   .footer_iconos {
     transform: none;
+  }
+  .footer_iconos svg {
+    padding: 2px;
+    height: 25px;
+    width: 25px;
   }
   .first_container_footer {
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
     text-align: center;
-    gap: 10px;
   }
   .container_links_footer {
     width: 100%;
@@ -296,7 +294,6 @@ small a {
   display: flex;
 }
 .first_section_portal .first_section_portal_img {
-  background-image: url("../media/img/vestidores/Screenshot_1.png");
   background-size: contain;
   background-repeat: no-repeat;
   width: 420px;

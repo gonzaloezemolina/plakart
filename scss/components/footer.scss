@@ -36,13 +36,11 @@ footer{
     transform: translateY(10px);
 }
 
-//Icons
 #whatsApp_icon:hover{
     cursor: pointer;
     color: rgb(117, 116, 116);
     transition: .5s;
 }
-
 
   #instagram_icon:hover path {
     color: rgb(117, 116, 116);
@@ -119,27 +117,26 @@ small{
     footer{
         width: 100%;
     }
-    .logo_in_footer{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        width: 100%;
-    }
+
     .first_container_footer img {
         transform: none;
+        width: 150px;
+        padding: 0;
     }
     .footer_iconos{
         transform: none;
+        svg{
+            padding: 2px;
+            height: 25px;
+            width: 25px;
+        }
     }
     .first_container_footer{
         width: 100%;
         display: flex;
         justify-content: center;
         align-items: center;
-        flex-direction: column;
         text-align: center;
-        gap: 10px;
     }
     .container_links_footer{
         width: 100%;
