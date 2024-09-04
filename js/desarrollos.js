@@ -81,7 +81,9 @@ function openingBar() {
 let i = 0;
 let slides = document.querySelectorAll(".slide");
 let slider = document.querySelector(".slider");
-var pause = false;
+let startX = 0;
+let endX = 0;
+let pause = false;
 
 function moveRight() {
   slides[i].className = "slide";
@@ -98,6 +100,25 @@ function moveLeft() {
   let Xvalue = -160 * i;
   slider.style.transform = `translateX(${Xvalue}px)`;
 }
+
+slider.addEventListener("touchstart", (e) => {
+  startX = e.touches[0].clientX;
+});
+
+slider.addEventListener("touchmove", (e) => {
+  endX = e.touches[0].clientX;
+});
+
+slider.addEventListener("touchend", () => {
+  if (startX - endX > 50) {
+    moveRight(); 
+  } else if (endX - startX > 50) {
+    moveLeft(); 
+  }
+  startX = 0;
+  endX = 0;
+});
+
 
 const interval = setInterval(() => {
   if (!pause) {
