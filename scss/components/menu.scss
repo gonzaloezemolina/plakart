@@ -142,6 +142,21 @@
 }
 }
 
+@media (max-height:450px){
+    .options_container ul{
+        margin-top: 40px;
+        padding: 0;
+        transform: none;
+        a{
+            font-size: 17px;
+        }
+        li{
+            padding: 3px;
+            margin: 0;
+        }
+    }
+}
+
 @media (min-width: 450px) and (max-width: 600px) {
     .options_container{
         left: -60%;

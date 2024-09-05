@@ -933,6 +933,16 @@ small a {
     height: 405px;
   }
 }
+@media (min-width: 600px) and (max-width: 800px) {
+  .first_section_cocinas p {
+    margin: 0 auto;
+    max-width: 530px;
+    color: black;
+    font-size: 15px;
+    font-family: "AdelleL", "RobotoL", sans-serif;
+    text-align: justify;
+  }
+}
 .portada_nosotros {
   background-image: url("../media/img/nosotros/empresa.JPG");
   filter: grayscale(100%);
@@ -1157,6 +1167,13 @@ small a {
   height: 320px;
 }
 
+@media (max-height: 450px) {
+  .first_section_cocinas {
+    padding-top: 10px;
+    margin-left: 45px;
+    margin-right: 45px;
+  }
+}
 @media (min-width: 600px) and (max-width: 980px) {
   .staff_section {
     display: grid;
@@ -2091,6 +2108,20 @@ input:focus {
     width: 100%;
     margin-left: 45%;
     text-align: end;
+  }
+}
+@media (max-height: 450px) {
+  .options_container ul {
+    margin-top: 40px;
+    padding: 0;
+    transform: none;
+  }
+  .options_container ul a {
+    font-size: 17px;
+  }
+  .options_container ul li {
+    padding: 3px;
+    margin: 0;
   }
 }
 @media (min-width: 450px) and (max-width: 600px) {

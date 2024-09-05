@@ -132,3 +132,16 @@
         height: 405px;
       }
   }
+
+@media (min-width:600px) and (max-width:800px){
+  .first_section_cocinas{
+    p{
+        margin: 0 auto;
+        max-width: 530px;
+        color: black;
+    font-size: 15px;
+    font-family: "AdelleL", "RobotoL", sans-serif;
+    text-align: justify;
+}
+}
+}

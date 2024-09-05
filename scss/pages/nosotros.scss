@@ -221,6 +221,14 @@ background-color: black;
     height: 320px;
 }
 
+@media (max-height:450px){
+    .first_section_cocinas{
+        padding-top: 10px;
+        margin-left: 45px;
+        margin-right: 45px;
+    }
+}
+
 
 @media (min-width:600px) and (max-width:980px){
     .staff_section{
