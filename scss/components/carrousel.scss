@@ -173,6 +173,14 @@ transition: .5s;
     color: rgba(255, 255, 255, 0.4);
   }
 
+  @media(max-height:450px){
+    .bigger_container{
+      height: 500px;
+    }
+    .slide .desc{
+      opacity: 1;
+    }
+  }
 
   @media(max-width:600px){
     .bigger_container{
