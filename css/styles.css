@@ -812,6 +812,24 @@ small a {
     text-decoration: underline;
   }
 }
+@media (max-height: 450px) {
+  .logo {
+    width: 220px;
+  }
+  .first_section_slogan p {
+    font-size: 15px;
+  }
+  .first_section_portal {
+    display: none;
+  }
+  .cta-icon {
+    display: block;
+    transform: translate(195px, -65px);
+  }
+  .second_section {
+    height: 100%;
+  }
+}
 .portada_cocinas {
   background-image: url("../media/img/cocinas/portada-cocina.jpg");
   filter: grayscale(100%);
@@ -2309,6 +2327,24 @@ body.menu-open {
   .card_link a {
     font-family: "AdelleL", "RobotoL", sans-serif;
     color: black;
+  }
+}
+@media (max-height: 450px) {
+  #card1 {
+    height: 190px;
+    width: 300px;
+    transform: translate(350px, 20px);
+  }
+  #card1 p {
+    font-size: 13px;
+    padding-bottom: 5px;
+  }
+  #card1 a {
+    font-size: 13px;
+  }
+  #card1 h2 {
+    font-size: 15px;
+    padding-bottom: 15px;
   }
 }
 .modal {

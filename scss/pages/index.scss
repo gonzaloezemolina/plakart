@@ -613,3 +613,25 @@
         }
     }
 }
+
+
+@media(max-height:450px){
+    .logo{
+        width: 220px;
+    }
+    .first_section_slogan{
+        p{
+            font-size: 15px;
+        }
+    }
+    .first_section_portal{
+        display: none;
+    }
+    .cta-icon{
+        display: block;
+        transform:translate(195px,-65px)
+    }
+    .second_section{
+        height: 100%;
+    }
+}

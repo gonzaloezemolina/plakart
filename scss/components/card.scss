@@ -128,3 +128,22 @@ transition: opacity 0s;
         color: black;
     }
 }
+
+@media(max-height:450px){
+#card1{
+    height: 190px;
+    width: 300px;
+    p{
+        font-size: 13px;
+        padding-bottom: 5px;
+    }
+    a{
+        font-size: 13px;
+    }
+    h2{
+        font-size: 15px;
+        padding-bottom: 15px;
+    }
+    transform: translate(350px, 20px);
+}
+}
