@@ -732,6 +732,9 @@ small a {
   .third_btn_left {
     display: none;
   }
+  .third_btn_left svg {
+    display: none;
+  }
   .third_section_btn_container {
     display: none;
   }
@@ -1171,7 +1174,7 @@ small a {
   height: 320px;
 }
 
-@media (max-height: 450px) {
+@media (max-height: 750px) {
   .first_section_cocinas {
     padding-top: 10px;
     margin-left: 45px;
