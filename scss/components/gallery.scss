@@ -91,3 +91,15 @@
 .image_btn_image{
     cursor: pointer;
 }
+
+@media(max-width:600px){
+    #adelante{
+        color: white;
+    }
+    #atras{
+        color: white;
+    }
+    #cerrar{
+        color: white;
+    }
+}

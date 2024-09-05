@@ -729,6 +729,9 @@ small a {
   .third_section_btn_container_left {
     display: none;
   }
+  .third_btn_left {
+    display: none;
+  }
   .third_section_btn_container {
     display: none;
   }
@@ -786,6 +789,7 @@ small a {
     justify-content: center;
     align-items: center;
     position: relative;
+    background-color: #000;
     height: 70vh;
     background-image: url("../media/img/obras/nordlink.jpeg");
     background-size: cover;
@@ -2396,6 +2400,17 @@ body.menu-open {
   cursor: pointer;
 }
 
+@media (max-width: 600px) {
+  #adelante {
+    color: white;
+  }
+  #atras {
+    color: white;
+  }
+  #cerrar {
+    color: white;
+  }
+}
 .view_list_btn {
   padding: 20px;
   box-shadow: 0 0 15px rgba(250, 250, 250, 0.5);

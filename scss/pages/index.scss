@@ -520,6 +520,10 @@
     display: none;
 }
 
+.third_btn_left{
+    display: none;
+}
+
 .third_section_btn_container{
     display: none;
 }
@@ -584,6 +588,7 @@
         justify-content: center;
         align-items: center;
         position: relative;
+        background-color: #000;
         height: 70vh;
         background-image: url('../media/img/obras/nordlink.jpeg');
         background-size: cover;
