@@ -1173,16 +1173,36 @@ small a {
     margin-left: 45px;
     margin-right: 45px;
   }
+  .mision_section, .vision_section, .valores_section {
+    height: 100vh;
+    transform: none;
+  }
+  .mision_title, .valores_title, .vision_title {
+    transform: translateY(25px);
+  }
+  .valores_section {
+    height: 100%;
+  }
+  .staff_h3 {
+    padding-bottom: 25px;
+  }
+  .staff_section {
+    height: 100%;
+    grid-row-gap: 15px;
+  }
 }
 @media (min-width: 600px) and (max-width: 980px) {
   .staff_section {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 0;
+    grid-row-gap: 80px;
+    grid-column-gap: 0px;
+    padding-top: 20px;
   }
   .retrato {
     width: 240px;
     height: 316px;
+    margin-bottom: 20px;
   }
   .mision_section {
     display: grid;
@@ -2061,10 +2081,11 @@ input:focus {
   font-family: "AdelleL", "RobotoL", sans-serif;
 }
 
+body.menu-open {
+  overflow: hidden;
+}
+
 @media (max-width: 450px) {
-  body.menu-open {
-    overflow: hidden;
-  }
   .menu {
     border: 0;
     justify-content: center;
@@ -2108,11 +2129,12 @@ input:focus {
     width: 100%;
     margin-left: 45%;
     text-align: end;
+    margin-bottom: 5%;
   }
 }
 @media (max-height: 450px) {
   .options_container ul {
-    margin-top: 40px;
+    margin-top: 30px;
     padding: 0;
     transform: none;
   }

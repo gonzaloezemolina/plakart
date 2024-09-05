@@ -227,6 +227,23 @@ background-color: black;
         margin-left: 45px;
         margin-right: 45px;
     }
+    .mision_section, .vision_section, .valores_section{
+        height: 100vh;
+        transform:none
+    }
+    .mision_title,.valores_title,.vision_title{
+        transform: translateY(25px);
+    }
+    .valores_section{
+        height: 100%;
+    }
+    .staff_h3{
+        padding-bottom: 25px;
+    }
+    .staff_section{
+        height: 100%;
+        grid-row-gap: 15px; 
+    }
 }
 
 
@@ -234,11 +251,14 @@ background-color: black;
     .staff_section{
         display: grid;
         grid-template-columns: repeat(2,1fr);
-        gap: 0;
+        grid-row-gap: 80px;
+        grid-column-gap: 0px;
+        padding-top: 20px;
     }
     .retrato{
         width: 240px;
         height: 316px;
+        margin-bottom: 20px;
     }
     .mision_section{
         display: grid;
@@ -524,3 +544,4 @@ background-color: black;
         height: 100%;
     }
 }
+
