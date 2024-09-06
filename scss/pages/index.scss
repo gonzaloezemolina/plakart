@@ -634,4 +634,26 @@
     .second_section{
         height: 100%;
     }
+    .third_section{
+        height: 100%;
+        li{
+            font-size: 20px;
+        }
+    }
+    .fourth_section{
+        h3{
+            font-size: 20px;
+        }
+        .circulo{
+            width: 120px;
+            height: 140px;
+            background-color: white;
+            border-radius: 50%;
+            position: absolute;
+            left: -6%;
+        }
+    }
+    .fifth_section{
+        height: 100%;
+    }
 }

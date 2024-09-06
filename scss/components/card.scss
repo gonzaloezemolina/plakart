@@ -146,4 +146,31 @@ transition: opacity 0s;
     }
     transform: translate(350px, 20px);
 }
+
+#card2{
+    height: 150px;
+    width: 300px;
+    h2{
+        font-size: 15px;
+        padding-bottom: 15px;
+    }
+    p{
+        font-size: 13px;
+    }
+    transform: translate(-150px, 40px);
+}
+
+
+#card3{
+    height: 150px;
+    width: 300px;
+    h4{
+        font-size: 15px;
+        padding-bottom: 15px;
+    }
+    p,a{
+        font-size: 13px;
+    }
+    transform: translate(200px,200px);
+}
 }

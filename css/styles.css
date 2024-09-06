@@ -829,6 +829,26 @@ small a {
   .second_section {
     height: 100%;
   }
+  .third_section {
+    height: 100%;
+  }
+  .third_section li {
+    font-size: 20px;
+  }
+  .fourth_section h3 {
+    font-size: 20px;
+  }
+  .fourth_section .circulo {
+    width: 120px;
+    height: 140px;
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+    left: -6%;
+  }
+  .fifth_section {
+    height: 100%;
+  }
 }
 .portada_cocinas {
   background-image: url("../media/img/cocinas/portada-cocina.jpg");
@@ -2345,6 +2365,30 @@ body.menu-open {
   #card1 h2 {
     font-size: 15px;
     padding-bottom: 15px;
+  }
+  #card2 {
+    height: 150px;
+    width: 300px;
+    transform: translate(-150px, 40px);
+  }
+  #card2 h2 {
+    font-size: 15px;
+    padding-bottom: 15px;
+  }
+  #card2 p {
+    font-size: 13px;
+  }
+  #card3 {
+    height: 150px;
+    width: 300px;
+    transform: translate(200px, 200px);
+  }
+  #card3 h4 {
+    font-size: 15px;
+    padding-bottom: 15px;
+  }
+  #card3 p, #card3 a {
+    font-size: 13px;
   }
 }
 .modal {
