@@ -615,7 +615,7 @@
 }
 
 
-@media(max-height:450px) and (max-width:850px){
+@media(max-height:450px){
     .logo{
         width: 220px;
     }
@@ -658,23 +658,12 @@
     }
 }
 
-@media(min-width:850px) and (max-width:1000px){
-    .logo{
-        transform:translateY(105px);
-        width: 300px;
-    }
-    .first_section_slogan{
-        transform:translateY(105px);
-        p{
-            font-size: 15px;
-        }
-    }
+@media(min-width:900px) and (max-width:1040px){
     .first_section_portal{
         display: none;
     }
     .cta-icon{
         display: block;
-        transform:translate(195px, 55px)
     }
     .third_section{
         li{
