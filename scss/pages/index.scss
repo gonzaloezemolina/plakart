@@ -615,7 +615,7 @@
 }
 
 
-@media(max-height:700px){
+@media(max-height:450px){
     .logo{
         width: 220px;
     }
@@ -658,7 +658,7 @@
     }
 }
 
-@media(max-height:900px){
+@media(max-height:600px){
     .logo{
         transform:translateY(45px);
         width: 300px;
@@ -683,7 +683,7 @@
             left: -7%;
         }
         h3{
-            font-size: 22px;
+            font-size: 22pxs;
         }
     }
 }
