@@ -145,6 +145,28 @@ input:focus {
     display: none;
 }
 
+@media(max-height:500px){
+    .contact_left_side{
+        p{
+            margin-bottom: 20px;
+        }
+        svg{
+            margin-bottom: 20px;
+            width: 20px;
+            height: 20px;
+        }
+        address{
+            font-size: 14px;
+        }
+    }
+    .contact_right_side{
+       padding: 0;
+       form{
+        padding-top: 30px;
+       }
+    }
+}
+
 @media(max-width:1000px){
     .contact_left_side{
         h1{

@@ -1730,6 +1730,25 @@ input:focus {
   display: none;
 }
 
+@media (max-height: 500px) {
+  .contact_left_side p {
+    margin-bottom: 20px;
+  }
+  .contact_left_side svg {
+    margin-bottom: 20px;
+    width: 20px;
+    height: 20px;
+  }
+  .contact_left_side address {
+    font-size: 14px;
+  }
+  .contact_right_side {
+    padding: 0;
+  }
+  .contact_right_side form {
+    padding-top: 30px;
+  }
+}
 @media (max-width: 1000px) {
   .contact_left_side h1 {
     font-size: 40px;
