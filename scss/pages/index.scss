@@ -615,7 +615,7 @@
 }
 
 
-@media(max-height:450px){
+@media(max-height:450px) and (max-width:850px){
     .logo{
         width: 220px;
     }
@@ -658,7 +658,7 @@
     }
 }
 
-@media(min-width:750px) and (max-width:1000px){
+@media(min-width:850px) and (max-width:1000px){
     .logo{
         transform:translateY(105px);
         width: 300px;
@@ -687,5 +687,8 @@
             height: 190px;
             left: -7%;
         }
+    }
+    .fifth_section{
+        height: 100%;
     }
 }
