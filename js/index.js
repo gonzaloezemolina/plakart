@@ -260,7 +260,6 @@ slides.addEventListener('touchend', () => {
 
     isDragging = false;
 });
-
 });
 
 
@@ -284,10 +283,10 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 const imagesOfFirstCarrousel = [
-  { src: './media/img/vestidores/vestidor.png', href: './pages/vestidores.html' },
-  { src: './media/img/complementos/complemento-naranja-guitarra.webp', href: './pages/complementos.html' },
-  { src: './media/img/cocinas/cocina-gris-plakart.jpg', href: './pages/cocinas.html' },
-  { src: './media/img/placares/placard-ancho-habitacion.jpeg', href: './pages/placares.html' }
+  { src: './media/img/vestidores/vestidor-luces-led-cajones-madera.jpeg', href: './pages/vestidores.html', title: 'Ver vestidores' },
+  { src: './media/img/complementos/complemento-fusion-pared.JPG', href: './pages/complementos.html', title: 'Ver complementos' },
+  { src: './media/img/cocinas/cocina-moderna-ambiente.jpeg', href: './pages/cocinas.html', title: 'Ver cocinas' },
+  { src: './media/img/placares/cajon-placard-blanco.jpg', href: './pages/placares.html', title: 'Ver placares' }
 ];
 
 let firstImage = 0;
@@ -298,6 +297,7 @@ const linkElement = document.getElementById('more-link');
 function updateCarousel() {
   portalImgElement.style.backgroundImage = `url(${imagesOfFirstCarrousel[firstImage].src})`;
   linkElement.href = imagesOfFirstCarrousel[firstImage].href;
+  linkElement.title = imagesOfFirstCarrousel[firstImage].title; 
 }
 
 document.getElementById('first_section_portal_button').addEventListener('click', () => {

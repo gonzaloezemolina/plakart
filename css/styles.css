@@ -295,7 +295,9 @@ small a {
   display: flex;
 }
 .first_section_portal .first_section_portal_img {
-  background-size: contain;
+  background-size: cover;
+  background-position: bottom center;
+  height: 100vh;
   background-repeat: no-repeat;
   width: 420px;
   transition: transform 0.5s ease-in-out;
@@ -835,6 +837,9 @@ small a {
   .third_section li {
     font-size: 20px;
   }
+  .third_section .third_section_btn_container_left {
+    display: none;
+  }
   .fourth_section h3 {
     font-size: 20px;
   }
@@ -859,6 +864,9 @@ small a {
   }
   .third_section li {
     font-size: 23px;
+  }
+  .third_section .third_section_btn_container_left {
+    display: none;
   }
   .fourth_section .circulo {
     width: 170px;

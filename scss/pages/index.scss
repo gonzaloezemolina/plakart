@@ -68,7 +68,9 @@
     z-index: -1;
     display: flex;
     .first_section_portal_img {
-        background-size: contain;
+        background-size: cover;
+        background-position: bottom center;
+        height: 100vh;
         background-repeat: no-repeat;
         width: 420px;
         transition: transform 0.5s ease-in-out;
@@ -639,6 +641,9 @@
         li{
             font-size: 20px;
         }
+        .third_section_btn_container_left{
+           display: none;
+        }
     }
     .fourth_section{
         h3{
@@ -668,6 +673,9 @@
     .third_section{
         li{
             font-size: 23px;
+        }
+        .third_section_btn_container_left{
+            display: none;
         }
     }
     .fourth_section{
