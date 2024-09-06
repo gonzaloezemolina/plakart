@@ -812,7 +812,7 @@ small a {
     text-decoration: underline;
   }
 }
-@media (max-height: 450px) {
+@media (max-height: 700px) {
   .logo {
     width: 220px;
   }
@@ -848,6 +848,33 @@ small a {
   }
   .fifth_section {
     height: 100%;
+  }
+}
+@media (max-height: 900px) {
+  .logo {
+    transform: translateY(45px);
+    width: 300px;
+  }
+  .first_section_slogan {
+    transform: translateY(45px);
+  }
+  .first_section_slogan p {
+    font-size: 15px;
+  }
+  .first_section_portal {
+    display: none;
+  }
+  .cta-icon {
+    display: block;
+    transform: translate(195px, -20px);
+  }
+  .fourth_section .circulo {
+    width: 170px;
+    height: 190px;
+    left: -7%;
+  }
+  .fourth_section h3 {
+    font-size: 22px;
   }
 }
 .portada_cocinas {
@@ -2349,7 +2376,7 @@ body.menu-open {
     color: black;
   }
 }
-@media (max-height: 450px) {
+@media (max-height: 700px) {
   #card1 {
     height: 190px;
     width: 300px;

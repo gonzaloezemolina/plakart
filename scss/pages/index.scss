@@ -615,7 +615,7 @@
 }
 
 
-@media(max-height:450px){
+@media(max-height:700px){
     .logo{
         width: 220px;
     }
@@ -655,5 +655,35 @@
     }
     .fifth_section{
         height: 100%;
+    }
+}
+
+@media(max-height:900px){
+    .logo{
+        transform:translateY(45px);
+        width: 300px;
+    }
+    .first_section_slogan{
+        transform:translateY(45px);
+        p{
+            font-size: 15px;
+        }
+    }
+    .first_section_portal{
+        display: none;
+    }
+    .cta-icon{
+        display: block;
+        transform:translate(195px,-20px)
+    }
+    .fourth_section{
+        .circulo{
+            width: 170px;
+            height: 190px;
+            left: -7%;
+        }
+        h3{
+            font-size: 22px;
+        }
     }
 }
