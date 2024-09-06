@@ -1566,6 +1566,11 @@ small a {
   transform: translateY(40px);
 }
 
+@media (max-height: 500px) {
+  .portada_complementos h1 {
+    font-size: 80px;
+  }
+}
 @media (max-width: 600px) {
   .portada_complementos {
     height: 73vh;
@@ -2232,9 +2237,9 @@ body.menu-open {
     margin-bottom: 5%;
   }
 }
-@media (max-height: 450px) {
+@media (max-height: 500px) {
   .options_container ul {
-    margin-top: 30px;
+    margin-top: 40px;
     padding: 0;
     transform: none;
   }
@@ -2244,6 +2249,11 @@ body.menu-open {
   .options_container ul li {
     padding: 3px;
     margin: 0;
+  }
+  .icons_in_menu {
+    width: 150px;
+    margin-left: 150px;
+    padding-top: 25px;
   }
 }
 @media (min-width: 450px) and (max-width: 600px) {

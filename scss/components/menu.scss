@@ -142,9 +142,9 @@
 }
 }
 
-@media (max-height:450px){
+@media (max-height:500px){
     .options_container ul{
-        margin-top: 30px;
+        margin-top: 40px;
         padding: 0;
         transform: none;
         a{
@@ -154,7 +154,11 @@
             padding: 3px;
             margin: 0;
         }
-
+    }
+    .icons_in_menu{
+        width: 150px;
+        margin-left: 150px;
+        padding-top: 25px;
     }
 }
 

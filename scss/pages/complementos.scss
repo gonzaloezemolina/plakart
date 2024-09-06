@@ -23,6 +23,14 @@
     }
 }
 
+@media(max-height:500px){
+    .portada_complementos{
+        h1{
+            font-size: 80px;
+        }
+    }
+}
+
 @media(max-width:600px){
     .portada_complementos{
       height: 73vh;
