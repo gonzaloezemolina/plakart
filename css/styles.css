@@ -573,7 +573,7 @@ small a {
   transform: translateY(70%) translateX(85%);
 }
 
-@media (max-width: 600px) {
+@media (max-width: 750px) {
   .first_section_portal {
     display: none;
   }
@@ -681,6 +681,9 @@ small a {
   .third_section #card2 a {
     text-decoration: underline;
   }
+  .third_section .third_section_btn_container_left {
+    display: none;
+  }
   .third_section_links {
     display: flex;
     justify-content: center;
@@ -725,9 +728,6 @@ small a {
     align-items: center;
     width: 100%;
     height: 40vh;
-  }
-  .third_section_btn_container_left {
-    display: none;
   }
   .third_btn_left {
     display: none;
@@ -848,6 +848,33 @@ small a {
   }
   .fifth_section {
     height: 100%;
+  }
+}
+@media (min-width: 750px) and (max-width: 1000px) {
+  .logo {
+    transform: translateY(105px);
+    width: 300px;
+  }
+  .first_section_slogan {
+    transform: translateY(105px);
+  }
+  .first_section_slogan p {
+    font-size: 15px;
+  }
+  .first_section_portal {
+    display: none;
+  }
+  .cta-icon {
+    display: block;
+    transform: translate(195px, 55px);
+  }
+  .third_section li {
+    font-size: 23px;
+  }
+  .fourth_section .circulo {
+    width: 170px;
+    height: 190px;
+    left: -7%;
   }
 }
 .portada_cocinas {
