@@ -2376,7 +2376,7 @@ body.menu-open {
     color: black;
   }
 }
-@media (max-height: 700px) {
+@media (max-height: 500px) {
   #card1 {
     height: 190px;
     width: 300px;
