@@ -850,7 +850,7 @@ small a {
     height: 100%;
   }
 }
-@media (max-height: 600px) {
+@media (min-height: 600px) and (max-height: 1000px) {
   .logo {
     transform: translateY(45px);
     width: 300px;
