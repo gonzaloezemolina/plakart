@@ -94,7 +94,7 @@ const arrayOfImages = [
 "../media/img/placares/placard-espejo.png",
 "../media/img/placares/placard-espejo-habitacion.jpeg",
 "../media/img/placares/placard-espejo-ancho.jpeg",
-"../media/img/placares/placard-sin-puertas.png",
+"../media/img/placares/placard-madera-semioscura.jpeg",
 "../media/img/placares/placard-cajon.png"
 ];
 

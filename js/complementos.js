@@ -95,7 +95,7 @@ const arrayOfImages = [
 "../media/img/complementos/complemento-pared.jpg",
 "../media/img/complementos/complemento-fusion-pared.JPG",
 "../media/img/complementos/complemento-televisor-living.jpg",
-"../media/img/complementos/escritorio-color-negro.png",
+"../media/img/complementos/mesas.jpeg",
 "../media/img/complementos/complemento-moderno-con-plantas.jpeg",
 "../media/img/complementos/estanteria.jpg",
 "../media/img/complementos/complemento-blanco-ancho.jpeg",
