@@ -95,7 +95,10 @@ const arrayOfImages = [
 "../media/img/placares/placard-espejo-habitacion.jpeg",
 "../media/img/placares/placard-espejo-ancho.jpeg",
 "../media/img/placares/placard-madera-semioscura.jpeg",
-"../media/img/placares/placard-cajon.png"
+"../media/img/placares/placard-cajon.png",
+"../media/img/placares/placard-habitacion-elegante.jpeg",
+"../media/img/placares/placard-madera-oscura-ancho.jpeg",
+"../media/img/placares/placard-ancho-luces.jpeg"
 ];
 
 const updateModalImage = () => {

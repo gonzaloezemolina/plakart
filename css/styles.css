@@ -1950,7 +1950,7 @@ input:focus {
   }
 }
 .portada_placares {
-  background-image: url("../media/img/placares/cajon-placard-blanco.jpg");
+  background-image: url("../media/img/placares/placard-madera-semioscura.jpeg");
   filter: grayscale(100%);
   background-position: center;
   background-repeat: no-repeat;
@@ -2756,6 +2756,7 @@ body.menu-open {
   color: #fff;
   padding: 10px;
   border-radius: 30px;
+  z-index: 9999;
 }
 
 /*# sourceMappingURL=styles.css.map */

@@ -97,8 +97,10 @@ const arrayOfImages = [
 "../media/img/cocinas/cocina-madera-oscura.jpeg",
 "../media/img/cocinas/cocina-blanco-negro.jpeg",
 "../media/img/cocinas/cocina-moderna-ambiente.jpeg",
-"../media/img/cocinas/cocina-lados.jpg",
-"../media/img/cocinas/cocina-inteligente.jpg"
+"../media/img/cocinas/cocina-mesa-marmol.jpeg",
+"../media/img/cocinas/cocina-butacas-negras-tazas.jpeg",
+"../media/img/cocinas/cocina-inteligente.jpg",
+"../media/img/cocinas/cocina-moderna-doble-horno.jpeg" 
 ];
 
 const updateModalImage = () => {

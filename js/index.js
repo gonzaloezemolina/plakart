@@ -285,7 +285,7 @@ document.addEventListener('DOMContentLoaded', function () {
 const imagesOfFirstCarrousel = [
   { src: './media/img/vestidores/vestidor-luces-led-cajones-madera.jpeg', href: './pages/vestidores.html', title: 'Ver vestidores' },
   { src: './media/img/complementos/complemento-fusion-pared.JPG', href: './pages/complementos.html', title: 'Ver complementos' },
-  { src: './media/img/cocinas/cocina-moderna-ambiente.jpeg', href: './pages/cocinas.html', title: 'Ver cocinas' },
+  { src: './media/img/cocinas/cocina-amoblamiento-negro.png', href: './pages/cocinas.html', title: 'Ver cocinas' },
   { src: './media/img/placares/cajon-placard-blanco.jpg', href: './pages/placares.html', title: 'Ver placares' }
 ];
 
