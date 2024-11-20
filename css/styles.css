@@ -30,6 +30,7 @@
 }
 body::-webkit-scrollbar {
   background: rgb(0, 0, 0);
+  width: 12px;
 }
 
 body::-webkit-scrollbar-thumb {
@@ -249,15 +250,6 @@ small a {
   object-fit: cover;
 }
 
-.content {
-  background-color: black;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-
 .first_section_slogan {
   display: flex;
   padding-bottom: 85px;
@@ -287,47 +279,57 @@ small a {
 
 .first_section_content {
   height: 100%;
+  display: grid;
+  grid-template-rows: 55% 45%;
+  overflow: hidden;
 }
 
 .first_section_portal {
   height: 100%;
-  z-index: -1;
   display: flex;
+  overflow: hidden;
 }
-.first_section_portal .first_section_portal_img {
-  background-size: cover;
-  background-position: bottom center;
-  height: 100vh;
-  background-repeat: no-repeat;
-  width: 420px;
-  transition: transform 0.5s ease-in-out;
-  margin-top: 20px;
-  display: flex;
-  justify-content: center;
-}
-.first_section_portal .first_section_portal_img .more {
-  margin-top: 100px;
+
+.more {
+  border: 1px solid rgb(235, 5, 158);
   text-align: center;
   height: 42px;
 }
-.first_section_portal .first_section_portal_img .more a {
+.more a {
   text-decoration: underline;
   color: rgb(0, 0, 0);
   font-family: "AdelleL", "RobotoL", sans-serif;
   font-size: 35px;
 }
-.first_section_portal .first_section_portal_button {
+
+.first_section_portal_img {
+  position: relative;
+  width: 65%;
+  height: 100%;
+  overflow: hidden;
+}
+.first_section_portal_img .video_portal {
+  object-fit: cover;
+  object-position: center;
+  height: 100%;
+  position: absolute;
+}
+
+.first_section_portal_img video {
+  width: 100%; /* Ocupa todo el ancho */
+}
+
+.first_section_portal_button {
   cursor: pointer;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 20px;
   font-size: 50px;
   background-color: rgb(255, 255, 255);
   width: 50px;
   height: 110px;
 }
-.first_section_portal .first_section_portal_button svg {
+.first_section_portal_button svg {
   fill: rgb(0, 0, 0);
 }
 
@@ -1441,7 +1443,7 @@ small a {
   }
 }
 .portada_complementos {
-  background-image: url("../media/img/complementos/com-port2.jpeg");
+  background-image: url("../media/img/complementos/com-port3.jpeg");
   filter: grayscale(100%);
   background-position: center;
   background-repeat: no-repeat;
@@ -1950,7 +1952,7 @@ input:focus {
   }
 }
 .portada_placares {
-  background-image: url("../media/img/placares/placard-madera-semioscura.jpeg");
+  background-image: url("../media/img/cajoness.jpeg");
   filter: grayscale(100%);
   background-position: center;
   background-repeat: no-repeat;

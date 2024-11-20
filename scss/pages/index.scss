@@ -7,7 +7,7 @@
 }
 
 @media(min-width:1075px){
-    
+    // por ver
 }
 
 .background_video {
@@ -21,14 +21,14 @@
     object-fit: cover; 
 }
 
-  .content {
-    background-color: black;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-  }
+//   .content {
+//     background-color: rgb(114, 31, 31);
+//     display: flex;
+//     flex-direction: column;
+//     justify-content: center;
+//     align-items: center;
+//     flex-direction: column;
+//   }
 
 .first_section_slogan{
     display: flex;
@@ -60,25 +60,21 @@
 }
 
 .first_section_content{
+    // border: 1px solid khaki;
     height: 100%;
+    display: grid;
+    grid-template-rows: 55% 45%;
+    overflow: hidden;
 }
 
 .first_section_portal{
     height: 100%;
-    z-index: -1;
+    // border: 1px solid red;
     display: flex;
-    .first_section_portal_img {
-        background-size: cover;
-        background-position: bottom center;
-        height: 100vh;
-        background-repeat: no-repeat;
-        width: 420px;
-        transition: transform 0.5s ease-in-out;
-        margin-top: 20px;
-        display: flex;
-        justify-content: center;
+    overflow: hidden;
+}
         .more {
-            margin-top: 100px;
+            border: 1px solid rgb(235, 5, 158);
             text-align: center;
             height: 42px;
             a{
@@ -88,14 +84,33 @@
                 font-size: 35px;
             }
         }
-      }
+
+.first_section_portal_img {
+    position: relative;
+    // border: 1px salmon solid;
+    width: 65%;
+    height: 100%;
+    overflow:hidden;
+    .video_portal{
+        object-fit: cover;
+        object-position: center;
+        height:100%;
+        // border: 1px solid lawngreen;
+        position: absolute;
+    }
+}
+
+      .first_section_portal_img video {
+        width: 100%; /* Ocupa todo el ancho */
+        // object-fit: contain; /* Evita la deformación */
+    }
+
 
     .first_section_portal_button{
         cursor: pointer;
         display: flex;
         justify-content: center;
         align-items: center;
-        margin-top: 20px;
         font-size: 50px;
         background-color: rgb(255, 255, 255);
         width: 50px;
@@ -104,7 +119,6 @@
             fill: rgb(0, 0, 0);
         }
     }
-}
 
 .first_section_portal_button:hover{
     transition: .7s;

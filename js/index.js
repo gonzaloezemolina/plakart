@@ -90,9 +90,9 @@ document.addEventListener('DOMContentLoaded', function () {
             sloganElement.textContent = textos[index];
             sloganElement.style.opacity = 1;
             index = (index + 1) % textos.length;
-        }, 2000)
+        }, 1600)
     }
-    setInterval(cambiarTexto, 5000);
+    setInterval(cambiarTexto, 4000);
   });
 
 
@@ -148,7 +148,7 @@ document.addEventListener('DOMContentLoaded', function () {
 document.addEventListener('DOMContentLoaded', function () {
     const images = [
       "./media/img/socialcontent/complemento-index-modulo.jpeg",
-      "./media/img/socialcontent/complemento-index-plakart.jpeg"
+      "./media/img/plakart-tenis.jpeg"
     ];
   
     let currentIndex = 0;
@@ -282,27 +282,28 @@ document.addEventListener('DOMContentLoaded', function () {
   }, 6000); 
 });
 
-const imagesOfFirstCarrousel = [
-  { src: './media/img/vestidores/vestidor-luces-led-cajones-madera.jpeg', href: './pages/vestidores.html', title: 'Ver vestidores' },
-  { src: './media/img/complementos/complemento-fusion-pared.JPG', href: './pages/complementos.html', title: 'Ver complementos' },
-  { src: './media/img/cocinas/cocina-amoblamiento-negro.png', href: './pages/cocinas.html', title: 'Ver cocinas' },
-  { src: './media/img/placares/cajon-placard-blanco.jpg', href: './pages/placares.html', title: 'Ver placares' }
-];
+// const imagesOfFirstCarrousel = [
+//   { src: './media/img/vestidores/vestidor-luces-led-cajones-madera.jpeg', href: './pages/vestidores.html', title: 'Ver vestidores' },
+//   { src: './media/img/complementos/complemento-fusion-pared.JPG', href: './pages/complementos.html', title: 'Ver complementos' },
+//   { src: './media/img/cocinas/cocina-amoblamiento-negro.png', href: './pages/cocinas.html', title: 'Ver cocinas' },
+//   { src: './media/img/placares/cajon-placard-blanco.jpg', href: './pages/placares.html', title: 'Ver placares' }
+// ];
 
-let firstImage = 0;
+// let firstImage = 0;
 
 const portalImgElement = document.querySelector('.first_section_portal_img');
 const linkElement = document.getElementById('more-link');
 
-function updateCarousel() {
-  portalImgElement.style.backgroundImage = `url(${imagesOfFirstCarrousel[firstImage].src})`;
-  linkElement.href = imagesOfFirstCarrousel[firstImage].href;
-  linkElement.title = imagesOfFirstCarrousel[firstImage].title; 
-}
 
-document.getElementById('first_section_portal_button').addEventListener('click', () => {
-  firstImage = (firstImage + 1) % imagesOfFirstCarrousel.length;
-  updateCarousel();
-});
+// function updateCarousel() {
+//   portalImgElement.style.backgroundImage = `url(${imagesOfFirstCarrousel[firstImage].src})`;
+//   linkElement.href = imagesOfFirstCarrousel[firstImage].href;
+//   linkElement.title = imagesOfFirstCarrousel[firstImage].title; 
+// }
 
-updateCarousel();
+// document.getElementById('first_section_portal_button').addEventListener('click', () => {
+//   firstImage = (firstImage + 1) % imagesOfFirstCarrousel.length;
+//   updateCarousel();
+// });
+
+// updateCarousel();

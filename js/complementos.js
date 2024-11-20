@@ -93,13 +93,13 @@ const arrayOfImages = [
 "../media/img/complementos/complemento-blanco-televisor.jpg",
 "../media/img/complementos/complemento-televisor-isla-madera.jpeg",
 "../media/img/complementos/complemento-pared.jpg",
-"../media/img/complementos/complemento-fusion-pared.JPG",
+"../media/img/complementos/complemento-local-plakart.png",
 "../media/img/complementos/complemento-televisor-living.jpg",
 "../media/img/complementos/mesas.jpeg",
 "../media/img/complementos/complemento-moderno-con-plantas.jpeg",
 "../media/img/complementos/estanteria.jpg",
 "../media/img/complementos/complemento-blanco-ancho.jpeg",
-"../media/img/complementos/complemento-local-plakart.png"
+"../media/img/complementos/baño2.jpeg"
 ];
 
 const updateModalImage = () => {
