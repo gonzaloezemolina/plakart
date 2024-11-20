@@ -587,6 +587,9 @@ small a {
     height: 100vh;
     overflow: hidden;
   }
+  .upside {
+    width: 100%;
+  }
   .background_video {
     position: absolute;
     top: 0;
