@@ -831,7 +831,7 @@ small a {
   }
   .cta-icon {
     display: block;
-    transform: translate(195px, -65px);
+    transform: translate(195px);
   }
   .second_section {
     height: 100%;
@@ -978,16 +978,16 @@ small a {
   .portada_cocinas_titulo {
     width: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: start;
     align-items: center;
     text-align: center;
   }
   .portada_cocinas_titulo h1 {
     font-family: "AdelleEB";
     text-align: center;
-    font-size: 70px;
+    font-size: 60px;
     color: white;
-    padding-bottom: 8px;
+    padding-bottom: 12px;
   }
   .galery_content {
     max-width: 410px;
@@ -1291,16 +1291,16 @@ small a {
   .portada_nosotros_titulo {
     width: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: start;
     align-items: center;
     text-align: center;
   }
   .portada_nosotros_titulo h1 {
     font-family: "AdelleEB";
     text-align: center;
-    font-size: 70px;
+    font-size: 60px;
     color: white;
-    padding-bottom: 8px;
+    padding-bottom: 13px;
   }
   .first_section_cocinas {
     padding-top: 10px;
@@ -1311,6 +1311,7 @@ small a {
     display: flex;
     flex-direction: column;
     height: 100vh;
+    background: linear-gradient(to bottom, rgb(0, 0, 0) 80%, rgb(255, 255, 255) 0%);
   }
   .mision_section_text {
     padding: 0;
@@ -1342,7 +1343,7 @@ small a {
     justify-content: center;
     align-items: center;
     order: 2;
-    margin-top: 65px;
+    transform: none;
     width: 100%;
     height: 400px;
   }
@@ -1353,7 +1354,7 @@ small a {
   .vision_section {
     display: flex;
     flex-direction: column;
-    background: white;
+    background: linear-gradient(to bottom, rgb(255, 255, 255) 65%, rgb(0, 0, 0) 0%);
     height: 100vh;
   }
   .vision_section_text {
@@ -1382,7 +1383,6 @@ small a {
     margin-right: 25px;
   }
   .vision_section_img {
-    background-color: #ffffff;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1482,16 +1482,16 @@ small a {
   .portada_complementos_titulo {
     width: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: start;
     align-items: center;
     text-align: center;
   }
   .portada_complementos_titulo h1 {
     font-family: "AdelleEB";
     text-align: center;
-    font-size: 40px;
+    font-size: 41px;
     color: white;
-    padding-bottom: 20px;
+    padding-bottom: 23px;
   }
 }
 .contact_main_section {
@@ -1615,8 +1615,6 @@ form {
 
 .map {
   height: 45%;
-  resize: both;
-  overflow: auto;
   width: 80%;
   outline: none;
 }
@@ -1819,16 +1817,16 @@ input:focus {
   .portada_vestidores_titulo {
     width: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: start;
     align-items: center;
     text-align: center;
   }
   .portada_vestidores_titulo h1 {
     font-family: "AdelleEB";
     text-align: center;
-    font-size: 53px;
+    font-size: 51px;
     color: white;
-    padding-bottom: 15px;
+    padding-bottom: 18px;
   }
 }
 .portada_desarrollos {
@@ -1911,14 +1909,14 @@ input:focus {
   .portada_desarrollos_titulo {
     width: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: start;
     align-items: center;
     text-align: center;
   }
   .portada_desarrollos_titulo h1 {
     font-family: "AdelleEB";
     text-align: center;
-    font-size: 45px;
+    font-size: 48px;
     color: white;
     padding-bottom: 20px;
   }
@@ -1986,7 +1984,7 @@ input:focus {
   .portada_placares_titulo {
     width: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: start;
     align-items: center;
     text-align: center;
   }
@@ -1995,7 +1993,7 @@ input:focus {
     text-align: center;
     font-size: 60px;
     color: white;
-    padding-bottom: 13px;
+    padding-bottom: 12px;
   }
 }
 .menu {

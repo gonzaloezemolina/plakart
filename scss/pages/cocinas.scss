@@ -98,15 +98,15 @@
       .portada_cocinas_titulo{
           width: 100%;
           display: flex;
-          justify-content: center;
+          justify-content: start;
           align-items: center;
           text-align: center;
           h1{
               font-family: "AdelleEB";
               text-align: center;
-              font-size: 70px;
+              font-size: 60px;
               color: white;
-              padding-bottom: 8px;
+              padding-bottom:12px;
           }
       }
       .galery_content{

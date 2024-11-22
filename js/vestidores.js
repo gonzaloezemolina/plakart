@@ -88,12 +88,12 @@ const galery = document.getElementById("galery_images");
 let currentIndex = 0;
 
 const arrayOfImages = [
-    "../media/img/vestidores/vestidor-iluminoso.webp",
-"../media/img/vestidores/vestidor-3-paredes.jpeg",
+"../media/img/vestidores/vestidores-ultima.jpeg",
+"../media/img/vestidores/vestidor-local-ultima.jpeg",
 "../media/img/vestidores/vestidor-iluminacion-led.jpeg",
 "../media/img/vestidores/vestidor-luces-led-cajones-madera.jpeg",
 "../media/img/vestidores/vestidor-vidrio-detras-pared.webp",
-"../media/img/vestidores/vestidor-con-vidrio-pared-violeta.png",
+"../media/img/vestidores/vestidor-iluminoso.webp",
 ];
 
 const updateModalImage = () => {

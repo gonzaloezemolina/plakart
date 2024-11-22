@@ -148,7 +148,7 @@ document.addEventListener('DOMContentLoaded', function () {
 document.addEventListener('DOMContentLoaded', function () {
     const images = [
       "./media/img/socialcontent/complemento-index-modulo.jpeg",
-      "./media/img/plakart-tenis.jpeg"
+      "./media/img/socialcontent/auto-plakart.jpeg"
     ];
   
     let currentIndex = 0;
@@ -282,28 +282,22 @@ document.addEventListener('DOMContentLoaded', function () {
   }, 6000); 
 });
 
-// const imagesOfFirstCarrousel = [
-//   { src: './media/img/vestidores/vestidor-luces-led-cajones-madera.jpeg', href: './pages/vestidores.html', title: 'Ver vestidores' },
-//   { src: './media/img/complementos/complemento-fusion-pared.JPG', href: './pages/complementos.html', title: 'Ver complementos' },
-//   { src: './media/img/cocinas/cocina-amoblamiento-negro.png', href: './pages/cocinas.html', title: 'Ver cocinas' },
-//   { src: './media/img/placares/cajon-placard-blanco.jpg', href: './pages/placares.html', title: 'Ver placares' }
-// ];
-
-// let firstImage = 0;
-
 const portalImgElement = document.querySelector('.first_section_portal_img');
-const linkElement = document.getElementById('more-link');
+const buttonPortal = document.getElementById('first_section_portal_button');
+const video = document.getElementById("video_portal");
 
-
-// function updateCarousel() {
-//   portalImgElement.style.backgroundImage = `url(${imagesOfFirstCarrousel[firstImage].src})`;
-//   linkElement.href = imagesOfFirstCarrousel[firstImage].href;
-//   linkElement.title = imagesOfFirstCarrousel[firstImage].title; 
-// }
-
-// document.getElementById('first_section_portal_button').addEventListener('click', () => {
-//   firstImage = (firstImage + 1) % imagesOfFirstCarrousel.length;
-//   updateCarousel();
-// });
-
-// updateCarousel();
+function toggleVideo() {
+    if (video.paused) {
+        video.play(); 
+        buttonPortal.innerHTML = `<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-pause" viewBox="0 0 16 16">
+                            <path d="M6 3.5a.5.5 0 0 1 .5.5v8a.5.5 0 0 1-1 0V4a.5.5 0 0 1 .5-.5m4 0a.5.5 0 0 1 .5.5v8a.5.5 0 0 1-1 0V4a.5.5 0 0 1 .5-.5"/>
+                          </svg>`; 
+    } else {
+        video.pause(); 
+        buttonPortal.innerHTML = `
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-play" viewBox="0 0 16 16">
+                  <path d="M10.804 8 5 4.633v6.734zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696z"/>
+                </svg>`; 
+    }
+}
+buttonPortal.addEventListener("click", toggleVideo);
